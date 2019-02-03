@@ -7,7 +7,6 @@ public class PlayerController : MonoBehaviour {
 	public Transform rightGunBone;
 	public Transform leftGunBone;
 	public Arsenal[] arsenal;
-    public Actions actions;
     public float turningSpeed;
     Animator animator;
 
@@ -51,6 +50,27 @@ public class PlayerController : MonoBehaviour {
     {
         animator.SetFloat("Speed", Input.GetAxis("Vertical"));
         transform.Rotate(Vector3.up * Input.GetAxis("Horizontal") * turningSpeed * Time.deltaTime);
+        float yRot = transform.rotation.eulerAngles.y;
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            animator.SetBool("Run", true);
+        } else if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            animator.SetBool("Run", false);
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            animator.SetBool("Jump", true);
+        }
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            animator.SetBool("Squat", true);
+        }
+        if (Input.GetKeyUp(KeyCode.LeftControl))
+        {
+            animator.SetBool("Squat", false);
+        }
+
     }
 
 
