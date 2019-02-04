@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
-using System.Collections;
+using UnityEngine.UI;
 
 [RequireComponent (typeof (Animator))]
 public class PlayerController : MonoBehaviour {
-
-	public Transform rightGunBone;
+    public Text timer;
+    public Text gameOver;
+    public float timeLeft = 120.0f;
+    public Transform rightGunBone;
 	public Transform leftGunBone;
 	public Arsenal[] arsenal;
     public float turningSpeed;
@@ -13,6 +15,7 @@ public class PlayerController : MonoBehaviour {
     private void Start()
     {
         animator = GetComponent<Animator>();
+        SetTimerText();
     }
 
     void Awake() {
@@ -70,7 +73,20 @@ public class PlayerController : MonoBehaviour {
         {
             animator.SetBool("Squat", false);
         }
+        
+        if (timeLeft >= 0)
+        {
+            timeLeft -= Time.deltaTime;
+        } else
+        {
+            gameOver.gameObject.SetActive(true);
+        }
+        SetTimerText();
+    }
 
+    void SetTimerText()
+    {
+        timer.text = "Time remaining: " + Mathf.Round(timeLeft * 10f) / 10f;
     }
 
 
