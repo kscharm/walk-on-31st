@@ -20,7 +20,7 @@ public class AddToInventory : MonoBehaviour
 
     void addToInventory()
     {
-        playerInventory.inventory.Add(gameObject.ToString());
+        playerInventory.inventory.Add(gameObject.name);
         if (deleteOnPickup)
         {
             gameObject.SetActive(false);

@@ -32,6 +32,7 @@ public class CheckInventory : MonoBehaviour
         }
         if (hasItems)
         {
+            print("invoking");
             OnHasItems.Invoke();
         }
     }
