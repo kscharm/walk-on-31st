@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour {
 	public Arsenal[] arsenal;
     public float turningSpeed;
     Animator animator;
+    public int clickableLayerMask = 1 << 9;
 
     private void Start()
     {
@@ -82,6 +83,26 @@ public class PlayerController : MonoBehaviour {
             gameOver.gameObject.SetActive(true);
         }
         SetTimerText();
+        handleClicks();
+    }
+
+    void handleClicks()
+    {
+        
+        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit Hit;
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (Physics.Raycast(ray, out Hit, 10.0f, clickableLayerMask))
+            {
+                ClickableObject clickableObject = Hit.collider.GetComponent<ClickableObject>();
+                if (clickableObject)
+                {
+                    clickableObject.Invoke("invokeOnClick", 0f);
+                }
+            }
+        }
     }
 
     void SetTimerText()

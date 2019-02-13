@@ -12,21 +12,12 @@ public class ClickableObject : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        //Not sure if this does anything
         definedButton = this.gameObject;
     }
 
-    // Update is called once per frame
-    void Update()
+    void invokeOnClick()
     {
-        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit Hit;
-
-        if (Input.GetMouseButtonDown(0))
-        {
-            if (Physics.Raycast(ray, out Hit) && Hit.collider.gameObject == gameObject)
-            {
-                OnClick.Invoke();
-            }
-        }
+        OnClick.Invoke();
     }
 }

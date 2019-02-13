@@ -12,12 +12,6 @@ public class AddToInventory : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void addToInventory()
     {
         playerInventory.inventory.Add(gameObject.name);
