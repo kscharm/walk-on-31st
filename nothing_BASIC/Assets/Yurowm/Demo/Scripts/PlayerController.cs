@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour {
 	public Arsenal[] arsenal;
     public float turningSpeed;
     Animator animator;
-    public int clickableLayerMask = 1 << 9;
+    public int clickableLayerMask = 1 << 9; //Layer 9 is our physics layer for Clickable objects.
 
     private void Start()
     {
@@ -100,6 +100,9 @@ public class PlayerController : MonoBehaviour {
                 if (clickableObject)
                 {
                     clickableObject.Invoke("invokeOnClick", 0f);
+                } else
+                {
+                    print("Error: object in Clickable layer does not have ClickableObject script");
                 }
             }
         }
