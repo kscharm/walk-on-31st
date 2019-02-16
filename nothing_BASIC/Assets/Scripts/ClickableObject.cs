@@ -12,7 +12,6 @@ public class ClickableObject : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        //Not sure if this does anything
         definedButton = this.gameObject;
     }
 
