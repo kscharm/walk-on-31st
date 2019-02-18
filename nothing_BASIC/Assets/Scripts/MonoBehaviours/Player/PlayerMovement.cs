@@ -31,8 +31,6 @@ public class PlayerMovement : MonoBehaviour
     private const float stopDistanceProportion = 0.1f;
     private const float navMeshSampleDistance = 4f;
 
-    public int clickableLayerMask = 1 << 9; // Layer 9 is our physics layer for Clickable objects.
-
 
     private void Start()
     {
@@ -132,29 +130,6 @@ public class PlayerMovement : MonoBehaviour
 
         agent.SetDestination(destinationPosition);
         agent.Resume ();
-    }
-
-    public void handleClicks()
-    {
-
-        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit Hit;
-
-        if (Input.GetMouseButtonDown(0))
-        {
-            if (Physics.Raycast(ray, out Hit, 10.0f, clickableLayerMask))
-            {
-                ClickableObject clickableObject = Hit.collider.GetComponent<ClickableObject>();
-                if (clickableObject)
-                {
-                    clickableObject.Invoke("invokeOnClick", 0f);
-                }
-                else
-                {
-                    print("Error: object in Clickable layer does not have ClickableObject script");
-                }
-            }
-        }
     }
 
 
