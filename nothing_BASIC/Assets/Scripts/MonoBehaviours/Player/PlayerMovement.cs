@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     public float slowingSpeed = 0.175f;
     public float turnSpeedThreshold = 0.5f;
     public float inputHoldDelay = 0.5f;
+    private double maxInteractionDistance = 1.5;
+    private float ikWeight = 0;
     
 
     private Interactable currentInteractable;
@@ -34,6 +36,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
+        animator = GetComponent<Animator>();
+
         agent.updateRotation = false;
 
         inputHoldWait = new WaitForSeconds (inputHoldDelay);
@@ -70,6 +74,15 @@ public class PlayerMovement : MonoBehaviour
             Moving ();
         
         animator.SetFloat(hashSpeedPara, speed, speedDampTime, Time.deltaTime);
+
+      
+        if (agent.velocity == Vector3.zero && System.Math.Abs(agent.transform.position.x - currentInteractable.transform.position.x) < maxInteractionDistance) {
+            animator.SetBool("atDestination", true);
+            ikWeight = 1;
+        } else {
+            animator.SetBool("atDestination", false);
+            ikWeight = 0;
+        }
     }
 
 
@@ -144,6 +157,25 @@ public class PlayerMovement : MonoBehaviour
 
         agent.SetDestination(destinationPosition);
         agent.Resume ();
+        
+
+        //Needs to only do this if the interactable is collectable
+        if (currentInteractable.interactionLocation.transform.position.y < .2) {
+            animator.SetBool("LowTake", true);
+            animator.SetBool("MedTake", false);
+            animator.SetBool("HighTake", false);
+        } else if (currentInteractable.interactionLocation.transform.position.y < .5) {
+            animator.SetBool("MedTake", true);
+            animator.SetBool("LowTake", false);
+            animator.SetBool("HighTake", false);
+        } else {
+            animator.SetBool("HighTake", true);
+            animator.SetBool("MiddleTake", false);
+            animator.SetBool("LowTake", false);
+        }
+        
+        
+
     }
 
 
@@ -159,5 +191,14 @@ public class PlayerMovement : MonoBehaviour
         }
 
         handleInput = true;
+    }
+
+
+
+    private void OnAnimatorIK() {
+        animator.SetLookAtWeight(ikWeight);
+        animator.SetIKPositionWeight(AvatarIKGoal.RightHand, ikWeight);
+        animator.SetLookAtPosition(currentInteractable.transform.position);
+        animator.SetIKPosition(AvatarIKGoal.RightHand, currentInteractable.transform.position);
     }
 }
