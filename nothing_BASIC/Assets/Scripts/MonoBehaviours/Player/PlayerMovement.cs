@@ -143,11 +143,10 @@ public class PlayerMovement : MonoBehaviour
             return;
 
         currentInteractable = interactable;
-
         destinationPosition = currentInteractable.interactionLocation.position;
 
         agent.SetDestination(destinationPosition);
-        agent.Resume ();
+        agent.Resume();
         
 
         //Needs to only do this if the interactable is collectable
@@ -176,7 +175,7 @@ public class PlayerMovement : MonoBehaviour
 
         yield return inputHoldWait;
 
-        while (animator.GetCurrentAnimatorStateInfo (0).tagHash != hashLocomotionTag)
+        while (animator.GetCurrentAnimatorStateInfo(0).tagHash != hashLocomotionTag)
         {
             yield return null;
         }
@@ -185,8 +184,6 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void OnAnimatorIK() {
-
-
         if (agent.velocity == Vector3.zero && System.Math.Abs(agent.transform.position.x - currentInteractable.transform.position.x) < maxInteractionDistance) {
             animator.SetBool("atDestination", true);
             ikWeight = animator.GetFloat("pocketItem");
