@@ -74,15 +74,6 @@ public class PlayerMovement : MonoBehaviour
             Moving ();
         
         animator.SetFloat(hashSpeedPara, speed, speedDampTime, Time.deltaTime);
-
-      
-        if (agent.velocity == Vector3.zero && System.Math.Abs(agent.transform.position.x - currentInteractable.transform.position.x) < maxInteractionDistance) {
-            animator.SetBool("atDestination", true);
-            ikWeight = 1;
-        } else {
-            animator.SetBool("atDestination", false);
-            ikWeight = 0;
-        }
     }
 
 
@@ -193,9 +184,17 @@ public class PlayerMovement : MonoBehaviour
         handleInput = true;
     }
 
-
-
     private void OnAnimatorIK() {
+
+
+        if (agent.velocity == Vector3.zero && System.Math.Abs(agent.transform.position.x - currentInteractable.transform.position.x) < maxInteractionDistance) {
+            animator.SetBool("atDestination", true);
+            ikWeight = animator.GetFloat("pocketItem");
+        } else {
+            animator.SetBool("atDestination", false);
+            ikWeight = 0;
+        }
+        
         animator.SetLookAtWeight(ikWeight);
         animator.SetIKPositionWeight(AvatarIKGoal.RightHand, ikWeight);
         animator.SetLookAtPosition(currentInteractable.transform.position);
