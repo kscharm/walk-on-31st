@@ -183,6 +183,7 @@ public class PlayerMovement : MonoBehaviour
         handleInput = true;
     }
 
+    /*
     private void OnAnimatorIK() {
         if (agent.velocity == Vector3.zero && System.Math.Abs(agent.transform.position.x - currentInteractable.transform.position.x) < maxInteractionDistance) {
             animator.SetBool("atDestination", true);
@@ -196,5 +197,5 @@ public class PlayerMovement : MonoBehaviour
         animator.SetIKPositionWeight(AvatarIKGoal.RightHand, ikWeight);
         animator.SetLookAtPosition(currentInteractable.transform.position);
         animator.SetIKPosition(AvatarIKGoal.RightHand, currentInteractable.transform.position);
-    }
+    }*/
 }
