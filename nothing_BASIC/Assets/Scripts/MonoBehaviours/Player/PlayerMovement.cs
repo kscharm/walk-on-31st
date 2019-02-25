@@ -15,6 +15,11 @@ public class PlayerMovement : MonoBehaviour
     public float inputHoldDelay = 0.5f;
     private double maxInteractionDistance = 1.5;
     private float ikWeight = 0;
+    private float rotateSpeed = 1f;
+    Vector3 direction;
+    Quaternion rotatePlayer;
+    private Rigidbody rbody;
+    bool holdingSkey = false;
     
 
     private Interactable currentInteractable;
@@ -37,6 +42,7 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
+        rbody = GetComponent<Rigidbody>();
 
         agent.updateRotation = false;
 
@@ -74,6 +80,7 @@ public class PlayerMovement : MonoBehaviour
             Moving ();
         
         animator.SetFloat(hashSpeedPara, speed, speedDampTime, Time.deltaTime);
+        movePlayer(); //WASD movement
     }
 
 
@@ -117,24 +124,24 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    public void OnGroundClick(BaseEventData data)
-    {
-        if(!handleInput)
-            return;
+    // public void OnGroundClick(BaseEventData data)
+    // {
+    //     if(!handleInput)
+    //         return;
         
-        currentInteractable = null;
+    //     currentInteractable = null;
 
-        PointerEventData pData = (PointerEventData)data;
+    //     PointerEventData pData = (PointerEventData)data;
 
-        NavMeshHit hit;
-        if (NavMesh.SamplePosition (pData.pointerCurrentRaycast.worldPosition, out hit, navMeshSampleDistance, NavMesh.AllAreas))
-            destinationPosition = hit.position;
-        else
-            destinationPosition = pData.pointerCurrentRaycast.worldPosition;
+    //     NavMeshHit hit;
+    //     if (NavMesh.SamplePosition (pData.pointerCurrentRaycast.worldPosition, out hit, navMeshSampleDistance, NavMesh.AllAreas))
+    //         destinationPosition = hit.position;
+    //     else
+    //         destinationPosition = pData.pointerCurrentRaycast.worldPosition;
 
-        agent.SetDestination(destinationPosition);
-        agent.Resume ();
-    }
+    //     agent.SetDestination(destinationPosition);
+    //     agent.Resume ();
+    // }
 
 
     public void OnInteractableClick(Interactable interactable)
@@ -198,4 +205,44 @@ public class PlayerMovement : MonoBehaviour
         animator.SetLookAtPosition(currentInteractable.transform.position);
         animator.SetIKPosition(AvatarIKGoal.RightHand, currentInteractable.transform.position);
     }*/
+
+    private void movePlayer() {
+        agent.Resume();
+
+        if (Input.GetKey("w")) {
+            agent.SetDestination(agent.transform.position + agent.transform.forward.normalized);
+
+        }
+        if (Input.GetKey("s")) {
+            holdingSkey = true;
+            rbody.MovePosition(rbody.position - (rbody.transform.forward.normalized * 0.07f));
+            agent.transform.position = rbody.transform.position;
+        } else { //Called when done hitting the 's' key
+            if (holdingSkey) {
+                agent.SetDestination(agent.transform.position);
+                holdingSkey = false;
+            }
+        }
+        if (Input.GetKey("d")) {
+            direction = agent.transform.right.normalized;
+            rotatePlayer = Quaternion.LookRotation(direction);
+            agent.transform.rotation = Quaternion.Slerp(agent.transform.rotation, rotatePlayer, Time.deltaTime * rotateSpeed);
+
+        }
+        if (Input.GetKey ("a")) {
+            direction = -agent.transform.right.normalized;
+            rotatePlayer = Quaternion.LookRotation(direction);
+            agent.transform.rotation = Quaternion.Slerp(agent.transform.rotation, rotatePlayer, Time.deltaTime * rotateSpeed);
+        }
+        if (agent.remainingDistance < 0.5f) {
+            agent.Stop();
+        }
+
+    }
+
+         private void rotateTowards(Transform target) {
+            Vector3 direction = (target.position - agent.transform.position).normalized;
+            Quaternion lookRotation = Quaternion.LookRotation(direction);
+            transform.rotation = Quaternion.Slerp(agent.transform.rotation, lookRotation, Time.deltaTime * rotateSpeed);
+     }
 }
