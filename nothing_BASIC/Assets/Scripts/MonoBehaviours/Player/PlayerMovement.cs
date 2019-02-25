@@ -150,19 +150,19 @@ public class PlayerMovement : MonoBehaviour
         
 
         //Needs to only do this if the interactable is collectable
-        if (currentInteractable.interactionLocation.transform.position.y < .2) {
-            animator.SetBool("LowTake", true);
-            animator.SetBool("MedTake", false);
-            animator.SetBool("HighTake", false);
-        } else if (currentInteractable.interactionLocation.transform.position.y < .5) {
-            animator.SetBool("MedTake", true);
-            animator.SetBool("LowTake", false);
-            animator.SetBool("HighTake", false);
-        } else {
-            animator.SetBool("HighTake", true);
-            animator.SetBool("MiddleTake", false);
-            animator.SetBool("LowTake", false);
-        }
+        //if (currentInteractable.interactionLocation.transform.position.y < .2) {
+        //    animator.SetBool("LowTake", true);
+        //    animator.SetBool("MedTake", false);
+        //    animator.SetBool("HighTake", false);
+        //} else if (currentInteractable.interactionLocation.transform.position.y < .5) {
+        //    animator.SetBool("MedTake", true);
+        //    animator.SetBool("LowTake", false);
+        //    animator.SetBool("HighTake", false);
+        //} else {
+        //    animator.SetBool("HighTake", true);
+        //    animator.SetBool("MiddleTake", false);
+        //    animator.SetBool("LowTake", false);
+        //}
         
         
 

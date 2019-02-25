@@ -933,6 +933,7 @@ MonoBehaviour:
   resettableScriptableObjects:
   - {fileID: 11400000, guid: 48d6089c54f7ceb42b1f63276fdc2247, type: 2}
   - {fileID: 11400000, guid: 55d72825bf06cf44e9cbc1b37812cc6f, type: 2}
+  - {fileID: 11400000, guid: fd02464d008c790478d9826aba7c7847, type: 2}
 --- !u!4 &1446455603
 Transform:
   m_ObjectHideFlags: 0

@@ -52,10 +52,9 @@ public class AllConditions : ResettableScriptableObject
                     globalCondition = allConditions[i];
             }
         }
-
+        
         if (!globalCondition)
             return false;
-
         return globalCondition.satisfied == requiredCondition.satisfied;
     }
 }
