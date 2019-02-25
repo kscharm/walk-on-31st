@@ -2388,7 +2388,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 491516180}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 491516183}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29103d8075f789345997a0adb6a7520e, type: 3}
@@ -2400,6 +2400,28 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 491516180}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &491516183 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000014019507428, guid: ab5f05eb414b65f4f9c285f785c1dfad,
+    type: 3}
+  m_PrefabInstance: {fileID: 491516180}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &491516184
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491516183}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &529098458
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7219,6 +7241,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: conditionCollections.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: conditionCollections.Array.data[0]
+      value: 
+      objectReference: {fileID: 31782559}
     - target: {fileID: 8468022556588332828, guid: 0807d970657821b4188b26810db9a0c6,
         type: 3}
       propertyPath: m_Name
@@ -7279,14 +7309,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: conditionCollections.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: conditionCollections.Array.data[0]
-      value: 
-      objectReference: {fileID: 31782559}
     - target: {fileID: 5342505865742542503, guid: 0807d970657821b4188b26810db9a0c6,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
