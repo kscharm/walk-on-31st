@@ -67,6 +67,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        movePlayer(); //WASD movement
         if (agent.pathPending)
             return;
 
@@ -80,7 +81,7 @@ public class PlayerMovement : MonoBehaviour
             Moving ();
         
         animator.SetFloat(hashSpeedPara, speed, speedDampTime, Time.deltaTime);
-        movePlayer(); //WASD movement
+        
     }
 
 
@@ -207,33 +208,30 @@ public class PlayerMovement : MonoBehaviour
     }*/
 
     private void movePlayer() {
-        agent.Resume();
 
         if (Input.GetKey("w")) {
+            agent.Resume();
             agent.SetDestination(agent.transform.position + agent.transform.forward.normalized);
+        }
 
-        }
         if (Input.GetKey("s")) {
-            holdingSkey = true;
-            rbody.MovePosition(rbody.position - (rbody.transform.forward.normalized * 0.07f));
+            agent.Stop();
+            rbody.MovePosition(rbody.position - (rbody.transform.forward.normalized * 0.04f)); 
             agent.transform.position = rbody.transform.position;
-        } else { //Called when done hitting the 's' key
-            if (holdingSkey) {
-                agent.SetDestination(agent.transform.position);
-                holdingSkey = false;
-            }
         }
+
         if (Input.GetKey("d")) {
             direction = agent.transform.right.normalized;
             rotatePlayer = Quaternion.LookRotation(direction);
             agent.transform.rotation = Quaternion.Slerp(agent.transform.rotation, rotatePlayer, Time.deltaTime * rotateSpeed);
-
         }
+
         if (Input.GetKey ("a")) {
             direction = -agent.transform.right.normalized;
             rotatePlayer = Quaternion.LookRotation(direction);
             agent.transform.rotation = Quaternion.Slerp(agent.transform.rotation, rotatePlayer, Time.deltaTime * rotateSpeed);
         }
+
         if (agent.remainingDistance < 0.5f) {
             agent.Stop();
         }
