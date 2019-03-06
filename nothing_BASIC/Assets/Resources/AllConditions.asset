@@ -16,6 +16,16 @@ MonoBehaviour:
   - {fileID: 114732609483255576}
   - {fileID: 114388979326205170}
   - {fileID: 114057102114510280}
+  - {fileID: 114261874872408964}
+  - {fileID: 114631060959830496}
+  - {fileID: 114210343444787166}
+  - {fileID: 114145075572739530}
+  - {fileID: 114972834351214418}
+  - {fileID: 114884290278927232}
+  - {fileID: 114266818364833212}
+  - {fileID: 114310778524521266}
+  - {fileID: 114717388425823496}
+  - {fileID: 114753703001785506}
 --- !u!114 &114057102114510280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29,8 +39,83 @@ MonoBehaviour:
   m_Name: OpenDoor
   m_EditorClassIdentifier: 
   description: OpenDoor
-  satisfied: 0
+  satisfied: 1
   hash: 207596745
+--- !u!114 &114145075572739530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: HasOrangePotion
+  m_EditorClassIdentifier: 
+  description: HasOrangePotion
+  satisfied: 0
+  hash: 1963516443
+--- !u!114 &114210343444787166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: HasPinkPotion
+  m_EditorClassIdentifier: 
+  description: HasPinkPotion
+  satisfied: 0
+  hash: -988733496
+--- !u!114 &114261874872408964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: HasGreenPotion
+  m_EditorClassIdentifier: 
+  description: HasGreenPotion
+  satisfied: 0
+  hash: -2020880222
+--- !u!114 &114266818364833212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: HasShovel
+  m_EditorClassIdentifier: 
+  description: HasShovel
+  satisfied: 0
+  hash: 242079953
+--- !u!114 &114310778524521266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: HasBottle
+  m_EditorClassIdentifier: 
+  description: HasBottle
+  satisfied: 0
+  hash: 1480970978
 --- !u!114 &114388979326205170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44,8 +129,38 @@ MonoBehaviour:
   m_Name: PickedUpKey
   m_EditorClassIdentifier: 
   description: PickedUpKey
-  satisfied: 0
+  satisfied: 1
   hash: 1243592844
+--- !u!114 &114631060959830496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: HasBluePotion
+  m_EditorClassIdentifier: 
+  description: HasBluePotion
+  satisfied: 0
+  hash: -583836302
+--- !u!114 &114717388425823496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: HasFirePoker
+  m_EditorClassIdentifier: 
+  description: HasFirePoker
+  satisfied: 0
+  hash: 959016281
 --- !u!114 &114732609483255576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,5 +174,50 @@ MonoBehaviour:
   m_Name: TubMoved
   m_EditorClassIdentifier: 
   description: TubMoved
-  satisfied: 0
+  satisfied: 1
   hash: -1909643676
+--- !u!114 &114753703001785506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: OpenCloset
+  m_EditorClassIdentifier: 
+  description: OpenCloset
+  satisfied: 0
+  hash: -1878747140
+--- !u!114 &114884290278927232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: HasShovelHead
+  m_EditorClassIdentifier: 
+  description: HasShovelHead
+  satisfied: 0
+  hash: 760798011
+--- !u!114 &114972834351214418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: HasBranch
+  m_EditorClassIdentifier: 
+  description: HasBranch
+  satisfied: 0
+  hash: 1332371624
