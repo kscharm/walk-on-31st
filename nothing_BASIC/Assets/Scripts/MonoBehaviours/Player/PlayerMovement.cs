@@ -232,9 +232,9 @@ public class PlayerMovement : MonoBehaviour
             agent.transform.rotation = Quaternion.Slerp(agent.transform.rotation, rotatePlayer, Time.deltaTime * rotateSpeed);
         }
 
-        if (agent.remainingDistance < 0.5f) {
-            agent.Stop();
-        }
+        // if (agent.remainingDistance <= 0.05f) {
+        //     agent.Stop();
+        // }
 
     }
 
