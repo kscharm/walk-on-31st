@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -169,7 +169,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 2800000, guid: 73371386f5e28004dbcfdca242a34ae0, type: 3}
+  m_Texture: {fileID: 2800000, guid: c493744b9c9b8f14ea09686f6ec4ca51, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -494,7 +494,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 2800000, guid: 2aeda9ad56ef9e444adedf7ce48a93ed, type: 3}
+  m_Texture: {fileID: 2800000, guid: 9dbaa6646b441ea45a7c3ea6aaa3ddd1, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
