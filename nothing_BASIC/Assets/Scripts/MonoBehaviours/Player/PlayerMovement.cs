@@ -231,12 +231,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void movePlayer() {
 
-        if (Input.GetKey("w")) {
-            rbody.MovePosition(rbody.position + (rbody.transform.forward.normalized * 0.04f));
-        }
-
-        if (Input.GetKey("s")) {
-            rbody.MovePosition(rbody.position - (rbody.transform.forward.normalized * 0.04f)); 
+        if (Input.GetKey("w") || Input.GetKey("s")) {
+            if (Input.GetKey("w")) {
+                rbody.velocity = transform.forward * 2;
+            } else {
+                rbody.velocity = transform.forward * -2;
+            }
+        } else {
+            rbody.velocity = Vector3.zero;
         }
 
         if (Input.GetKey("d")) {
@@ -247,9 +249,11 @@ public class PlayerMovement : MonoBehaviour
             transform.Rotate(new Vector3(0, -1 * rotateSpeed * Time.deltaTime, 0));
         }
 
-        //Either walk or stand still animation
+        //Set animation 
         if (Vector3.Distance(Vector3.zero, rbody.velocity) != 0) {
             animator.SetFloat("Speed", 2);
+        } else if (Input.GetKey("d") || Input.GetKey("a")){ 
+            animator.SetFloat("Speed", 1);
         } else {
             animator.SetFloat("Speed", 0);
         }
