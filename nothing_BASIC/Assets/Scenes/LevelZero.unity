@@ -2107,7 +2107,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014075113472, guid: ab5f05eb414b65f4f9c285f785c1dfad, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.047
       objectReference: {fileID: 0}
     - target: {fileID: 4000014075113472, guid: ab5f05eb414b65f4f9c285f785c1dfad, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2466,7 +2466,13 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114000014294072012, guid: ab5f05eb414b65f4f9c285f785c1dfad,
+        type: 3}
+      propertyPath: rotateSpeed
+      value: 50
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 195000013459137288, guid: ab5f05eb414b65f4f9c285f785c1dfad, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ab5f05eb414b65f4f9c285f785c1dfad, type: 3}
 --- !u!114 &491516181 stripped
 MonoBehaviour:
@@ -2505,9 +2511,23 @@ Rigidbody:
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 10
+  m_CollisionDetection: 1
+--- !u!136 &491516185
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491516183}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.2
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1001 &529098458
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5096,8 +5116,8 @@ GameObject:
   - component: {fileID: 1430064854}
   - component: {fileID: 1430064853}
   - component: {fileID: 1430064852}
-  - component: {fileID: 1430064851}
   - component: {fileID: 1430064855}
+  - component: {fileID: 1430064851}
   m_Layer: 0
   m_Name: Quad
   m_TagString: Untagged
@@ -5105,8 +5125,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!64 &1430064851
-MeshCollider:
+--- !u!65 &1430064851
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -5115,10 +5135,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.0000002, z: 6.123235e-17}
+  m_Center: {x: 0, y: 0, z: 0.000000027418082}
 --- !u!23 &1430064852
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5190,24 +5209,7 @@ MonoBehaviour:
   m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 491516181}
-          m_MethodName: OnGroundClick
-          m_Mode: 0
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Delegates: []
   delegates: []
 --- !u!1001 &1461404748
 PrefabInstance:
@@ -5573,7 +5575,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4973153598202484, guid: 1906213e749fefb4ebea8c388ae05b25, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.47
+      value: 0.489
       objectReference: {fileID: 0}
     - target: {fileID: 4973153598202484, guid: 1906213e749fefb4ebea8c388ae05b25, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7479,12 +7481,12 @@ PrefabInstance:
     - target: {fileID: 8545195976263107927, guid: e026cd044ed067b4a8e119a3943e4b3c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.01
+      value: 0.071
       objectReference: {fileID: 0}
     - target: {fileID: 8545195976263107927, guid: e026cd044ed067b4a8e119a3943e4b3c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -13.737
+      value: -13.504
       objectReference: {fileID: 0}
     - target: {fileID: 8545195976263107927, guid: e026cd044ed067b4a8e119a3943e4b3c,
         type: 3}

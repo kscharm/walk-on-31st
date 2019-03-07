@@ -6,16 +6,19 @@ using UnityEngine.EventSystems;
 public class PlayerMovement : MonoBehaviour
 {
     public Animator animator;
-    public NavMeshAgent agent;
+    //public NavMeshAgent agent;
     public SaveData playerSaveData;
     public float turnSmoothing = 15f;
     public float speedDampTime = 0.1f;
     public float slowingSpeed = 0.175f;
     public float turnSpeedThreshold = 0.5f;
     public float inputHoldDelay = 0.5f;
+    public float playerSpeed = 3.0f;
+    public float rotateSpeed = 50f;
+
     private double maxInteractionDistance = 1.5;
     private float ikWeight = 0;
-    private float rotateSpeed = 1f;
+
     Vector3 direction;
     Quaternion rotatePlayer;
     private Rigidbody rbody;
@@ -44,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         rbody = GetComponent<Rigidbody>();
 
-        agent.updateRotation = false;
+        //agent.updateRotation = false;
 
         inputHoldWait = new WaitForSeconds (inputHoldDelay);
 
@@ -61,29 +64,34 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnAnimatorMove()
     {
-        agent.velocity = animator.deltaPosition / Time.deltaTime;
+        //agent.velocity = animator.deltaPosition / Time.deltaTime;
+        
+        //Set player's velocity here
     }
 
 
     private void Update()
     {
         movePlayer(); //WASD movement
+
+
+        float speed = playerSpeed;
+
+        animator.SetFloat(hashSpeedPara, speed, speedDampTime, Time.deltaTime);
+
+        /*
         if (agent.pathPending)
             return;
-
-        float speed = agent.desiredVelocity.magnitude;
-        
         if (agent.remainingDistance <= agent.stoppingDistance * stopDistanceProportion)
             Stopping (out speed);
         else if (agent.remainingDistance <= agent.stoppingDistance)
             Slowing(out speed, agent.remainingDistance);
         else if (speed > turnSpeedThreshold)
             Moving ();
-        
-        animator.SetFloat(hashSpeedPara, speed, speedDampTime, Time.deltaTime);
-        
+        */
     }
 
+    /*
 
     private void Stopping (out float speed)
     {
@@ -124,6 +132,8 @@ public class PlayerMovement : MonoBehaviour
         transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, turnSmoothing * Time.deltaTime);
     }
 
+    */
+
 
     // public void OnGroundClick(BaseEventData data)
     // {
@@ -153,9 +163,21 @@ public class PlayerMovement : MonoBehaviour
         currentInteractable = interactable;
         destinationPosition = currentInteractable.interactionLocation.position;
 
+        if (currentInteractable)
+        {
+            transform.rotation = currentInteractable.interactionLocation.rotation;
+            //Check distance here!
+            currentInteractable.Interact();
+            currentInteractable = null;
+
+            StartCoroutine(WaitForInteraction());
+        }
+
+        /*
         agent.SetDestination(destinationPosition);
         agent.Resume();
-        
+        */
+
 
         //Needs to only do this if the interactable is collectable
         //if (currentInteractable.interactionLocation.transform.position.y < .2) {
@@ -171,8 +193,8 @@ public class PlayerMovement : MonoBehaviour
         //    animator.SetBool("MiddleTake", false);
         //    animator.SetBool("LowTake", false);
         //}
-        
-        
+
+
 
     }
 
@@ -208,28 +230,33 @@ public class PlayerMovement : MonoBehaviour
     }*/
 
     private void movePlayer() {
+        Rigidbody body = GetComponent<Rigidbody>();
 
         if (Input.GetKey("w")) {
-            agent.Resume();
-            agent.SetDestination(agent.transform.position + agent.transform.forward.normalized);
+            //agent.Resume();
+            //agent.SetDestination(agent.transform.position + agent.transform.forward.normalized);
         }
 
         if (Input.GetKey("s")) {
-            agent.Stop();
+            //agent.Stop();
             rbody.MovePosition(rbody.position - (rbody.transform.forward.normalized * 0.04f)); 
-            agent.transform.position = rbody.transform.position;
+            //agent.transform.position = rbody.transform.position;
         }
 
         if (Input.GetKey("d")) {
-            direction = agent.transform.right.normalized;
-            rotatePlayer = Quaternion.LookRotation(direction);
-            agent.transform.rotation = Quaternion.Slerp(agent.transform.rotation, rotatePlayer, Time.deltaTime * rotateSpeed);
+            //direction = agent.transform.right.normalized;
+            //rotatePlayer = Quaternion.LookRotation(direction);
+            transform.Rotate(new Vector3(0, rotateSpeed * Time.deltaTime, 0));
+            //body.MoveRotation(Quaternion.Slerp(transform.rotation, rotatePlayer, Time.deltaTime * rotateSpeed));
+            //agent.transform.rotation = Quaternion.Slerp(agent.transform.rotation, rotatePlayer, Time.deltaTime * rotateSpeed);
         }
 
         if (Input.GetKey ("a")) {
-            direction = -agent.transform.right.normalized;
-            rotatePlayer = Quaternion.LookRotation(direction);
-            agent.transform.rotation = Quaternion.Slerp(agent.transform.rotation, rotatePlayer, Time.deltaTime * rotateSpeed);
+            //direction = -agent.transform.right.normalized;
+            //rotatePlayer = Quaternion.LookRotation(direction);
+            transform.Rotate(new Vector3(0, -1 * rotateSpeed * Time.deltaTime, 0));
+            //body.MoveRotation(Quaternion.Slerp(transform.rotation, rotatePlayer, Time.deltaTime * rotateSpeed));
+            //agent.transform.rotation = Quaternion.Slerp(agent.transform.rotation, rotatePlayer, Time.deltaTime * rotateSpeed);
         }
 
         // if (agent.remainingDistance <= 0.05f) {
@@ -238,9 +265,11 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    /*
          private void rotateTowards(Transform target) {
             Vector3 direction = (target.position - agent.transform.position).normalized;
             Quaternion lookRotation = Quaternion.LookRotation(direction);
             transform.rotation = Quaternion.Slerp(agent.transform.rotation, lookRotation, Time.deltaTime * rotateSpeed);
      }
+     */
 }
