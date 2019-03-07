@@ -2469,7 +2469,7 @@ PrefabInstance:
     - target: {fileID: 114000014294072012, guid: ab5f05eb414b65f4f9c285f785c1dfad,
         type: 3}
       propertyPath: rotateSpeed
-      value: 50
+      value: 80
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 195000013459137288, guid: ab5f05eb414b65f4f9c285f785c1dfad, type: 3}
@@ -6473,7 +6473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b698434391f86a94fbbc37ce9f2ebd21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceApart: 1
+  distanceApart: 1.25
   dog: {fileID: 1841536255}
   player: {fileID: 491516183}
 --- !u!195 &1841536257

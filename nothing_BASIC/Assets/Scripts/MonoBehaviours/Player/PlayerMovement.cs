@@ -13,8 +13,8 @@ public class PlayerMovement : MonoBehaviour
     public float slowingSpeed = 0.175f;
     public float turnSpeedThreshold = 0.5f;
     public float inputHoldDelay = 0.5f;
-    public float playerSpeed = 3.0f;
-    public float rotateSpeed = 50f;
+    public float playerSpeed; //is dynamically altered based on movement keys
+    public float rotateSpeed; 
 
     private double maxInteractionDistance = 1.5;
     private float ikWeight = 0;
@@ -230,39 +230,30 @@ public class PlayerMovement : MonoBehaviour
     }*/
 
     private void movePlayer() {
-        Rigidbody body = GetComponent<Rigidbody>();
 
         if (Input.GetKey("w")) {
-            //agent.Resume();
-            //agent.SetDestination(agent.transform.position + agent.transform.forward.normalized);
+            rbody.MovePosition(rbody.position + (rbody.transform.forward.normalized * 0.04f));
         }
 
         if (Input.GetKey("s")) {
-            //agent.Stop();
             rbody.MovePosition(rbody.position - (rbody.transform.forward.normalized * 0.04f)); 
-            //agent.transform.position = rbody.transform.position;
         }
 
         if (Input.GetKey("d")) {
-            //direction = agent.transform.right.normalized;
-            //rotatePlayer = Quaternion.LookRotation(direction);
             transform.Rotate(new Vector3(0, rotateSpeed * Time.deltaTime, 0));
-            //body.MoveRotation(Quaternion.Slerp(transform.rotation, rotatePlayer, Time.deltaTime * rotateSpeed));
-            //agent.transform.rotation = Quaternion.Slerp(agent.transform.rotation, rotatePlayer, Time.deltaTime * rotateSpeed);
         }
 
         if (Input.GetKey ("a")) {
-            //direction = -agent.transform.right.normalized;
-            //rotatePlayer = Quaternion.LookRotation(direction);
             transform.Rotate(new Vector3(0, -1 * rotateSpeed * Time.deltaTime, 0));
-            //body.MoveRotation(Quaternion.Slerp(transform.rotation, rotatePlayer, Time.deltaTime * rotateSpeed));
-            //agent.transform.rotation = Quaternion.Slerp(agent.transform.rotation, rotatePlayer, Time.deltaTime * rotateSpeed);
         }
 
-        // if (agent.remainingDistance <= 0.05f) {
-        //     agent.Stop();
-        // }
-
+        //Either walk or stand still animation
+        if (Vector3.Distance(Vector3.zero, rbody.velocity) != 0) {
+            animator.SetFloat("Speed", 2);
+        } else {
+            animator.SetFloat("Speed", 0);
+        }
+        
     }
 
     /*

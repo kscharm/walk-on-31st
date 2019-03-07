@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class DogMovement : MonoBehaviour
 {
 
-    public float distanceApart = 1f;
+    public float distanceApart;
     public GameObject dog;
     public GameObject player;
     private Animator animator;
