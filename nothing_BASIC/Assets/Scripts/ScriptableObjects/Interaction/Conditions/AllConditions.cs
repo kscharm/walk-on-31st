@@ -48,6 +48,7 @@ public class AllConditions : ResettableScriptableObject
         {
             for (int i = 0; i < allConditions.Length; i++)
             {
+                Debug.Log(allConditions[i] + ":" + allConditions[i].satisfied);
                 if (allConditions[i].hash == requiredCondition.hash)
                     globalCondition = allConditions[i];
             }

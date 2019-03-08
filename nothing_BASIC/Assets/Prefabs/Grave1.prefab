@@ -103,7 +103,6 @@ GameObject:
   - component: {fileID: 6916908820408058871}
   - component: {fileID: 6916908820408058868}
   - component: {fileID: 6916908820408058873}
-  - component: {fileID: 6916908820408058872}
   - component: {fileID: 6916908820408058875}
   m_Layer: 0
   m_Name: Grave1
@@ -203,25 +202,6 @@ MonoBehaviour:
   conditionCollections:
   - {fileID: 0}
   defaultReactionCollection: {fileID: 6916908820251284476}
---- !u!95 &6916908820408058872
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6916908820408058866}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8bd32ae1cc906d841b04d370f0483c61, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &6916908820408058875
 MonoBehaviour:
   m_ObjectHideFlags: 0
