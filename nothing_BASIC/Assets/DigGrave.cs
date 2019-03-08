@@ -3,6 +3,7 @@
 public class DigGrave : MonoBehaviour
 {
     bool objectMoving = false;
+    int direction = 0;
     public Condition condition;
     public float speed;
     Vector3 targetPos;
@@ -11,6 +12,8 @@ public class DigGrave : MonoBehaviour
     void Start()
     {
         targetPos = transform.position + moveTarget;
+        
+
     }
 
     public void moveObject()
@@ -30,6 +33,16 @@ public class DigGrave : MonoBehaviour
         }
         if (transform.position == targetPos)
         {
+            if (direction == 1)
+            {
+                targetPos = transform.position + moveTarget;
+                direction = 0;
+            }
+            else if (direction == 0)
+            {
+                targetPos = transform.position - moveTarget;
+                direction = 1;
+            } 
             objectMoving = false;
         }
     }
