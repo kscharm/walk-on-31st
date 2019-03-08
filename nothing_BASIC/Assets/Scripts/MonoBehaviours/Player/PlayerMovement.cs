@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public SaveData playerSaveData;
 
     public float inputHoldDelay = 0.5f;
-    private float playerSpeed = 0f; 
+    private float playerSpeed = 2f; 
     public float rotateSpeed; 
 
     // private double maxInteractionDistance = 1.5;
@@ -24,7 +24,6 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 destinationPosition;
     private bool handleInput = true;
     private WaitForSeconds inputHoldWait;
-    private Scene scene;
     private readonly int hashLocomotionTag = Animator.StringToHash("Locomotion");
 
 
@@ -63,16 +62,6 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         movePlayer(); //WASD movement
-
-        //Variable player speed depending on the level
-        scene = SceneManager.GetActiveScene();
-        if (scene.name == "LevelZero") {
-            playerSpeed = 2f;
-        } else if (scene.name == "LevelTwo") {
-            playerSpeed = 10f;
-        }
-
-
     }
 
     public void OnInteractableClick(Interactable interactable)
