@@ -2,15 +2,15 @@
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
     public Animator animator;
     public SaveData playerSaveData;
-    public float speedDampTime = 0.1f;
 
     public float inputHoldDelay = 0.5f;
-    public float playerSpeed; //is dynamically altered based on movement keys
+    private float playerSpeed = 0f; 
     public float rotateSpeed; 
 
     // private double maxInteractionDistance = 1.5;
@@ -24,9 +24,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 destinationPosition;
     private bool handleInput = true;
     private WaitForSeconds inputHoldWait;
-
-
-    private readonly int hashSpeedPara = Animator.StringToHash("Speed");
+    private Scene scene;
     private readonly int hashLocomotionTag = Animator.StringToHash("Locomotion");
 
 
@@ -51,6 +49,8 @@ public class PlayerMovement : MonoBehaviour
         transform.rotation = startingPosition.rotation;
 
         destinationPosition = transform.position;
+
+
     }
 
 
@@ -64,10 +64,14 @@ public class PlayerMovement : MonoBehaviour
     {
         movePlayer(); //WASD movement
 
+        //Variable player speed depending on the level
+        scene = SceneManager.GetActiveScene();
+        if (scene.name == "LevelZero") {
+            playerSpeed = 2f;
+        } else if (scene.name == "LevelTwo") {
+            playerSpeed = 10f;
+        }
 
-        float speed = playerSpeed;
-
-        animator.SetFloat(hashSpeedPara, speed, speedDampTime, Time.deltaTime);
 
     }
 
@@ -141,12 +145,11 @@ public class PlayerMovement : MonoBehaviour
     }*/
 
     private void movePlayer() {
-
         if (Input.GetKey("w") || Input.GetKey("s")) {
             if (Input.GetKey("w")) {
-                rbody.velocity = transform.forward * 2;
+                rbody.velocity = transform.forward * playerSpeed;
             } else {
-                rbody.velocity = transform.forward * -2;
+                rbody.velocity = transform.forward * -playerSpeed;
             }
         } else {
             rbody.velocity = Vector3.zero;
