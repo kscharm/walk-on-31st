@@ -3061,7 +3061,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 1
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -6917,6 +6917,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TubInteractable
       objectReference: {fileID: 0}
+    - target: {fileID: 8930579002735174641, guid: 5f719c506a774fe40942fa0b00b09e04,
+        type: 3}
+      propertyPath: reactions.Array.data[0]
+      value: 
+      objectReference: {fileID: 1779815395}
     - target: {fileID: 8926626021723375814, guid: 5f719c506a774fe40942fa0b00b09e04,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7007,11 +7012,6 @@ PrefabInstance:
       propertyPath: reactions.Array.data[2]
       value: 
       objectReference: {fileID: 1644189086}
-    - target: {fileID: 8930579002735174641, guid: 5f719c506a774fe40942fa0b00b09e04,
-        type: 3}
-      propertyPath: reactions.Array.data[0]
-      value: 
-      objectReference: {fileID: 1779815395}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f719c506a774fe40942fa0b00b09e04, type: 3}
 --- !u!114 &8930579003032597931 stripped

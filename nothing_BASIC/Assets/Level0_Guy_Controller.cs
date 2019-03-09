@@ -25,6 +25,12 @@ public class Level0_Guy_Controller : MonoBehaviour
         {
             animator.SetTrigger(1);
             agent.SetDestination(player.transform.position);
+
+            if (Vector3.Distance(agent.transform.position, player.transform.position) > .5) {
+                animator.SetFloat("Speed", 1);
+            } else {
+                animator.SetFloat("Speed", 0);
+            }
         }
         
     }
