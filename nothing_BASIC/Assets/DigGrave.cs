@@ -8,13 +8,15 @@ public class DigGrave : MonoBehaviour
     public float speed;
     public float scaleOffset;
     public Vector3 moveTarget;
-    private Transform dirtPile;
+    private GameObject dirtPile;
+    private Transform dirtPileTransform;
     Vector3 targetPos;
     // Start is called before the first frame update
     void Start()
     {
         targetPos = transform.position + moveTarget;
-        dirtPile = GameObject.Find("Pile O' Dirt").transform;
+        dirtPile = GameObject.Find("Pile O' Dirt");
+        dirtPileTransform = dirtPile.transform;
     }
 
     public void moveObject()
@@ -35,23 +37,23 @@ public class DigGrave : MonoBehaviour
 
         if (transform.position == targetPos)
         {
+            moveTarget = -moveTarget;
+            targetPos = transform.position + moveTarget;
             // Grave moving up
             if (direction == 1)
             {
-                targetPos = transform.position + moveTarget;
                 direction = 0;
                 // Decrease size of dirt pile
-                dirtPile.localScale += new Vector3(0, -scaleOffset, 0);
-                dirtPile.position += new Vector3(0, -scaleOffset / 2.5f, 0);
+                dirtPileTransform.localScale += new Vector3(0, -scaleOffset, 0);
+                dirtPileTransform.position += new Vector3(0, -scaleOffset / 2.5f, 0);
             }
             // Grave moving down
-            else if (direction == 0)
+            else
             {
-                targetPos = transform.position - moveTarget;
                 direction = 1;
                 // Increase side of dirt pile
-                dirtPile.localScale += new Vector3(0, scaleOffset, 0);
-                dirtPile.position += new Vector3(0, scaleOffset / 2.5f , 0);
+                dirtPileTransform.localScale += new Vector3(0, scaleOffset, 0);
+                dirtPileTransform.position += new Vector3(0, scaleOffset / 2.5f , 0);
             } 
             objectMoving = false;
         }
