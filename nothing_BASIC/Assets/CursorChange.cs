@@ -15,4 +15,10 @@ public class CursorChange : MonoBehaviour
     {
         Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     }
+
+    private void disable()
+    {
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+        GetComponent<CursorChange>().enabled = false;
+    }
 }

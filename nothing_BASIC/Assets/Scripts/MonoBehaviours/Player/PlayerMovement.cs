@@ -74,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (currentInteractable)
         {
-            transform.rotation = currentInteractable.interactionLocation.rotation;
+            //transform.rotation = currentInteractable.interactionLocation.rotation;
             //Check distance here!
             currentInteractable.Interact();
             currentInteractable = null;

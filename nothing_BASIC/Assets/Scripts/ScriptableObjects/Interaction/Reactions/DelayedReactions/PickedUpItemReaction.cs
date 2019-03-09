@@ -14,6 +14,7 @@
 
     protected override void ImmediateReaction()
     {
+        
         inventory.AddItem(item);
     }
 }
