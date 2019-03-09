@@ -12,14 +12,14 @@ public class DigGrave : MonoBehaviour
     void Start()
     {
         targetPos = transform.position + moveTarget;
-        
-
     }
 
     public void moveObject()
     {
+        Debug.Log("Inside function call");
         if (condition.satisfied)
         {
+            Debug.Log("Grave moving");
             objectMoving = true;
         }
         
@@ -31,6 +31,7 @@ public class DigGrave : MonoBehaviour
         {
             transform.position = Vector3.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
         }
+
         if (transform.position == targetPos)
         {
             if (direction == 1)
