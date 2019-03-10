@@ -5491,7 +5491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4900350095ceff24fbe8c1ac5f1e17c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  description: New condition collection
+  description: Has bottle to attack guy
   requiredConditions:
   - {fileID: 1270481789}
   reactionCollection: {fileID: 1358721280}
@@ -12218,7 +12218,7 @@ PrefabInstance:
     - target: {fileID: 6709464569646408446, guid: ddcf59adeb8c67146b961c8615b62b64,
         type: 3}
       propertyPath: m_Name
-      value: bottle_interactable
+      value: BottleInteractable
       objectReference: {fileID: 0}
     - target: {fileID: 6709464569645924062, guid: ddcf59adeb8c67146b961c8615b62b64,
         type: 3}

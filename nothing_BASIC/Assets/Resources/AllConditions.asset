@@ -30,6 +30,7 @@ MonoBehaviour:
   - {fileID: 114532056079432836}
   - {fileID: 114920521894677556}
   - {fileID: 114892110042640594}
+  - {fileID: 114831900719400314}
 --- !u!114 &114057102114510280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43,7 +44,7 @@ MonoBehaviour:
   m_Name: OpenDoor
   m_EditorClassIdentifier: 
   description: OpenDoor
-  satisfied: 1
+  satisfied: 0
   hash: 207596745
 --- !u!114 &114063184999164436
 MonoBehaviour:
@@ -58,7 +59,7 @@ MonoBehaviour:
   m_Name: HasGoldKey
   m_EditorClassIdentifier: 
   description: HasGoldKey
-  satisfied: 0
+  satisfied: 1
   hash: -634121075
 --- !u!114 &114145075572739530
 MonoBehaviour:
@@ -118,7 +119,7 @@ MonoBehaviour:
   m_Name: HasShovel
   m_EditorClassIdentifier: 
   description: HasShovel
-  satisfied: 0
+  satisfied: 1
   hash: 242079953
 --- !u!114 &114310778524521266
 MonoBehaviour:
@@ -148,7 +149,7 @@ MonoBehaviour:
   m_Name: PickedUpKey
   m_EditorClassIdentifier: 
   description: PickedUpKey
-  satisfied: 1
+  satisfied: 0
   hash: 1243592844
 --- !u!114 &114532056079432836
 MonoBehaviour:
@@ -163,7 +164,7 @@ MonoBehaviour:
   m_Name: HasGenerator
   m_EditorClassIdentifier: 
   description: HasGenerator
-  satisfied: 0
+  satisfied: 1
   hash: 1875418495
 --- !u!114 &114631060959830496
 MonoBehaviour:
@@ -208,7 +209,7 @@ MonoBehaviour:
   m_Name: TubMoved
   m_EditorClassIdentifier: 
   description: TubMoved
-  satisfied: 1
+  satisfied: 0
   hash: -1909643676
 --- !u!114 &114753703001785506
 MonoBehaviour:
@@ -225,6 +226,21 @@ MonoBehaviour:
   description: OpenCloset
   satisfied: 0
   hash: -1878747140
+--- !u!114 &114831900719400314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: FenceLowered
+  m_EditorClassIdentifier: 
+  description: FenceLowered
+  satisfied: 0
+  hash: -1881090423
 --- !u!114 &114884290278927232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,7 +284,7 @@ MonoBehaviour:
   m_Name: PickedUpKey_ExitLevel0
   m_EditorClassIdentifier: 
   description: PickedUpKey_ExitLevel0
-  satisfied: 1
+  satisfied: 0
   hash: -1983539911
 --- !u!114 &114972834351214418
 MonoBehaviour:

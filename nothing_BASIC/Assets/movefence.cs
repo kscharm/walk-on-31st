@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Movefence : MonoBehaviour
+public class MoveFence : MonoBehaviour
 {
     bool objectMoving = false;
     public Condition condition;
@@ -10,7 +10,7 @@ public class Movefence : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    	targetPos = transform.position + new Vector3(0,0,1);
+    	targetPos = transform.position + new Vector3(0,-1.25f,0);
     }
 
     public void moveObject()
@@ -28,10 +28,11 @@ public class Movefence : MonoBehaviour
         {
             transform.position = Vector3.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
             moved = true;
+        }
+        if (transform.position == targetPos)
+        {
             objectMoving = false;
-
-        } 
-
+        }
     }
 }
 
