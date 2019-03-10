@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject throwingBottle;
     public GameObject throwTo;
     public GameObject gameOverMessage;
+    public Condition toThrowCondition;
 
     // private double maxInteractionDistance = 1.5;
     // private float ikWeight = 0;
@@ -173,7 +174,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void throwBottle()
     {
-        if (inventory.items[0] != null)
+        if (toThrowCondition.satisfied == true)
         {
             GameObject bottle = Instantiate(throwingBottle, Camera.main.ScreenToWorldPoint(Input.mousePosition), new Quaternion()) as GameObject;
             bottle.GetComponent<Rigidbody>().AddForce(new Vector3(0, throwUpForce, 0));

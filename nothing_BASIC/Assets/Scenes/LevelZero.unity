@@ -1837,7 +1837,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: {fileID: 1373450286}
-  gameOver: {fileID: 1178634665}
   timeLeft: 120
 --- !u!114 &186678284
 MonoBehaviour:
@@ -4833,6 +4832,21 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
+--- !u!114 &523408113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec43236ba6522584894ac80bfbcb3815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  condition: {fileID: 114310778524521266, guid: fd02464d008c790478d9826aba7c7847,
+    type: 2}
+  satisfied: 0
 --- !u!1001 &529098458
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5304,6 +5318,20 @@ MonoBehaviour:
   delay: 0
   gameObject: {fileID: 6}
   activeState: 0
+--- !u!114 &718173081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d482a9551d8b074097fdb7beded4043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  item: {fileID: 11400000, guid: 7355bada1d33c3a4388efb03f28d910d, type: 2}
 --- !u!1 &719525338
 GameObject:
   m_ObjectHideFlags: 0
@@ -6168,7 +6196,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 984580200}
+        - m_Target: {fileID: 491516181}
           m_MethodName: SendMessage
           m_Mode: 5
           m_Arguments:
@@ -6176,7 +6204,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: Interact
+            m_StringArgument: throwBottle
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 984580204}
@@ -6190,9 +6218,9 @@ MonoBehaviour:
             m_StringArgument: disable
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 491516181}
-          m_MethodName: SendMessage
-          m_Mode: 5
+        - m_Target: {fileID: 984580200}
+          m_MethodName: Interact
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7083,6 +7111,8 @@ MonoBehaviour:
   - {fileID: 1389051601}
   - {fileID: 1420780406}
   - {fileID: 1274215540}
+  - {fileID: 718173081}
+  - {fileID: 523408113}
 --- !u!114 &1368087233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10023,6 +10053,12 @@ PrefabInstance:
       propertyPath: gameOverMessage
       value: 
       objectReference: {fileID: 1178634664}
+    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
+        type: 3}
+      propertyPath: toThrowCondition
+      value: 
+      objectReference: {fileID: 114310778524521266, guid: fd02464d008c790478d9826aba7c7847,
+        type: 2}
     - target: {fileID: 3692840389348231112, guid: 1c37b45f16e1409418b499c34918acf9,
         type: 3}
       propertyPath: m_LocalPosition.x
