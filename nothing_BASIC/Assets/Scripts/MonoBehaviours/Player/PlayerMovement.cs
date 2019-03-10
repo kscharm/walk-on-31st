@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     public Vector3 throwSpin;
     public GameObject throwingBottle;
     public GameObject throwTo;
+    public GameObject gameOverMessage;
 
     // private double maxInteractionDistance = 1.5;
     // private float ikWeight = 0;
@@ -176,6 +177,15 @@ public class PlayerMovement : MonoBehaviour
         bottle.GetComponent<Rigidbody>().AddForce(new Vector3(0, throwUpForce, 0));
         bottle.GetComponent<Rigidbody>().AddForce((throwTo.transform.position - bottle.transform.position) * throwForceScale);
         bottle.GetComponent<Rigidbody>().AddTorque(throwSpin);
+    }
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+       if (other.tag == "enemy")
+        {
+            gameOverMessage.SetActive(true);
+        }
     }
 
 }
