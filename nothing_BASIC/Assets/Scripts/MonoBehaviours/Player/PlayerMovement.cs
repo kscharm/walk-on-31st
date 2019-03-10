@@ -23,8 +23,9 @@ public class PlayerMovement : MonoBehaviour
     // private float ikWeight = 0;
 
     private Rigidbody rbody;
+    private Inventory inventory;
 
-    
+
 
     private Interactable currentInteractable;
     private Vector3 destinationPosition;
@@ -54,6 +55,7 @@ public class PlayerMovement : MonoBehaviour
         transform.rotation = startingPosition.rotation;
 
         destinationPosition = transform.position;
+        inventory = FindObjectOfType<Inventory>();
 
 
     }
@@ -172,12 +174,15 @@ public class PlayerMovement : MonoBehaviour
 
     private void throwBottle()
     {
-        Debug.Log("Throw bottle!");
-        GameObject bottle = Instantiate(throwingBottle, Camera.main.ScreenToWorldPoint(Input.mousePosition), new Quaternion()) as GameObject;
-        bottle.GetComponent<Rigidbody>().AddForce(new Vector3(0, throwUpForce, 0));
-        bottle.GetComponent<Rigidbody>().AddForce((throwTo.transform.position - bottle.transform.position) * throwForceScale);
-        bottle.GetComponent<Rigidbody>().AddTorque(throwSpin);
+        if (inventory.items[0] != null)
+        {
+            GameObject bottle = Instantiate(throwingBottle, Camera.main.ScreenToWorldPoint(Input.mousePosition), new Quaternion()) as GameObject;
+            bottle.GetComponent<Rigidbody>().AddForce(new Vector3(0, throwUpForce, 0));
+            bottle.GetComponent<Rigidbody>().AddForce((throwTo.transform.position - bottle.transform.position) * throwForceScale);
+            bottle.GetComponent<Rigidbody>().AddTorque(throwSpin);
+        }
     }
+        
 
 
     private void OnTriggerEnter(Collider other)
