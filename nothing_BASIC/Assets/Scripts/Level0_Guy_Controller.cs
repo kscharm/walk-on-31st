@@ -7,6 +7,7 @@ public class Level0_Guy_Controller : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject player;
+    public GameObject ragdoll;
 
     private NavMeshAgent agent;
     private Animator animator;
@@ -39,12 +40,13 @@ public class Level0_Guy_Controller : MonoBehaviour
         moving = true;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider collider)
     {
-        agent.enabled = false;
-        if (collision.collider.tag == "throwable")
+        if (collider.tag == "throwable")
         {
             animator.enabled = false;
+            ragdoll.SetActive(true);
+            GetComponent<CapsuleCollider>().enabled = false;
         }
     }
 }
