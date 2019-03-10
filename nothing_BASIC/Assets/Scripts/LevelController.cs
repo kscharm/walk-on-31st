@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class LevelController : MonoBehaviour
 {
     public Text timer;
-    public Text gameOver;
     public float timeLeft = 120f;
     // Start is called before the first frame update
     void Start()
@@ -21,7 +21,7 @@ public class LevelController : MonoBehaviour
         }
         else
         {
-            gameOver.gameObject.SetActive(true);
+            SceneManager.LoadScene("EndGame", LoadSceneMode.Single);
         }
         SetTimerText();
     }

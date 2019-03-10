@@ -63,14 +63,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnAnimatorMove()
     {
-        //Still necessary despite being empty
+        // Still necessary despite being empty
     }
 
 
     private void Update()
     {
-        Debug.Log("Yo");
-        movePlayer(); //WASD movement
+        movePlayer(); // WASD movement
     }
 
     public void OnInteractableClick(Interactable interactable)
@@ -189,7 +188,7 @@ public class PlayerMovement : MonoBehaviour
     {
        if (other.tag == "enemy")
         {
-            gameOverMessage.SetActive(true);
+            SceneManager.LoadScene("EndGame", LoadSceneMode.Single);
         }
     }
 
