@@ -47,6 +47,7 @@ public class Level0_Guy_Controller : MonoBehaviour
             animator.enabled = false;
             ragdoll.SetActive(true);
             GetComponent<CapsuleCollider>().enabled = false;
+            agent.Stop();
         }
     }
 }
