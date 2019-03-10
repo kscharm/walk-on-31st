@@ -11,7 +11,12 @@ public class PlayerMovement : MonoBehaviour
 
     public float inputHoldDelay = 0.5f;
     private float playerSpeed = 2f; 
-    public float rotateSpeed; 
+    public float rotateSpeed;
+    public float throwForceScale = 1;
+    public float throwUpForce = 10;
+    public Vector3 throwSpin;
+    public GameObject throwingBottle;
+    public GameObject throwTo;
 
     // private double maxInteractionDistance = 1.5;
     // private float ikWeight = 0;
@@ -61,6 +66,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        Debug.Log("Yo");
         movePlayer(); //WASD movement
     }
 
@@ -161,6 +167,15 @@ public class PlayerMovement : MonoBehaviour
             animator.SetFloat("Speed", 0);
         }
         
+    }
+
+    private void throwBottle()
+    {
+        Debug.Log("Throw bottle!");
+        GameObject bottle = Instantiate(throwingBottle, Camera.main.ScreenToWorldPoint(Input.mousePosition), new Quaternion()) as GameObject;
+        bottle.GetComponent<Rigidbody>().AddForce(new Vector3(0, throwUpForce, 0));
+        bottle.GetComponent<Rigidbody>().AddForce((throwTo.transform.position - bottle.transform.position) * throwForceScale);
+        bottle.GetComponent<Rigidbody>().AddTorque(throwSpin);
     }
 
 }

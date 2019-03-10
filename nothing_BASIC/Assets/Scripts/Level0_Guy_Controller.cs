@@ -23,10 +23,9 @@ public class Level0_Guy_Controller : MonoBehaviour
     {
         if (moving)
         {
-            animator.SetTrigger(1);
             agent.SetDestination(player.transform.position);
 
-            if (Vector3.Distance(agent.transform.position, player.transform.position) > .5) {
+            if (Vector3.Distance(agent.transform.position, player.transform.position) > 1) {
                 animator.SetFloat("Speed", 1);
             } else {
                 animator.SetFloat("Speed", 0);
@@ -37,7 +36,15 @@ public class Level0_Guy_Controller : MonoBehaviour
 
     void makeWalk()
     {
-        animator.SetTrigger(1);
         moving = true;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        agent.enabled = false;
+        if (collision.collider.tag == "throwable")
+        {
+            animator.enabled = false;
+        }
     }
 }
