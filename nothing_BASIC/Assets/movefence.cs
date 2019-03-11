@@ -15,7 +15,7 @@ public class MoveFence : MonoBehaviour
 
     public void moveObject()
     {
-        if (condition.satisfied && !moved);
+        if (condition.satisfied && !moved)
         {
             objectMoving = true;
         }

@@ -5504,7 +5504,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 736221922}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa56efaeaaae2cd4d8fc273df71e64f7, type: 3}
+  m_Script: {fileID: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &737731933
@@ -5913,7 +5915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: LevelTwo
-  startingPointInLoadedScene: 
+  startingPointInLoadedScene: Graveyard
   playerSaveData: {fileID: 11400000, guid: 55d72825bf06cf44e9cbc1b37812cc6f, type: 2}
 --- !u!1001 &907111182
 PrefabInstance:
