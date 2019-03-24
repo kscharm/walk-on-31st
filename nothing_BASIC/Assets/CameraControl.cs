@@ -19,8 +19,8 @@ public class CameraControl : MonoBehaviour
 
     void Start()
     {
-        startingRotation = transform.rotation;
-        startingPosition = transform.position;
+        startingRotation = transform.localRotation;
+        startingPosition = transform.localPosition;
     }
 
 
@@ -29,6 +29,9 @@ public class CameraControl : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1))
         {
+            startingRotation = transform.localRotation;
+            startingPosition = transform.localPosition;
+
             Cursor.lockState = CursorLockMode.Locked;
             playerRotating = true;
         } else if (Input.GetMouseButtonUp(1))
@@ -45,11 +48,12 @@ public class CameraControl : MonoBehaviour
             
         } else
         {
-            Quaternion currentRotation = Quaternion.RotateTowards(transform.rotation, startingRotation, Time.deltaTime * rotateSpeed);
-            transform.rotation = currentRotation;
-            Vector3 currentPosition = Vector3.MoveTowards(transform.position, startingPosition, Time.deltaTime * moveSpeed);
-            transform.position = currentPosition;
+            Quaternion currentRotation = Quaternion.RotateTowards(transform.localRotation, startingRotation, Time.deltaTime * rotateSpeed);
+            transform.localRotation = currentRotation;
+            Vector3 currentPosition = Vector3.MoveTowards(transform.localPosition, startingPosition, Time.deltaTime * moveSpeed);
+            transform.localPosition = currentPosition;
         }
+
 
     }
 
