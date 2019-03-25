@@ -12085,6 +12085,8 @@ MonoBehaviour:
   rotateSpeed: 100
   moveSpeed: 15
   player: {fileID: 402319319}
+  XRotMax: 60
+  XRotMin: 0
 --- !u!1 &4653819396005890358 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4653819396005890358, guid: 5581b5629ada2984aae3fcbe5d7d57d4,

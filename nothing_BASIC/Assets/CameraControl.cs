@@ -11,6 +11,8 @@ public class CameraControl : MonoBehaviour
     public float rotateSpeed;
     public float moveSpeed;
     public Transform player;
+    public float XRotMax;
+    public float XRotMin;
 
     private Vector3 cursorPosition;
     private bool playerRotating;
@@ -44,7 +46,10 @@ public class CameraControl : MonoBehaviour
         {
             //transform.Rotate(new Vector3(-1 * Input.GetAxis("Mouse Y"), Input.GetAxis("Mouse X")));
             transform.RotateAround(player.position, player.transform.up, rotateSpeed * Input.GetAxis("Mouse X"));
-            transform.RotateAround(player.position, player.transform.right, rotateSpeed * -1 * Input.GetAxis("Mouse Y"));
+            if (!(transform.rotation.eulerAngles.x > XRotMax & Input.GetAxis("Mouse Y") <= 0) & !(transform.rotation.eulerAngles.x < XRotMin & Input.GetAxis("Mouse Y") >= 0))
+            {
+                transform.RotateAround(player.position, transform.right, rotateSpeed * -1 * Input.GetAxis("Mouse Y"));
+            }
             
         } else
         {
