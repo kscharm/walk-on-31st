@@ -2512,6 +2512,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 395772831}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &402319319 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5294441032488720327, guid: 1c37b45f16e1409418b499c34918acf9,
+    type: 3}
+  m_PrefabInstance: {fileID: 3692840388333401895}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &406757359
 GameObject:
   m_ObjectHideFlags: 0
@@ -5505,8 +5511,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &737731933
@@ -11946,6 +11950,16 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 3692840388847644389, guid: 1c37b45f16e1409418b499c34918acf9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.115
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692840388847644389, guid: 1c37b45f16e1409418b499c34918acf9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.702
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c37b45f16e1409418b499c34918acf9, type: 3}
 --- !u!1 &3692840388333401896 stripped
@@ -11980,7 +11994,7 @@ AudioSource:
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
-  BypassReverbZones: 0
+  BypassReverbZones: 1
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -12056,6 +12070,23 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3692840388333401895}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3692840388333401903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3692840388333401896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 581330073a73954499409fd6413aa069, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 100
+  moveSpeed: 15
+  player: {fileID: 402319319}
+  XRotMax: 60
+  XRotMin: 0
 --- !u!1 &4653819396005890358 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4653819396005890358, guid: 5581b5629ada2984aae3fcbe5d7d57d4,
