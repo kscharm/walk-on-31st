@@ -9,7 +9,6 @@ public class CameraControl : MonoBehaviour
 {
     // Start is called before the first frame update
     public float rotateSpeed;
-    public float moveSpeed;
     public Transform player;
     public float XRotMax;
     public float XRotMin;
@@ -44,19 +43,16 @@ public class CameraControl : MonoBehaviour
 
         if (playerRotating)
         {
-            //transform.Rotate(new Vector3(-1 * Input.GetAxis("Mouse Y"), Input.GetAxis("Mouse X")));
             transform.RotateAround(player.position, player.transform.up, rotateSpeed * Input.GetAxis("Mouse X"));
-            if (!(transform.rotation.eulerAngles.x > XRotMax & Input.GetAxis("Mouse Y") <= 0) & !(transform.rotation.eulerAngles.x < XRotMin & Input.GetAxis("Mouse Y") >= 0))
+            float xAngle = transform.rotation.eulerAngles.x;
+            if (xAngle > 180) xAngle -= 360;
+            if (!(xAngle > XRotMax & Input.GetAxis("Mouse Y") <= 0) & !(xAngle < XRotMin & Input.GetAxis("Mouse Y") >= 0))
             {
                 transform.RotateAround(player.position, transform.right, rotateSpeed * -1 * Input.GetAxis("Mouse Y"));
             }
             
         } else
         {
-            Quaternion currentRotation = Quaternion.RotateTowards(transform.localRotation, startingRotation, Time.deltaTime * rotateSpeed);
-            transform.localRotation = currentRotation;
-            Vector3 currentPosition = Vector3.MoveTowards(transform.localPosition, startingPosition, Time.deltaTime * moveSpeed);
-            transform.localPosition = currentPosition;
         }
 
 
