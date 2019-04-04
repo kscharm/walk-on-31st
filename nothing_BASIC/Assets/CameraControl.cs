@@ -47,6 +47,7 @@ public class CameraControl : MonoBehaviour
             float xAngle = transform.rotation.eulerAngles.x;
             if (xAngle > 180) xAngle -= 360;
             if (!(xAngle > XRotMax & Input.GetAxis("Mouse Y") <= 0) & !(xAngle < XRotMin & Input.GetAxis("Mouse Y") >= 0))
+
             {
                 transform.RotateAround(player.position, transform.right, rotateSpeed * -1 * Input.GetAxis("Mouse Y"));
             }
