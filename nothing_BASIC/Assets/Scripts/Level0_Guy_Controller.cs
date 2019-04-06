@@ -8,6 +8,7 @@ public class Level0_Guy_Controller : MonoBehaviour
     // Start is called before the first frame update
     public GameObject player;
     public GameObject ragdoll;
+    public GameObject key2;
 
     private NavMeshAgent agent;
     private Animator animator;
@@ -22,12 +23,17 @@ public class Level0_Guy_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float dist = Vector3.Distance(player.transform.position, agent.transform.position);
+        if (dist < 13)
+        {
+            moving = true;
+        }
         if (moving)
         {
             agent.SetDestination(player.transform.position);
 
             if (Vector3.Distance(agent.transform.position, player.transform.position) > 1) {
-                animator.SetFloat("Speed", 1);
+                animator.SetFloat("Speed", 0.75f);
             } else {
                 animator.SetFloat("Speed", 0);
             }
@@ -35,15 +41,12 @@ public class Level0_Guy_Controller : MonoBehaviour
         
     }
 
-    void makeWalk()
-    {
-        moving = true;
-    }
-
     void OnTriggerEnter(Collider collider)
     {
         if (collider.tag == "throwable")
         {
+            key2.transform.position = agent.transform.position;
+            key2.SetActive(true);
             animator.enabled = false;
             ragdoll.SetActive(true);
             GetComponent<CapsuleCollider>().enabled = false;
