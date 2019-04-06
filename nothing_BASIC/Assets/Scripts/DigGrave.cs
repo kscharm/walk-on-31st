@@ -4,9 +4,9 @@ public class DigGrave : MonoBehaviour
 {
     bool objectMoving = false;
     public int direction = 0;
-    public Condition condition;
     public float speed;
     public float scaleOffset;
+    public Condition condition;
     public Vector3 moveTarget;
     private GameObject dirtPile;
     private Transform dirtPileTransform;
