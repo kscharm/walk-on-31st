@@ -1,3 +1,0 @@
-Dog model contains 30 seperate animations.
-You can modify any color of the texture easily by changing the colors in the psd file provided.
-All animations are also included in 3ds studio max file.
