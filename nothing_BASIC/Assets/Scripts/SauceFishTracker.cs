@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class SauceFishTracker : MonoBehaviour
 {
-    public Condition sauceCondition;
-    public Condition fishCondition;
     private bool spicySelected = false;
     private bool sourSelected = false;
     private bool sweetSelected = false;
@@ -96,7 +94,6 @@ public class SauceFishTracker : MonoBehaviour
 
     public bool isCorrectCombination() {
         //Check if certain booleans are true
-        //Conditions = Has at least one sauce and one fish selected
-        return sauceCondition.satisfied && fishCondition.satisfied && spicySelected && sardinesSelected;
+        return false;
     }
 }
