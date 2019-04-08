@@ -31,6 +31,9 @@ MonoBehaviour:
   - {fileID: 114920521894677556}
   - {fileID: 114892110042640594}
   - {fileID: 114831900719400314}
+  - {fileID: 114809033962162904}
+  - {fileID: 114311759104794880}
+  - {fileID: 114393230518750864}
 --- !u!114 &114057102114510280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,6 +139,21 @@ MonoBehaviour:
   description: HasBottle
   satisfied: 0
   hash: 1480970978
+--- !u!114 &114311759104794880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: HasFish
+  m_EditorClassIdentifier: 
+  description: HasFish
+  satisfied: 0
+  hash: 693147281
 --- !u!114 &114388979326205170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,6 +169,21 @@ MonoBehaviour:
   description: PickedUpKey
   satisfied: 0
   hash: 1243592844
+--- !u!114 &114393230518750864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: HasMixedSauceAndFish
+  m_EditorClassIdentifier: 
+  description: HasMixedSauceAndFish
+  satisfied: 0
+  hash: -1453468318
 --- !u!114 &114532056079432836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,6 +259,21 @@ MonoBehaviour:
   description: OpenCloset
   satisfied: 0
   hash: -1878747140
+--- !u!114 &114809033962162904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: HasSauce
+  m_EditorClassIdentifier: 
+  description: HasSauce
+  satisfied: 0
+  hash: -499770246
 --- !u!114 &114831900719400314
 MonoBehaviour:
   m_ObjectHideFlags: 0
