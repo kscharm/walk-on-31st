@@ -34,6 +34,22 @@ MonoBehaviour:
   - {fileID: 114809033962162904}
   - {fileID: 114311759104794880}
   - {fileID: 114393230518750864}
+  - {fileID: 114040606488132352}
+--- !u!114 &114040606488132352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: isCorrectFoodCombo1
+  m_EditorClassIdentifier: 
+  description: isCorrectFoodCombo1
+  satisfied: 0
+  hash: -1758952041
 --- !u!114 &114057102114510280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,7 +78,7 @@ MonoBehaviour:
   m_Name: HasGoldKey
   m_EditorClassIdentifier: 
   description: HasGoldKey
-  satisfied: 1
+  satisfied: 0
   hash: -634121075
 --- !u!114 &114145075572739530
 MonoBehaviour:
@@ -122,7 +138,7 @@ MonoBehaviour:
   m_Name: HasShovel
   m_EditorClassIdentifier: 
   description: HasShovel
-  satisfied: 1
+  satisfied: 0
   hash: 242079953
 --- !u!114 &114310778524521266
 MonoBehaviour:
@@ -197,7 +213,7 @@ MonoBehaviour:
   m_Name: HasGenerator
   m_EditorClassIdentifier: 
   description: HasGenerator
-  satisfied: 1
+  satisfied: 0
   hash: 1875418495
 --- !u!114 &114631060959830496
 MonoBehaviour:
