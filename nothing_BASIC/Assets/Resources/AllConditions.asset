@@ -35,6 +35,13 @@ MonoBehaviour:
   - {fileID: 114311759104794880}
   - {fileID: 114393230518750864}
   - {fileID: 114040606488132352}
+  - {fileID: 114796645480153572}
+  - {fileID: 114654828085066554}
+  - {fileID: 114885203999353040}
+  - {fileID: 114393253725562360}
+  - {fileID: 114405306700668604}
+  - {fileID: 114476146570938240}
+  - {fileID: 114385683103626362}
 --- !u!114 &114040606488132352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,6 +177,21 @@ MonoBehaviour:
   description: HasFish
   satisfied: 0
   hash: 693147281
+--- !u!114 &114385683103626362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: HasDictionary2
+  m_EditorClassIdentifier: 
+  description: HasDictionary2
+  satisfied: 0
+  hash: 104228337
 --- !u!114 &114388979326205170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,6 +222,51 @@ MonoBehaviour:
   description: HasMixedSauceAndFish
   satisfied: 0
   hash: -1453468318
+--- !u!114 &114393253725562360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: HasPurpleFish
+  m_EditorClassIdentifier: 
+  description: HasPurpleFish
+  satisfied: 0
+  hash: -1391045176
+--- !u!114 &114405306700668604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: HasYellowFish
+  m_EditorClassIdentifier: 
+  description: HasYellowFish
+  satisfied: 0
+  hash: -1472700516
+--- !u!114 &114476146570938240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: HasDictionary1
+  m_EditorClassIdentifier: 
+  description: HasDictionary1
+  satisfied: 0
+  hash: -1623247797
 --- !u!114 &114532056079432836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,6 +297,21 @@ MonoBehaviour:
   description: HasBluePotion
   satisfied: 0
   hash: -583836302
+--- !u!114 &114654828085066554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: HasBlueFish
+  m_EditorClassIdentifier: 
+  description: HasBlueFish
+  satisfied: 0
+  hash: 1670801991
 --- !u!114 &114717388425823496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,6 +357,21 @@ MonoBehaviour:
   description: OpenCloset
   satisfied: 0
   hash: -1878747140
+--- !u!114 &114796645480153572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: HasRedFish
+  m_EditorClassIdentifier: 
+  description: HasRedFish
+  satisfied: 0
+  hash: 971222877
 --- !u!114 &114809033962162904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -320,6 +417,21 @@ MonoBehaviour:
   description: HasShovelHead
   satisfied: 0
   hash: 760798011
+--- !u!114 &114885203999353040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: HasGreenFish
+  m_EditorClassIdentifier: 
+  description: HasGreenFish
+  satisfied: 0
+  hash: -1934653257
 --- !u!114 &114892110042640594
 MonoBehaviour:
   m_ObjectHideFlags: 0
