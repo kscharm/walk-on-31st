@@ -113,12 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 1674713cf0dbd14459ee1d996288528e, type: 2}
---- !u!1 &6 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6645546427488838789, guid: 0807d970657821b4188b26810db9a0c6,
-    type: 3}
-  m_PrefabInstance: {fileID: 6645546427488838787}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &187650
 GameObject:
   m_ObjectHideFlags: 0
@@ -2259,7 +2253,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03f8a149ea5a3aa4583dc1cab3334cbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: This key might unlock something
+  message: 'ew fish in the toliet. I need this though
+
+'
   textColor: {r: 1, g: 1, b: 1, a: 1}
   delay: 0
 --- !u!4 &217116858 stripped
@@ -2461,7 +2457,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100002, guid: ed57c8d5ed850ba428cfe0b9550932cf, type: 3}
       propertyPath: m_Name
-      value: Fish2
+      value: BlueFishInteractable
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: ed57c8d5ed850ba428cfe0b9550932cf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2867,6 +2863,20 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3692840388333401895}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &405629326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b804958e1981f9544989d65e32719692, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  item: {fileID: 11400000, guid: 5b4c16119b46f9146aaa2c3298e9f6af, type: 2}
 --- !u!1 &406757359
 GameObject:
   m_ObjectHideFlags: 0
@@ -3174,7 +3184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec43236ba6522584894ac80bfbcb3815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  condition: {fileID: 114388979326205170, guid: fd02464d008c790478d9826aba7c7847,
+  condition: {fileID: 114654828085066554, guid: fd02464d008c790478d9826aba7c7847,
     type: 2}
   satisfied: 1
 --- !u!114 &431553728
@@ -5431,7 +5441,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0
-  item: {fileID: 11400000, guid: 141eee64bd32b524cae64bc72e71d206, type: 2}
+  item: {fileID: 11400000, guid: 5b4c16119b46f9146aaa2c3298e9f6af, type: 2}
 --- !u!1001 &589398682
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5949,7 +5959,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0
-  gameObject: {fileID: 6}
+  gameObject: {fileID: 1255858352}
   activeState: 0
 --- !u!1 &719525338
 GameObject:
@@ -6824,6 +6834,21 @@ MonoBehaviour:
   description: TubMoved
   satisfied: 1
   hash: -1909643676
+--- !u!114 &875113554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f8a149ea5a3aa4583dc1cab3334cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Sleeping with the fishes? Not me.
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  delay: 0
 --- !u!114 &894674355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7013,6 +7038,95 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
+--- !u!1 &916658230 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: ed57c8d5ed850ba428cfe0b9550932cf,
+    type: 3}
+  m_PrefabInstance: {fileID: 1151820634}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &916658231
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916658230}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.6298056, y: 2, z: 4}
+  m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!114 &916658232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916658230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57b92e829e5d3f646a32d0859a538979, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+--- !u!114 &916658233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916658230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d85941078afdf3244b2a1ae50fea256c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionLocation: {fileID: 1151820635}
+  conditionCollections: []
+  defaultReactionCollection: {fileID: 1921868269}
+--- !u!114 &916658234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916658230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 491516181}
+          m_MethodName: OnInteractableClick
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 916658233}
+            m_ObjectArgumentAssemblyTypeName: Interactable, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 916658232}
+          m_MethodName: SendMessage
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: disable
             m_BoolArgument: 0
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
@@ -7679,19 +7793,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100002, guid: ed57c8d5ed850ba428cfe0b9550932cf, type: 3}
       propertyPath: m_Name
-      value: Fish1
+      value: GreenFishInteractable
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: ed57c8d5ed850ba428cfe0b9550932cf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.6045918
+      value: -3.611
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: ed57c8d5ed850ba428cfe0b9550932cf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.943336
+      value: -8.943
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: ed57c8d5ed850ba428cfe0b9550932cf, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.948063
+      value: -11.948
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: ed57c8d5ed850ba428cfe0b9550932cf, type: 3}
       propertyPath: m_LocalRotation.x
@@ -7978,6 +8092,21 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1189669535}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1217324495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c32f1270758a64ba4bc71dbf7e498b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  gameObject: {fileID: 1255858352}
+  activeState: 0
 --- !u!1 &1220625091
 GameObject:
   m_ObjectHideFlags: 0
@@ -8070,6 +8199,95 @@ Transform:
   m_Father: {fileID: 1740513003}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 90}
+--- !u!1 &1255858352 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: ed57c8d5ed850ba428cfe0b9550932cf,
+    type: 3}
+  m_PrefabInstance: {fileID: 256737032}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1255858353
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255858352}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 4}
+  m_Center: {x: 0, y: 0.5, z: 0.5}
+--- !u!114 &1255858354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255858352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57b92e829e5d3f646a32d0859a538979, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+--- !u!114 &1255858355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255858352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d85941078afdf3244b2a1ae50fea256c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionLocation: {fileID: 256737033}
+  conditionCollections: []
+  defaultReactionCollection: {fileID: 1358369220}
+--- !u!114 &1255858356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255858352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 491516181}
+          m_MethodName: OnInteractableClick
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1255858355}
+            m_ObjectArgumentAssemblyTypeName: Interactable, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1255858354}
+          m_MethodName: SendMessage
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: disable
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!114 &1270481789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8366,6 +8584,55 @@ MonoBehaviour:
   audioSource: {fileID: 1991707424}
   audioClip: {fileID: 8300000, guid: 0dfe28e7ce2057a4488c8962dcab8afd, type: 3}
   delay: 0
+--- !u!1 &1358369218
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1358369219}
+  - component: {fileID: 1358369220}
+  m_Layer: 0
+  m_Name: DefaultReaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1358369219
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358369218}
+  m_LocalRotation: {x: 0.38239577, y: 0.38946316, z: -0.5978913, w: -0.5870417}
+  m_LocalPosition: {x: 2.7653718, y: 186.58209, z: 17.600668}
+  m_LocalScale: {x: 0.9357997, y: 0.93580043, z: 0.9358002}
+  m_Children: []
+  m_Father: {fileID: 256737033}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1358369220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358369218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc7ecfe98531f2429694b8c81a6748a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 875113554}
+  - {fileID: 1401143922}
+  - {fileID: 405629326}
+  - {fileID: 1217324495}
+  - {fileID: 1688593790}
 --- !u!1 &1358721278
 GameObject:
   m_ObjectHideFlags: 0
@@ -8783,6 +9050,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1396413345}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1401143922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec43236ba6522584894ac80bfbcb3815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  condition: {fileID: 114654828085066554, guid: fd02464d008c790478d9826aba7c7847,
+    type: 2}
+  satisfied: 0
 --- !u!114 &1419369434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9999,6 +10281,21 @@ MonoBehaviour:
   message: A sketchy looking dude...
   textColor: {r: 1, g: 1, b: 1, a: 1}
   delay: 0
+--- !u!114 &1688593790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2392585f8a4e53a42a0ddc8de25e64d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 1991707424}
+  audioClip: {fileID: 8300000, guid: 0dfe28e7ce2057a4488c8962dcab8afd, type: 3}
+  delay: 0
 --- !u!1 &1689450713
 GameObject:
   m_ObjectHideFlags: 0
@@ -10706,6 +11003,55 @@ Transform:
   m_Father: {fileID: 3692840388333401898}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1921868267
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1921868268}
+  - component: {fileID: 1921868269}
+  m_Layer: 0
+  m_Name: DefaultReaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1921868268
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921868267}
+  m_LocalRotation: {x: 0.3823958, y: 0.3894632, z: -0.5978913, w: -0.5870417}
+  m_LocalPosition: {x: 4.72323, y: -25.281374, z: 19.95014}
+  m_LocalScale: {x: 0.93580556, y: 0.9358056, z: 0.9358053}
+  m_Children: []
+  m_Father: {fileID: 1151820635}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1921868269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921868267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc7ecfe98531f2429694b8c81a6748a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 541974039}
+  - {fileID: 426265705}
+  - {fileID: 688581374}
+  - {fileID: 186678284}
+  - {fileID: 170645870}
 --- !u!114 &1977247412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13945,7 +14291,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 6645546427488838787}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 57b92e829e5d3f646a32d0859a538979, type: 3}
