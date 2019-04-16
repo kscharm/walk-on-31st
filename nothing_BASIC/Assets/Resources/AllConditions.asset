@@ -42,6 +42,7 @@ MonoBehaviour:
   - {fileID: 114405306700668604}
   - {fileID: 114476146570938240}
   - {fileID: 114385683103626362}
+  - {fileID: 114537660950732320}
 --- !u!114 &114040606488132352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,7 +251,7 @@ MonoBehaviour:
   m_Name: HasYellowFish
   m_EditorClassIdentifier: 
   description: HasYellowFish
-  satisfied: 0
+  satisfied: 1
   hash: -1472700516
 --- !u!114 &114476146570938240
 MonoBehaviour:
@@ -282,6 +283,21 @@ MonoBehaviour:
   description: HasGenerator
   satisfied: 0
   hash: 1875418495
+--- !u!114 &114537660950732320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: HasLadle
+  m_EditorClassIdentifier: 
+  description: HasLadle
+  satisfied: 0
+  hash: -1694840415
 --- !u!114 &114631060959830496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -385,7 +401,7 @@ MonoBehaviour:
   m_Name: HasSauce
   m_EditorClassIdentifier: 
   description: HasSauce
-  satisfied: 0
+  satisfied: 1
   hash: -499770246
 --- !u!114 &114831900719400314
 MonoBehaviour:
@@ -460,7 +476,7 @@ MonoBehaviour:
   m_Name: PickedUpKey_ExitLevel0
   m_EditorClassIdentifier: 
   description: PickedUpKey_ExitLevel0
-  satisfied: 0
+  satisfied: 1
   hash: -1983539911
 --- !u!114 &114972834351214418
 MonoBehaviour:
