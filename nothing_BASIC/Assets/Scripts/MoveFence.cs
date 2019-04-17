@@ -10,7 +10,7 @@ public class MoveFence : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    	targetPos = transform.position + new Vector3(0,-1.25f,0);
+    	targetPos = transform.position + new Vector3(0,-6.0f,0);
     }
 
     public void moveObject()
