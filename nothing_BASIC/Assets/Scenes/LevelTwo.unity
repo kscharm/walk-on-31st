@@ -521,6 +521,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &27531106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec43236ba6522584894ac80bfbcb3815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  condition: {fileID: 114448366326592914, guid: fd02464d008c790478d9826aba7c7847,
+    type: 2}
+  satisfied: 1
 --- !u!1001 &29818063
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1636,7 +1651,7 @@ Transform:
   - {fileID: 1011198841}
   - {fileID: 1682287317}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &178436204
 GameObject:
@@ -12927,11 +12942,17 @@ MonoBehaviour:
   distanceApart: 1.25
   dog: {fileID: 1501477065}
   player: {fileID: 3692840390241055284}
+  conditions:
+  - {fileID: 114448366326592914, guid: fd02464d008c790478d9826aba7c7847, type: 2}
+  - {fileID: 114266818364833212, guid: fd02464d008c790478d9826aba7c7847, type: 2}
+  - {fileID: 114063184999164436, guid: fd02464d008c790478d9826aba7c7847, type: 2}
+  - {fileID: 114532056079432836, guid: fd02464d008c790478d9826aba7c7847, type: 2}
+  - {fileID: 114831900719400314, guid: fd02464d008c790478d9826aba7c7847, type: 2}
   hintLoc:
   - {fileID: 3317823455205924873}
   - {fileID: 273031377}
   - {fileID: 8900697978031495928}
-  - {fileID: 0}
+  - {fileID: 1677858517}
   - {fileID: 398891229}
 --- !u!1 &1520322385
 GameObject:
@@ -12983,6 +13004,7 @@ MonoBehaviour:
   - {fileID: 799918615}
   - {fileID: 620322473}
   - {fileID: 1219751918}
+  - {fileID: 1920362595}
 --- !u!4 &1532404999 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8874298192334721663, guid: 7abb07bca61169d4798096426e4d0209,
@@ -13029,7 +13051,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000030517578}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: -0.000030518}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1554794804
@@ -14297,6 +14319,36 @@ MonoBehaviour:
   message: I wonder what this could be used for?
   textColor: {r: 1, g: 1, b: 1, a: 1}
   delay: 0
+--- !u!1 &1677858517
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1677858518}
+  m_Layer: 0
+  m_Name: Generator HintLoc
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1677858518
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677858517}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.6, y: 0, z: -11.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1972060338}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1682287317 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 430986, guid: a84cb58ef7faa67488076810242453b9,
@@ -15913,6 +15965,21 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1240115068}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1920362595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec43236ba6522584894ac80bfbcb3815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  condition: {fileID: 114860428603780272, guid: fd02464d008c790478d9826aba7c7847,
+    type: 2}
+  satisfied: 1
 --- !u!4 &1927875232 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010986723022, guid: e4277c05d3a71e34cad57f77f74050c6,
@@ -19417,7 +19484,7 @@ PrefabInstance:
     - target: {fileID: 3317823456245060721, guid: 76e34883b0934894fb6749c8c9e67225,
         type: 3}
       propertyPath: reactions.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3317823456245060721, guid: 76e34883b0934894fb6749c8c9e67225,
         type: 3}
@@ -19449,6 +19516,11 @@ PrefabInstance:
       propertyPath: reactions.Array.data[5]
       value: 
       objectReference: {fileID: 144786725}
+    - target: {fileID: 3317823456245060721, guid: 76e34883b0934894fb6749c8c9e67225,
+        type: 3}
+      propertyPath: reactions.Array.data[6]
+      value: 
+      objectReference: {fileID: 27531106}
     - target: {fileID: 3317823455152602690, guid: 76e34883b0934894fb6749c8c9e67225,
         type: 3}
       propertyPath: m_StaticEditorFlags

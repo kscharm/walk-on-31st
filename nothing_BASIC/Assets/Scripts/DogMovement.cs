@@ -16,6 +16,7 @@ public class DogMovement : MonoBehaviour
     public float distanceApart;
     public GameObject dog;
     public GameObject player;
+    public Condition[] conditions;
     public GameObject[] hintLoc;
     private Animator animator;
     private NavMeshAgent agent;
@@ -39,11 +40,11 @@ public class DogMovement : MonoBehaviour
         Vector3 target = player.transform.position;
         timer += Time.deltaTime;
 
-        if (timer > hintTime + 15)
+        if (timer - hintTime > 10 || state == DogState.Hint && Input.GetKeyDown("n"))
         {
             state = DogState.Follow;
         }
-        if (timer > hintTime + 30 || Input.GetKeyDown("h"))
+        if (state == DogState.Follow && Input.GetKeyDown("h"))
         {
             state = DogState.Hint;
             hintTime = timer;
@@ -56,9 +57,17 @@ public class DogMovement : MonoBehaviour
                 break;
 
             case DogState.Hint:
-                target = hintLoc[Mathf.Min((int)timer / 30, hintLoc.Length - 1)].transform.position;
+                for (int x = 0; x < conditions.Length; x++)
+                {
+                    if (!conditions[x].satisfied)
+                    {
+                        target = hintLoc[x].transform.position;
+                        break;
+                    }
+                }
                 break;
         }
+        target = new Vector3(target.x, player.transform.position.y, target.z);
         agent.SetDestination(target);
 
         if (Vector3.Distance(target, dog.transform.position) < distanceApart) {
