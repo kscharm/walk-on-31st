@@ -1,0 +1,320 @@
+fileFormatVersion: 2
+guid: 9a37ebdef82a5a94eb3952c9135f1de4
+timeCreated: 1532938979
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: bandana01_Bone
+    100002: bandana02_Bone
+    100004: //RootNode
+    100006: Bip001
+    100008: Bip001-Head
+    100010: Bip001-L-Calf
+    100012: Bip001-L-Clavicle
+    100014: Bip001-L-Finger0
+    100016: Bip001-L-Finger01
+    100018: Bip001-L-Finger1
+    100020: Bip001-L-Finger11
+    100022: Bip001-L-Foot
+    100024: Bip001-L-Forearm
+    100026: Bip001-L-Hand
+    100028: Bip001-L-Thigh
+    100030: Bip001-L-Toe0
+    100032: Bip001-L-UpperArm
+    100034: Bip001-Neck
+    100036: Bip001-Pelvis
+    100038: Bip001-Prop1
+    100040: Bip001-R-Calf
+    100042: Bip001-R-Clavicle
+    100044: Bip001-R-Finger0
+    100046: Bip001-R-Finger01
+    100048: Bip001-R-Finger1
+    100050: Bip001-R-Finger11
+    100052: Bip001-R-Foot
+    100054: Bip001-R-Forearm
+    100056: Bip001-R-Hand
+    100058: Bip001-R-Thigh
+    100060: Bip001-R-Toe0
+    100062: Bip001-R-UpperArm
+    100064: Bip001-Spine
+    100066: Bip001-Spine1
+    100068: Bip001-Spine2
+    100070: Bip001-Spine3
+    100072: Bone-L-ForeArm-Twist
+    100074: Bone-L-UpperArm-Twist
+    100076: Bone-R-ForeArm-Twist
+    100078: Bone-R-UpperArm-Twist
+    100080: Cloth01_Bone
+    100082: Cloth02_Bone
+    100084: Dummy_root
+    100086: FXDummy_MainWeapon
+    100088: Jaw_Bone
+    100090: MOC_Banditwarrior_B_SKEL
+    100092: mustache01_Bone
+    100094: mustache02_Bone
+    400000: bandana01_Bone
+    400002: bandana02_Bone
+    400004: //RootNode
+    400006: Bip001
+    400008: Bip001-Head
+    400010: Bip001-L-Calf
+    400012: Bip001-L-Clavicle
+    400014: Bip001-L-Finger0
+    400016: Bip001-L-Finger01
+    400018: Bip001-L-Finger1
+    400020: Bip001-L-Finger11
+    400022: Bip001-L-Foot
+    400024: Bip001-L-Forearm
+    400026: Bip001-L-Hand
+    400028: Bip001-L-Thigh
+    400030: Bip001-L-Toe0
+    400032: Bip001-L-UpperArm
+    400034: Bip001-Neck
+    400036: Bip001-Pelvis
+    400038: Bip001-Prop1
+    400040: Bip001-R-Calf
+    400042: Bip001-R-Clavicle
+    400044: Bip001-R-Finger0
+    400046: Bip001-R-Finger01
+    400048: Bip001-R-Finger1
+    400050: Bip001-R-Finger11
+    400052: Bip001-R-Foot
+    400054: Bip001-R-Forearm
+    400056: Bip001-R-Hand
+    400058: Bip001-R-Thigh
+    400060: Bip001-R-Toe0
+    400062: Bip001-R-UpperArm
+    400064: Bip001-Spine
+    400066: Bip001-Spine1
+    400068: Bip001-Spine2
+    400070: Bip001-Spine3
+    400072: Bone-L-ForeArm-Twist
+    400074: Bone-L-UpperArm-Twist
+    400076: Bone-R-ForeArm-Twist
+    400078: Bone-R-UpperArm-Twist
+    400080: Cloth01_Bone
+    400082: Cloth02_Bone
+    400084: Dummy_root
+    400086: FXDummy_MainWeapon
+    400088: Jaw_Bone
+    400090: MOC_Banditwarrior_B_SKEL
+    400092: mustache01_Bone
+    400094: mustache02_Bone
+    4300000: MOC_Banditwarrior_B_SKEL
+    7400000: Take 001
+    7400002: Matinee_sleep2
+    9500000: //RootNode
+    13700000: MOC_Banditwarrior_B_SKEL
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar to
+      improve retargeting quality.\n\t'Bip001-Spine' has translation animation that
+      will be discarded.\n\t'Bip001-Spine' is inbetween humanoid transforms and has
+      rotation animation that will be discarded.\n\t'Bip001-Neck' is inbetween humanoid
+      transforms and has rotation animation that will be discarded.\n\t'Bip001-L-Clavicle'
+      has translation animation that will be discarded.\n\t'Bip001-R-Clavicle' has
+      translation animation that will be discarded.\n\t'Bip001-Prop1' has translation
+      animation that will be discarded.\n\t'Bip001-Prop1' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'Matinee_sleep2'
+      has import animation warnings that might lower retargeting quality:\nNote: Activate
+      translation DOF on avatar to improve retargeting quality.\n\t'Bip001-Spine'
+      has translation animation that will be discarded.\n\t'Bip001-Spine' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'Bip001-Neck'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'Bip001-L-Clavicle'
+      has translation animation that will be discarded.\n\t'Bip001-R-Clavicle' has
+      translation animation that will be discarded.\n\t'Bip001-Prop1' has translation
+      animation that will be discarded.\n\t'Bip001-Prop1' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Matinee_sleep2
+      takeName: Matinee_sleep2
+      firstFrame: 0
+      lastFrame: 217
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dummy_root
+        weight: 1
+      - path: Dummy_root/Bip001
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-L-Thigh
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-L-Thigh/Bip001-L-Calf
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-L-Thigh/Bip001-L-Calf/Bip001-L-Foot
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-L-Thigh/Bip001-L-Calf/Bip001-L-Foot/Bip001-L-Toe0
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-R-Thigh
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-R-Thigh/Bip001-R-Calf
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-R-Thigh/Bip001-R-Calf/Bip001-R-Foot
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-R-Thigh/Bip001-R-Calf/Bip001-R-Foot/Bip001-R-Toe0
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1/Bip001-Spine2
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1/Bip001-Spine2/Bip001-Spine3
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1/Bip001-Spine2/Bip001-Spine3/Bip001-Neck
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1/Bip001-Spine2/Bip001-Spine3/Bip001-Neck/Bip001-Head
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1/Bip001-Spine2/Bip001-Spine3/Bip001-Neck/Bip001-Head/bandana01_Bone
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1/Bip001-Spine2/Bip001-Spine3/Bip001-Neck/Bip001-Head/bandana01_Bone/bandana02_Bone
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1/Bip001-Spine2/Bip001-Spine3/Bip001-Neck/Bip001-Head/Jaw_Bone
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1/Bip001-Spine2/Bip001-Spine3/Bip001-Neck/Bip001-Head/Jaw_Bone/mustache01_Bone
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1/Bip001-Spine2/Bip001-Spine3/Bip001-Neck/Bip001-Head/Jaw_Bone/mustache01_Bone/mustache02_Bone
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1/Bip001-Spine2/Bip001-Spine3/Bip001-Neck/Bip001-L-Clavicle
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1/Bip001-Spine2/Bip001-Spine3/Bip001-Neck/Bip001-L-Clavicle/Bip001-L-UpperArm
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1/Bip001-Spine2/Bip001-Spine3/Bip001-Neck/Bip001-L-Clavicle/Bip001-L-UpperArm/Bip001-L-Forearm
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1/Bip001-Spine2/Bip001-Spine3/Bip001-Neck/Bip001-L-Clavicle/Bip001-L-UpperArm/Bip001-L-Forearm/Bip001-L-Hand
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1/Bip001-Spine2/Bip001-Spine3/Bip001-Neck/Bip001-L-Clavicle/Bip001-L-UpperArm/Bip001-L-Forearm/Bip001-L-Hand/Bip001-L-Finger0
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1/Bip001-Spine2/Bip001-Spine3/Bip001-Neck/Bip001-L-Clavicle/Bip001-L-UpperArm/Bip001-L-Forearm/Bip001-L-Hand/Bip001-L-Finger0/Bip001-L-Finger01
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1/Bip001-Spine2/Bip001-Spine3/Bip001-Neck/Bip001-L-Clavicle/Bip001-L-UpperArm/Bip001-L-Forearm/Bip001-L-Hand/Bip001-L-Finger1
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1/Bip001-Spine2/Bip001-Spine3/Bip001-Neck/Bip001-L-Clavicle/Bip001-L-UpperArm/Bip001-L-Forearm/Bip001-L-Hand/Bip001-L-Finger1/Bip001-L-Finger11
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1/Bip001-Spine2/Bip001-Spine3/Bip001-Neck/Bip001-L-Clavicle/Bip001-L-UpperArm/Bip001-L-Forearm/Bone-L-ForeArm-Twist
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1/Bip001-Spine2/Bip001-Spine3/Bip001-Neck/Bip001-L-Clavicle/Bip001-L-UpperArm/Bone-L-UpperArm-Twist
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1/Bip001-Spine2/Bip001-Spine3/Bip001-Neck/Bip001-R-Clavicle
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1/Bip001-Spine2/Bip001-Spine3/Bip001-Neck/Bip001-R-Clavicle/Bip001-R-UpperArm
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1/Bip001-Spine2/Bip001-Spine3/Bip001-Neck/Bip001-R-Clavicle/Bip001-R-UpperArm/Bip001-R-Forearm
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1/Bip001-Spine2/Bip001-Spine3/Bip001-Neck/Bip001-R-Clavicle/Bip001-R-UpperArm/Bip001-R-Forearm/Bip001-R-Hand
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1/Bip001-Spine2/Bip001-Spine3/Bip001-Neck/Bip001-R-Clavicle/Bip001-R-UpperArm/Bip001-R-Forearm/Bip001-R-Hand/Bip001-Prop1
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1/Bip001-Spine2/Bip001-Spine3/Bip001-Neck/Bip001-R-Clavicle/Bip001-R-UpperArm/Bip001-R-Forearm/Bip001-R-Hand/Bip001-Prop1/FXDummy_MainWeapon
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1/Bip001-Spine2/Bip001-Spine3/Bip001-Neck/Bip001-R-Clavicle/Bip001-R-UpperArm/Bip001-R-Forearm/Bip001-R-Hand/Bip001-R-Finger0
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1/Bip001-Spine2/Bip001-Spine3/Bip001-Neck/Bip001-R-Clavicle/Bip001-R-UpperArm/Bip001-R-Forearm/Bip001-R-Hand/Bip001-R-Finger0/Bip001-R-Finger01
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1/Bip001-Spine2/Bip001-Spine3/Bip001-Neck/Bip001-R-Clavicle/Bip001-R-UpperArm/Bip001-R-Forearm/Bip001-R-Hand/Bip001-R-Finger1
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1/Bip001-Spine2/Bip001-Spine3/Bip001-Neck/Bip001-R-Clavicle/Bip001-R-UpperArm/Bip001-R-Forearm/Bip001-R-Hand/Bip001-R-Finger1/Bip001-R-Finger11
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1/Bip001-Spine2/Bip001-Spine3/Bip001-Neck/Bip001-R-Clavicle/Bip001-R-UpperArm/Bip001-R-Forearm/Bone-R-ForeArm-Twist
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1/Bip001-Spine2/Bip001-Spine3/Bip001-Neck/Bip001-R-Clavicle/Bip001-R-UpperArm/Bone-R-UpperArm-Twist
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1/Cloth01_Bone
+        weight: 1
+      - path: Dummy_root/Bip001/Bip001-Pelvis/Bip001-Spine/Bip001-Spine1/Cloth01_Bone/Cloth02_Bone
+        weight: 1
+      - path: MOC_Banditwarrior_B_SKEL
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.25
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: Dummy_root
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
