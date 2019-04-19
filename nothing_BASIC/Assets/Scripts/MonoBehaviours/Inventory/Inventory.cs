@@ -10,9 +10,11 @@ public class Inventory : MonoBehaviour
 
     public void AddItem(Item itemToAdd)
     {
-        //First, remove an exisiting fish if we are adding one
+        //First, remove an exisiting fish or sauce if we are adding one
         if (itemToAdd.name == "GreenFish" || itemToAdd.name == "BlueFish" || itemToAdd.name == "RedFish" || itemToAdd.name == "YellowFish" || itemToAdd.name == "PurpleFish") {
             RemoveFish();
+        } if (itemToAdd.name == "RedSauce" || itemToAdd.name == "GreenSauce" || itemToAdd.name == "OrangeSauce" || itemToAdd.name == "BlueSauce" || itemToAdd.name == "PinkSauce") {
+            RemoveSauce();
         }
         //Now add item
         for (int i = 0; i < items.Length; i++)
@@ -51,5 +53,18 @@ public class Inventory : MonoBehaviour
             }
         }
     }
+
+    public void RemoveSauce() {
+        for (int i = 0; i < items.Length; i++) {
+            if (items[i] != null && (items[i].name == "RedSauce" || items[i].name == "GreenSauce" || items[i].name == "OrangeSauce" || items[i].name == "BlueSauce" || items[i].name == "PinkSauce")) {
+                items[i] = null;
+                itemImages[i].sprite = null;
+                itemImages[i].enabled = false;
+                return;
+            }
+        }
+    }
+
+    
 
 }
