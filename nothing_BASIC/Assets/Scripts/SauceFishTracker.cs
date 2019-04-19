@@ -11,11 +11,11 @@ public class SauceFishTracker : MonoBehaviour
     private bool sweetSelected = false;
     private bool saltySelected = false;
     private bool creamySelected = false;
-    private bool sardinesSelected = false;
-    private bool tunaSelected = false;
-    private bool catfishSelected = false;
-    private bool salmonSelected = false;
-    private bool codSelected = false;
+    private bool yellowFishSelected = false;
+    private bool redFishSelected = false;
+    private bool blueFishSelected = false;
+    private bool greenFishSelected = false;
+    private bool purpleFishSelected = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -59,36 +59,36 @@ public class SauceFishTracker : MonoBehaviour
                     sweetSelected = false;
                     saltySelected = false;
                     creamySelected = true;
-                } else if (hit.transform.name == "SardinesInteractable") {
-                    sardinesSelected = true;
-                    tunaSelected = false;
-                    catfishSelected = false;
-                    salmonSelected = false;
-                    codSelected = false;
-                } else if (hit.transform.name == "TunaInteractable") {
-                    sardinesSelected = false;
-                    tunaSelected = true;
-                    catfishSelected = false;
-                    salmonSelected = false;
-                    codSelected = false;
-                } else if (hit.transform.name == "CatfishInteractable") {
-                    sardinesSelected = false;
-                    tunaSelected = false;
-                    catfishSelected = true;
-                    salmonSelected = false;
-                    codSelected = false;
-                } else if (hit.transform.name == "SalmonInteractable") {
-                    sardinesSelected = false;
-                    tunaSelected = false;
-                    catfishSelected = false;
-                    salmonSelected = true;
-                    codSelected = false;
-                } else if (hit.transform.name == "CodInteractable") {
-                    sardinesSelected = false;
-                    tunaSelected = false;
-                    catfishSelected = false;
-                    salmonSelected = false;
-                    codSelected = true;
+                } else if (hit.transform.name == "YellowFishInteractable") {
+                    yellowFishSelected = true;
+                    redFishSelected = false;
+                    blueFishSelected = false;
+                    greenFishSelected = false;
+                    purpleFishSelected = false;
+                } else if (hit.transform.name == "RedFishInteractable") {
+                    yellowFishSelected = false;
+                    redFishSelected = true;
+                    blueFishSelected = false;
+                    greenFishSelected = false;
+                    purpleFishSelected = false;
+                } else if (hit.transform.name == "BlueFishInteractable") {
+                    yellowFishSelected = false;
+                    redFishSelected = false;
+                    blueFishSelected = true;
+                    greenFishSelected = false;
+                    purpleFishSelected = false;
+                } else if (hit.transform.name == "GreenFishInteractable") {
+                    yellowFishSelected = false;
+                    redFishSelected = false;
+                    blueFishSelected = false;
+                    greenFishSelected = true;
+                    purpleFishSelected = false;
+                } else if (hit.transform.name == "PurpleFishInteractable") {
+                    yellowFishSelected = false;
+                    redFishSelected = false;
+                    blueFishSelected = false;
+                    greenFishSelected = false;
+                    purpleFishSelected = true;
                 }
             }
         }
@@ -97,6 +97,6 @@ public class SauceFishTracker : MonoBehaviour
     public bool isCorrectCombination() {
         //Check if certain booleans are true
         //Conditions = Has at least one sauce and one fish selected
-        return sauceCondition.satisfied && fishCondition.satisfied && spicySelected && sardinesSelected;
+        return spicySelected && yellowFishSelected;
     }
 }

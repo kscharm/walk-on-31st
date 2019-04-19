@@ -8,8 +8,13 @@ public class Inventory : MonoBehaviour
     public Image[] itemImages = new Image[numItemSlots];
     public Item[] items = new Item[numItemSlots];
 
-    public void AddItem (Item itemToAdd)
+    public void AddItem(Item itemToAdd)
     {
+        //First, remove an exisiting fish if we are adding one
+        if (itemToAdd.name == "GreenFish" || itemToAdd.name == "BlueFish" || itemToAdd.name == "RedFish" || itemToAdd.name == "YellowFish" || itemToAdd.name == "PurpleFish") {
+            RemoveFish();
+        }
+        //Now add item
         for (int i = 0; i < items.Length; i++)
         {
             if(items[i] == null)
@@ -18,7 +23,7 @@ public class Inventory : MonoBehaviour
                 itemImages[i].sprite = itemToAdd.sprite;
                 itemImages[i].enabled = true;
                 return;
-            }
+            } 
         }
     }
 
@@ -35,4 +40,16 @@ public class Inventory : MonoBehaviour
             }
         }
     }
+
+    public void RemoveFish() {
+        for (int i = 0; i < items.Length; i++) {
+            if (items[i] != null && (items[i].name == "GreenFish" || items[i].name == "YellowFish" || items[i].name == "RedFish" || items[i].name == "BlueFish" || items[i].name == "PurpleFish")) {
+                items[i] = null;
+                itemImages[i].sprite = null;
+                itemImages[i].enabled = false;
+                return;
+            }
+        }
+    }
+
 }

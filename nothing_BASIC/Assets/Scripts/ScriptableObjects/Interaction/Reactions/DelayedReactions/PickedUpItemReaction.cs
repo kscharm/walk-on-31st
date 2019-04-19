@@ -13,8 +13,7 @@
 
 
     protected override void ImmediateReaction()
-    {
-        inventory.RemoveItem(item); //will prevent adding the same item twice. Does nothing if first time adding item
+    {   
         inventory.AddItem(item);
     }
 }
