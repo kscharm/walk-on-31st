@@ -6,6 +6,8 @@ TagManager:
   tags:
   - throwable
   - enemy
+  - Interact
+  - red carpet
   layers:
   - Default
   - TransparentFX

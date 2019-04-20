@@ -5,7 +5,6 @@ public class DigGrave : MonoBehaviour
     bool objectMoving = false;
     public int direction = 0;
     public float speed;
-    public float scaleOffset;
     public Condition condition;
     public Vector3 moveTarget;
     private GameObject dirtPile;
@@ -44,16 +43,16 @@ public class DigGrave : MonoBehaviour
             {
                 direction = 0;
                 // Decrease size of dirt pile
-                dirtPileTransform.localScale += new Vector3(0, -scaleOffset, 0);
-                dirtPileTransform.position += new Vector3(0, -scaleOffset / 2.5f, 0);
+                dirtPileTransform.localScale += new Vector3(-0.25f, -0.25f, -0.25f);
+                dirtPileTransform.position += new Vector3(0, -0.05f, 0);
             }
             // Grave moving down
             else
             {
                 direction = 1;
                 // Increase side of dirt pile
-                dirtPileTransform.localScale += new Vector3(0, scaleOffset, 0);
-                dirtPileTransform.position += new Vector3(0, scaleOffset / 2.5f , 0);
+                dirtPileTransform.localScale += new Vector3(0.25f, 0.25f, 0.25f);
+                dirtPileTransform.position += new Vector3(0, 0.05f , 0);
             } 
             objectMoving = false;
         }
