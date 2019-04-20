@@ -39,9 +39,6 @@ public class PlayerMovement : MonoBehaviour
     public const string startingPositionKey = "starting position";
 
 
-    // private const float stopDistanceProportion = 0.1f;
-
-
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -154,16 +151,33 @@ public class PlayerMovement : MonoBehaviour
             rbody.velocity = Vector3.zero;
         }
 
-        if (Input.GetKey("d")) {
-            transform.Rotate(new Vector3(0, rotateSpeed * Time.deltaTime, 0));
+        if (rbody.velocity != Vector3.zero && Input.GetKey("left shift"))
+        {
+            rbody.velocity *= 2;
         }
-
-        if (Input.GetKey ("a")) {
-            transform.Rotate(new Vector3(0, -1 * rotateSpeed * Time.deltaTime, 0));
+        if (Input.GetKey("a") || Input.GetKey("d")) {
+            if (Input.GetKey("left shift")) {
+                // Fast turn
+                if (Input.GetKey("a")) {
+                    transform.Rotate(new Vector3(0, (float)(-1 * rotateSpeed * 1.5 * Time.deltaTime), 0));
+                } else {
+                    transform.Rotate(new Vector3(0, (float)(rotateSpeed * 1.5 * Time.deltaTime), 0));
+                }
+            } else {
+                // Regular turn
+                if (Input.GetKey("a")) {
+                    transform.Rotate(new Vector3(0, -1 * rotateSpeed * Time.deltaTime, 0));
+                }
+                else {
+                    transform.Rotate(new Vector3(0, rotateSpeed * Time.deltaTime, 0));
+                }
+            }
         }
 
         //Set animation 
-        if (Vector3.Distance(Vector3.zero, rbody.velocity) != 0) {
+        if (Input.GetKey("left shift")) {
+            animator.SetFloat("Speed", 5);
+        } else if (Vector3.Distance(Vector3.zero, rbody.velocity) != 0) {
             animator.SetFloat("Speed", 2);
         } else if (Input.GetKey("d") || Input.GetKey("a")){ 
             animator.SetFloat("Speed", 1);
@@ -190,9 +204,13 @@ public class PlayerMovement : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
        if (other.tag == "enemy")
-        {
+       {
             SceneManager.LoadScene("EndGame", LoadSceneMode.Single);
-        }
+       }
+       if (other.tag == "red carpet")
+       {
+            SceneManager.LoadScene("EndGame", LoadSceneMode.Single);
+       }
     }
 
 }

@@ -10783,8 +10783,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1396413345}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.70710677}
-  m_LocalPosition: {x: -9.55, y: 2.92, z: -8.09}
-  m_LocalScale: {x: 6.4, y: 5.801544, z: 1}
+  m_LocalPosition: {x: -9.588, y: 2.92, z: -8.09}
+  m_LocalScale: {x: 6.4, y: 5.85, z: 1}
   m_Children: []
   m_Father: {fileID: 1740513003}
   m_RootOrder: 6
@@ -10969,7 +10969,7 @@ Transform:
   m_GameObject: {fileID: 1421017266}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.70710677}
   m_LocalPosition: {x: -13.07, y: 4.06, z: -8.09}
-  m_LocalScale: {x: 4, y: 1, z: 1}
+  m_LocalScale: {x: 4, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 1740513003}
   m_RootOrder: 13
@@ -11346,7 +11346,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1486793250}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.70710677}
-  m_LocalPosition: {x: -15.196, y: 2.27, z: -8.09}
+  m_LocalPosition: {x: -15.152, y: 2.27, z: -8.09}
   m_LocalScale: {x: 4.4, y: 3.2978275, z: 1}
   m_Children: []
   m_Father: {fileID: 1740513003}
@@ -14026,7 +14026,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1147003324406517}
   m_LocalRotation: {x: 0.00000008146034, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5089999, y: -1.697, z: 0.019000947}
+  m_LocalPosition: {x: 0.57, y: -1.697, z: 0.019000947}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4967148794502073}
@@ -14267,73 +14267,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
-        type: 3}
-      propertyPath: throwingBottle
-      value: 
-      objectReference: {fileID: 1652222113944582218, guid: abcc6cc692842fe40b5450ec9e06f423,
-        type: 3}
-    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
-        type: 3}
-      propertyPath: throwTo
-      value: 
-      objectReference: {fileID: 984580199}
-    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
-        type: 3}
-      propertyPath: throwForceScale
-      value: 400
-      objectReference: {fileID: 0}
-    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
-        type: 3}
-      propertyPath: throwUpForce
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
-        type: 3}
-      propertyPath: throwSpin.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
-        type: 3}
-      propertyPath: throwSpin.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
-        type: 3}
-      propertyPath: throwSpin.z
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
-        type: 3}
-      propertyPath: gameOverMessage
-      value: 
-      objectReference: {fileID: 1178634664}
-    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
-        type: 3}
-      propertyPath: toThrowCondition
-      value: 
-      objectReference: {fileID: 114310778524521266, guid: fd02464d008c790478d9826aba7c7847,
-        type: 2}
-    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
-        type: 3}
-      propertyPath: bottleOffset.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
-        type: 3}
-      propertyPath: bottleOffset.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
-        type: 3}
-      propertyPath: bottleOffset.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
-        type: 3}
-      propertyPath: throwFrom
-      value: 
-      objectReference: {fileID: 1851238038}
     - target: {fileID: 3692840389348231112, guid: 1c37b45f16e1409418b499c34918acf9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14404,11 +14337,73 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.85
       objectReference: {fileID: 0}
-    - target: {fileID: 3692840388681795134, guid: 1c37b45f16e1409418b499c34918acf9,
+    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
         type: 3}
-      propertyPath: m_Radius
-      value: 0.3
+      propertyPath: throwingBottle
+      value: 
+      objectReference: {fileID: 1652222113944582218, guid: abcc6cc692842fe40b5450ec9e06f423,
+        type: 3}
+    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
+        type: 3}
+      propertyPath: throwTo
+      value: 
+      objectReference: {fileID: 984580199}
+    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
+        type: 3}
+      propertyPath: throwForceScale
+      value: 400
       objectReference: {fileID: 0}
+    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
+        type: 3}
+      propertyPath: throwUpForce
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
+        type: 3}
+      propertyPath: throwSpin.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
+        type: 3}
+      propertyPath: throwSpin.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
+        type: 3}
+      propertyPath: throwSpin.z
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
+        type: 3}
+      propertyPath: gameOverMessage
+      value: 
+      objectReference: {fileID: 1178634664}
+    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
+        type: 3}
+      propertyPath: toThrowCondition
+      value: 
+      objectReference: {fileID: 114310778524521266, guid: fd02464d008c790478d9826aba7c7847,
+        type: 2}
+    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
+        type: 3}
+      propertyPath: bottleOffset.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
+        type: 3}
+      propertyPath: bottleOffset.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
+        type: 3}
+      propertyPath: bottleOffset.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
+        type: 3}
+      propertyPath: throwFrom
+      value: 
+      objectReference: {fileID: 1851238038}
     - target: {fileID: 3692840388847644389, guid: 1c37b45f16e1409418b499c34918acf9,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -14418,6 +14413,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.702
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692840388681795134, guid: 1c37b45f16e1409418b499c34918acf9,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 7471293542648671993, guid: 1c37b45f16e1409418b499c34918acf9,
         type: 3}
@@ -16796,7 +16796,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1644189086}
     m_RemovedComponents:
-    - {fileID: 8930579002940048017, guid: 5f719c506a774fe40942fa0b00b09e04, type: 3}
     - {fileID: 8930579002940048019, guid: 5f719c506a774fe40942fa0b00b09e04, type: 3}
     - {fileID: 8930579002940048016, guid: 5f719c506a774fe40942fa0b00b09e04, type: 3}
     - {fileID: 8929185432697188415, guid: 5f719c506a774fe40942fa0b00b09e04, type: 3}
