@@ -151,7 +151,7 @@ public class PlayerMovement : MonoBehaviour
             rbody.velocity = Vector3.zero;
         }
 
-        if (rbody.velocity != Vector3.zero && Input.GetKey("left shift"))
+        if (Input.GetKey("left shift"))
         {
             rbody.velocity *= 2;
         }
@@ -175,7 +175,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //Set animation 
-        if (Input.GetKey("left shift")) {
+        if (Input.GetKey("left shift") && rbody.velocity != Vector3.zero) {
             animator.SetFloat("Speed", 5);
         } else if (Vector3.Distance(Vector3.zero, rbody.velocity) != 0) {
             animator.SetFloat("Speed", 2);
