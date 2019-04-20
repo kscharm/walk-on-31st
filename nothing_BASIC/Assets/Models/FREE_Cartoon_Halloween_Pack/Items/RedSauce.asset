@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f67bd8ec6e33af4987562f6141a3bf2, type: 3}
-  m_Name: Red Sauce
+  m_Name: RedSauce
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 9350298c93871de4c80c815e64f69df3, type: 3}
