@@ -45,6 +45,26 @@ MonoBehaviour:
   - {fileID: 114537660950732320}
   - {fileID: 114573955889962018}
   - {fileID: 114448366326592914}
+  - {fileID: 114672155476596150}
+  - {fileID: 114510765262627342}
+  - {fileID: 114015259147641790}
+  - {fileID: 114550210439912274}
+  - {fileID: 114293867677614920}
+--- !u!114 &114015259147641790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: HasGreenSauce
+  m_EditorClassIdentifier: 
+  description: HasGreenSauce
+  satisfied: 0
+  hash: 815687321
 --- !u!114 &114040606488132352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88,7 +108,7 @@ MonoBehaviour:
   m_Name: HasGoldKey
   m_EditorClassIdentifier: 
   description: HasGoldKey
-  satisfied: 1
+  satisfied: 0
   hash: -634121075
 --- !u!114 &114145075572739530
 MonoBehaviour:
@@ -148,8 +168,23 @@ MonoBehaviour:
   m_Name: HasShovel
   m_EditorClassIdentifier: 
   description: HasShovel
-  satisfied: 1
+  satisfied: 0
   hash: 242079953
+--- !u!114 &114293867677614920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: HasOrangeSauce
+  m_EditorClassIdentifier: 
+  description: HasOrangeSauce
+  satisfied: 0
+  hash: -777219638
 --- !u!114 &114310778524521266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,7 +303,7 @@ MonoBehaviour:
   m_Name: PickedUpSHEver
   m_EditorClassIdentifier: 
   description: PickedUpSHEver
-  satisfied: 1
+  satisfied: 0
   hash: 749643187
 --- !u!114 &114476146570938240
 MonoBehaviour:
@@ -285,6 +320,21 @@ MonoBehaviour:
   description: HasDictionary1
   satisfied: 0
   hash: -1623247797
+--- !u!114 &114510765262627342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: HasBlueSauce
+  m_EditorClassIdentifier: 
+  description: HasBlueSauce
+  satisfied: 0
+  hash: -1915966105
 --- !u!114 &114532056079432836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -298,7 +348,7 @@ MonoBehaviour:
   m_Name: HasGenerator
   m_EditorClassIdentifier: 
   description: HasGenerator
-  satisfied: 1
+  satisfied: 0
   hash: 1875418495
 --- !u!114 &114537660950732320
 MonoBehaviour:
@@ -313,8 +363,23 @@ MonoBehaviour:
   m_Name: HasLadle
   m_EditorClassIdentifier: 
   description: HasLadle
-  satisfied: 0
+  satisfied: 1
   hash: -1694840415
+--- !u!114 &114550210439912274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: HasPinkSauce
+  m_EditorClassIdentifier: 
+  description: HasPinkSauce
+  satisfied: 0
+  hash: 415850672
 --- !u!114 &114573955889962018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -360,6 +425,21 @@ MonoBehaviour:
   description: HasBlueFish
   satisfied: 0
   hash: 1670801991
+--- !u!114 &114672155476596150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: HasRedSauce
+  m_EditorClassIdentifier: 
+  description: HasRedSauce
+  satisfied: 0
+  hash: 1895047640
 --- !u!114 &114717388425823496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -433,7 +513,7 @@ MonoBehaviour:
   m_Name: HasSauce
   m_EditorClassIdentifier: 
   description: HasSauce
-  satisfied: 0
+  satisfied: 1
   hash: -499770246
 --- !u!114 &114831900719400314
 MonoBehaviour:
@@ -448,7 +528,7 @@ MonoBehaviour:
   m_Name: FenceLowered
   m_EditorClassIdentifier: 
   description: FenceLowered
-  satisfied: 1
+  satisfied: 0
   hash: -1881090423
 --- !u!114 &114884290278927232
 MonoBehaviour:

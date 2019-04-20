@@ -16,7 +16,7 @@ public class GoblinConditionals : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
-        //Spicy + Sardines
+        //Red Sauce + Yellow Fish
         if (tracker.isCorrectCombination()) {
             correctCombo1.satisfied = true;
         } else {
