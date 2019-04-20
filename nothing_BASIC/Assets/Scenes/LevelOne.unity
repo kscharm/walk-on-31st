@@ -1565,6 +1565,11 @@ MonoBehaviour:
   correctCombo1: {fileID: 114040606488132352, guid: fd02464d008c790478d9826aba7c7847,
     type: 2}
   mixingPot: {fileID: 4283174}
+  goblinBehavior: {fileID: 1813808667}
+  goblin1Satisfied: {fileID: 114652232056639792, guid: fd02464d008c790478d9826aba7c7847,
+    type: 2}
+  goblin1Angry: {fileID: 114161729865386658, guid: fd02464d008c790478d9826aba7c7847,
+    type: 2}
 --- !u!114 &176946174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8715,6 +8720,7 @@ MonoBehaviour:
   - {fileID: 1697665089}
   - {fileID: 694529241}
   - {fileID: 1082201347}
+  - {fileID: 1451339193}
 --- !u!4 &1281951168
 Transform:
   m_ObjectHideFlags: 0
@@ -9741,6 +9747,21 @@ MonoBehaviour:
   condition: {fileID: 114405306700668604, guid: fd02464d008c790478d9826aba7c7847,
     type: 2}
   satisfied: 0
+--- !u!114 &1451339193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec43236ba6522584894ac80bfbcb3815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  condition: {fileID: 114652232056639792, guid: fd02464d008c790478d9826aba7c7847,
+    type: 2}
+  satisfied: 1
 --- !u!114 &1454165191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11235,6 +11256,7 @@ MonoBehaviour:
   - {fileID: 118261960}
   - {fileID: 1736775468}
   - {fileID: 1248164425}
+  - {fileID: 2019756414}
 --- !u!1001 &1716024493
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11476,7 +11498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03f8a149ea5a3aa4583dc1cab3334cbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: I don't think he liked that...
+  message: OUCH! I don't think he liked that...
   textColor: {r: 1, g: 1, b: 1, a: 1}
   delay: 0
 --- !u!114 &1742153172
@@ -11675,6 +11697,27 @@ MonoBehaviour:
   requiredConditions:
   - {fileID: 1150859258}
   reactionCollection: {fileID: 455720201}
+--- !u!1 &1813808666 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 156312, guid: 3ffe8ac9f1ef9984a9428440d1c31b9f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1945519799}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1813808667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813808666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4887e12cf709e2c4a805c686940b304e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goblin: {fileID: 173170505}
+  player: {fileID: 933652139}
+  objectToLookAtGoblin1: {fileID: 1173292376}
 --- !u!114 &1818451222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13267,6 +13310,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   condition: {fileID: 114293867677614920, guid: fd02464d008c790478d9826aba7c7847,
+    type: 2}
+  satisfied: 1
+--- !u!114 &2019756414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec43236ba6522584894ac80bfbcb3815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  condition: {fileID: 114161729865386658, guid: fd02464d008c790478d9826aba7c7847,
     type: 2}
   satisfied: 1
 --- !u!114 &2023564163
