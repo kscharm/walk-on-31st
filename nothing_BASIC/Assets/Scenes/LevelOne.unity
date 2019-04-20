@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4483,6 +4483,28 @@ MonoBehaviour:
   message: Tuna in the fridge.
   textColor: {r: 1, g: 1, b: 1, a: 1}
   delay: 0
+--- !u!1 &702282972 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3692840388847644390, guid: 1c37b45f16e1409418b499c34918acf9,
+    type: 3}
+  m_PrefabInstance: {fileID: 57725892}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &702282977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702282972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 581330073a73954499409fd6413aa069, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 3
+  player: {fileID: 933652144}
+  XRotMax: 60
+  XRotMin: 10
 --- !u!1 &707567908
 GameObject:
   m_ObjectHideFlags: 0
@@ -5666,6 +5688,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!4 &933652144 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3692840389348231112, guid: 1c37b45f16e1409418b499c34918acf9,
+    type: 3}
+  m_PrefabInstance: {fileID: 57725892}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &937749142
 GameObject:
   m_ObjectHideFlags: 0
