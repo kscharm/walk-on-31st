@@ -52,6 +52,7 @@ MonoBehaviour:
   - {fileID: 114293867677614920}
   - {fileID: 114652232056639792}
   - {fileID: 114161729865386658}
+  - {fileID: 114254711819410002}
 --- !u!114 &114015259147641790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,7 +111,7 @@ MonoBehaviour:
   m_Name: HasGoldKey
   m_EditorClassIdentifier: 
   description: HasGoldKey
-  satisfied: 0
+  satisfied: 1
   hash: -634121075
 --- !u!114 &114145075572739530
 MonoBehaviour:
@@ -157,6 +158,21 @@ MonoBehaviour:
   description: HasPinkPotion
   satisfied: 0
   hash: -988733496
+--- !u!114 &114254711819410002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: CoffinOpen
+  m_EditorClassIdentifier: 
+  description: CoffinOpen
+  satisfied: 0
+  hash: -943706501
 --- !u!114 &114261874872408964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,7 +201,7 @@ MonoBehaviour:
   m_Name: HasShovel
   m_EditorClassIdentifier: 
   description: HasShovel
-  satisfied: 0
+  satisfied: 1
   hash: 242079953
 --- !u!114 &114293867677614920
 MonoBehaviour:
@@ -380,7 +396,7 @@ MonoBehaviour:
   m_Name: HasLadle
   m_EditorClassIdentifier: 
   description: HasLadle
-  satisfied: 1
+  satisfied: 0
   hash: -1694840415
 --- !u!114 &114550210439912274
 MonoBehaviour:
@@ -440,7 +456,7 @@ MonoBehaviour:
   m_Name: goblin1Satisfied
   m_EditorClassIdentifier: 
   description: goblin1Satisfied
-  satisfied: 1
+  satisfied: 0
   hash: 571022761
 --- !u!114 &114654828085066554
 MonoBehaviour:
