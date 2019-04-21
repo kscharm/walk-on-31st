@@ -7,7 +7,6 @@ public class GoblinBehavior : MonoBehaviour
     private Animator anim;
     public GameObject goblin;
     public GameObject player;
-    public GameObject objectToLookAtGoblin1;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,4 +32,5 @@ public class GoblinBehavior : MonoBehaviour
         //goblin.transform.rotation = Quaternion.LookRotation(new Vector3(0,0,-1), Vector3.up);
         anim.SetInteger("moving", 0);
     }
+
 }
