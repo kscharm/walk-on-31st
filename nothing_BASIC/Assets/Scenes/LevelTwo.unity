@@ -5698,6 +5698,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 524202271}
+  - component: {fileID: 524202272}
+  - component: {fileID: 524202270}
+  - component: {fileID: 524202269}
+  - component: {fileID: 524202268}
+  - component: {fileID: 524202273}
+  - component: {fileID: 524202274}
   m_Layer: 0
   m_Name: Savers
   m_TagString: Untagged
@@ -5705,6 +5711,51 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &524202268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524202267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f29b6054d4e0304f8b32fb4625cff19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueIdentifier: GoldKeyGameObject
+  saveData: {fileID: 11400000, guid: fa68cb6ea43e1864e8e8a8f880fde20c, type: 2}
+  gameObjectToSave: {fileID: 8900697978031495928}
+--- !u!114 &524202269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524202267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f29b6054d4e0304f8b32fb4625cff19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueIdentifier: BranchGameObject
+  saveData: {fileID: 11400000, guid: fa68cb6ea43e1864e8e8a8f880fde20c, type: 2}
+  gameObjectToSave: {fileID: 273031377}
+--- !u!114 &524202270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524202267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f29b6054d4e0304f8b32fb4625cff19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueIdentifier: ShovelheadGameObject
+  saveData: {fileID: 11400000, guid: fa68cb6ea43e1864e8e8a8f880fde20c, type: 2}
+  gameObjectToSave: {fileID: 3317823455205924873}
 --- !u!4 &524202271
 Transform:
   m_ObjectHideFlags: 0
@@ -5719,6 +5770,51 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &524202272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524202267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f29b6054d4e0304f8b32fb4625cff19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueIdentifier: EarthGameObject
+  saveData: {fileID: 11400000, guid: fa68cb6ea43e1864e8e8a8f880fde20c, type: 2}
+  gameObjectToSave: {fileID: 652240801}
+--- !u!114 &524202273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524202267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f29b6054d4e0304f8b32fb4625cff19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueIdentifier: GeneratorGameObject
+  saveData: {fileID: 11400000, guid: fa68cb6ea43e1864e8e8a8f880fde20c, type: 2}
+  gameObjectToSave: {fileID: 1972060339}
+--- !u!114 &524202274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524202267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f29b6054d4e0304f8b32fb4625cff19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueIdentifier: ElectricityGameObject
+  saveData: {fileID: 11400000, guid: fa68cb6ea43e1864e8e8a8f880fde20c, type: 2}
+  gameObjectToSave: {fileID: 171829952}
 --- !u!1 &526353342
 GameObject:
   m_ObjectHideFlags: 0
