@@ -10,5 +10,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b25a41fcf26f82144b0eb57e0e4d8c69, type: 3}
-  m_Name: FirstLevelSaveData
+  m_Name: Level0SaveData
   m_EditorClassIdentifier: 
