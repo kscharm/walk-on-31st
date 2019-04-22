@@ -29,7 +29,6 @@ public class GoblinBehavior : MonoBehaviour
     }
 
     public void resetToIdle() {
-        //goblin.transform.rotation = Quaternion.LookRotation(new Vector3(0,0,-1), Vector3.up);
         anim.SetInteger("moving", 0);
     }
 
