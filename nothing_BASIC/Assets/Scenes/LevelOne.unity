@@ -12816,6 +12816,7 @@ MonoBehaviour:
   hintLoc:
   - {fileID: 873664631}
   - {fileID: 689522528}
+  isHinting: {fileID: 0}
 --- !u!195 &1595382325
 NavMeshAgent:
   m_ObjectHideFlags: 0
