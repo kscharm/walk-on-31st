@@ -18,6 +18,7 @@ public class DogMovement : MonoBehaviour
     public GameObject player;
     public Condition[] conditions;
     public GameObject[] hintLoc;
+    public Condition isHinting;
     private Animator animator;
     private NavMeshAgent agent;
     private double timer;
@@ -40,14 +41,23 @@ public class DogMovement : MonoBehaviour
         Vector3 target = player.transform.position;
         timer += Time.deltaTime;
 
-        if (timer - hintTime > 10 || state == DogState.Hint && Input.GetKeyDown("n"))
+        if (timer - hintTime > 15 || state == DogState.Hint && Input.GetKeyDown("n"))
         {
-            state = DogState.Follow;
+            isHinting.satisfied = false;
         }
-        if (state == DogState.Follow && Input.GetKeyDown("h"))
+        if (timer - hintTime > 45 || state == DogState.Follow && Input.GetKeyDown("h"))
+        {
+            isHinting.satisfied = true;
+            hintTime = timer;
+        }
+
+        if (isHinting.satisfied)
         {
             state = DogState.Hint;
-            hintTime = timer;
+        }
+        if (!isHinting.satisfied)
+        {
+            state = DogState.Follow;
         }
 
         switch (state)

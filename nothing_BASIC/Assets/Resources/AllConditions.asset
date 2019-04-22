@@ -53,6 +53,7 @@ MonoBehaviour:
   - {fileID: 114652232056639792}
   - {fileID: 114161729865386658}
   - {fileID: 114254711819410002}
+  - {fileID: 114058155635645654}
 --- !u!114 &114015259147641790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98,6 +99,21 @@ MonoBehaviour:
   description: OpenDoor
   satisfied: 0
   hash: 207596745
+--- !u!114 &114058155635645654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: DogHinting
+  m_EditorClassIdentifier: 
+  description: DogHinting
+  satisfied: 0
+  hash: -658378387
 --- !u!114 &114063184999164436
 MonoBehaviour:
   m_ObjectHideFlags: 0
