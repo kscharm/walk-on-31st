@@ -40,8 +40,12 @@ public class SauceFishTracker : MonoBehaviour
     }
 
     public bool isCorrectCombination() {
-        //Check if certain booleans are true
-        //Conditions = Has at least one sauce and one fish selected
+        //Red Sauce + Yellow Fish
         return redSauceCondition.satisfied && yellowFishCondition.satisfied;
     }
+    public bool isCorrectCombination2() {
+        //Orange Sauce + Purple Fish
+        return orangeSauceCondition.satisfied && purpleFishCondition.satisfied;
+    }
+
 }

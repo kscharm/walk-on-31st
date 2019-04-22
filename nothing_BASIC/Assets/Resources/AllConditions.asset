@@ -54,6 +54,24 @@ MonoBehaviour:
   - {fileID: 114161729865386658}
   - {fileID: 114254711819410002}
   - {fileID: 114058155635645654}
+  - {fileID: 114008611221475282}
+  - {fileID: 114836217846913286}
+  - {fileID: 114241042950598854}
+--- !u!114 &114008611221475282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: goblin2Satisfied
+  m_EditorClassIdentifier: 
+  description: goblin2Satisfied
+  satisfied: 0
+  hash: -918640982
 --- !u!114 &114015259147641790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,6 +192,21 @@ MonoBehaviour:
   description: HasPinkPotion
   satisfied: 0
   hash: -988733496
+--- !u!114 &114241042950598854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: isCorrectFoodCombo2
+  m_EditorClassIdentifier: 
+  description: isCorrectFoodCombo2
+  satisfied: 0
+  hash: 237098029
 --- !u!114 &114254711819410002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -594,6 +627,21 @@ MonoBehaviour:
   description: FenceLowered
   satisfied: 0
   hash: -1881090423
+--- !u!114 &114836217846913286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: goblin2Angry
+  m_EditorClassIdentifier: 
+  description: goblin2Angry
+  satisfied: 0
+  hash: 298537957
 --- !u!114 &114884290278927232
 MonoBehaviour:
   m_ObjectHideFlags: 0
