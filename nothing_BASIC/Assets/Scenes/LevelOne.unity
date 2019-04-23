@@ -5455,7 +5455,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: f1a2b835f101d114da0d929b8b4f82a8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2240
+      value: 2304
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: f1a2b835f101d114da0d929b8b4f82a8, type: 3}
       propertyPath: m_LocalRotation.x
@@ -13546,7 +13546,8 @@ MonoBehaviour:
   hintLoc:
   - {fileID: 873664631}
   - {fileID: 689522528}
-  isHinting: {fileID: 0}
+  isHinting: {fileID: 114058155635645654, guid: fd02464d008c790478d9826aba7c7847,
+    type: 2}
 --- !u!195 &1595382325
 NavMeshAgent:
   m_ObjectHideFlags: 0

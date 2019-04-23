@@ -7,6 +7,15 @@ public class Inventory : MonoBehaviour
     public const int numItemSlots = 15;
     public Image[] itemImages = new Image[numItemSlots];
     public Item[] items = new Item[numItemSlots];
+    private GameObject expandedInventory;
+    private Inventory inventoryComponent;
+    private Inventory expandedInventoryComponent;
+
+    public void Start()
+    {
+        expandedInventory = GameObject.Find("ExpandedInventory");
+        expandedInventoryComponent = expandedInventory.GetComponent<Inventory>();
+    }
 
     public void AddItem(Item itemToAdd)
     {
@@ -24,6 +33,9 @@ public class Inventory : MonoBehaviour
                 items[i] = itemToAdd;
                 itemImages[i].sprite = itemToAdd.sprite;
                 itemImages[i].enabled = true;
+                expandedInventoryComponent.items[i] = itemToAdd;
+                expandedInventoryComponent.itemImages[i].sprite = itemToAdd.sprite;
+                expandedInventoryComponent.itemImages[i].enabled = true;
                 return;
             } 
         }
@@ -38,6 +50,9 @@ public class Inventory : MonoBehaviour
                 items[i] = null;
                 itemImages[i].sprite = null;
                 itemImages[i].enabled = false;
+                expandedInventoryComponent.items[i] = null;
+                expandedInventoryComponent.itemImages[i].sprite = null;
+                expandedInventoryComponent.itemImages[i].enabled = false;
                 return;
             }
         }
