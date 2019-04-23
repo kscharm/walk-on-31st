@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,11 +7,12 @@ using UnityEngine;
         STATICPOINT,
         CHASING
     };
-    
+
 [RequireComponent(typeof(UnityEngine.AI.NavMeshAgent))]
 public class GravekeeperAI : MonoBehaviour
 
 {   public Animator graveKeeper;
+    public GameObject player;
 	public UnityEngine.AI.NavMeshAgent navmesh;
 	public GameObject[] stoppoints;
 	private int currSP = -1;
@@ -24,7 +25,7 @@ public class GravekeeperAI : MonoBehaviour
     	if(stoppoints.Length <= 0) {
 
     	} else {
-    		if (currSP >= (stoppoints.Length - 1)) {
+    		if (currSP >= (stoppoints.Length - 2)) {
     			currSP = 0;
     			aistate = AIstate.STATICPOINT; 
     		} else {
@@ -72,6 +73,19 @@ public class GravekeeperAI : MonoBehaviour
     			graveKeeper.SetFloat("vely", navmesh.velocity.magnitude / navmesh.speed);
     		}
     		break;
+            case AIstate.CHASING:
+                currSP = 10;
+                float gdist = (stoppoints[currSP].transform.position 
+                    - navmesh.transform.position).magnitude;
+                float gtime =  gdist / navmesh.speed;
+                waypointvel = GameObject.Find("navpoint1").GetComponent<VelocityReporter>().velocity * 20;
+                Vector3 gfutureTarget = stoppoints[currSP].transform.position + gtime * waypointvel;
+                setDestination(gfutureTarget);
+                graveKeeper.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 3;
+                graveKeeper.GetComponent<UnityEngine.AI.NavMeshAgent>().angularSpeed = 180;
+                break;
+                
+
     	}
     }
 }
