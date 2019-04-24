@@ -1901,6 +1901,7 @@ GameObject:
   - component: {fileID: 104613646}
   - component: {fileID: 104613648}
   - component: {fileID: 104613647}
+  - component: {fileID: 104613649}
   m_Layer: 0
   m_Name: carp2
   m_TagString: Untagged
@@ -1967,6 +1968,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 104613645}
   m_Mesh: {fileID: 4300000, guid: ed57c8d5ed850ba428cfe0b9550932cf, type: 3}
+--- !u!95 &104613649
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104613645}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: df0bbf5181a11b74b98f3a8dc4c1a334, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &110229944
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2160,7 +2180,7 @@ PrefabInstance:
     - target: {fileID: 108188552073391100, guid: d4af06651d8d3584280c91256ee64bf9,
         type: 3}
       propertyPath: m_Intensity
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1993079101567690, guid: d4af06651d8d3584280c91256ee64bf9, type: 3}
       propertyPath: m_IsActive
@@ -6294,7 +6314,7 @@ PrefabInstance:
     - target: {fileID: 108624933079712358, guid: b65ef34a17009fc4b9c6776307b0446e,
         type: 3}
       propertyPath: m_Intensity
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 108624933079712358, guid: b65ef34a17009fc4b9c6776307b0446e,
         type: 3}
@@ -9993,7 +10013,7 @@ PrefabInstance:
     - target: {fileID: 108624933079712358, guid: b65ef34a17009fc4b9c6776307b0446e,
         type: 3}
       propertyPath: m_Intensity
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 108624933079712358, guid: b65ef34a17009fc4b9c6776307b0446e,
         type: 3}
@@ -11802,7 +11822,7 @@ PrefabInstance:
     - target: {fileID: 108188552073391100, guid: d4af06651d8d3584280c91256ee64bf9,
         type: 3}
       propertyPath: m_Intensity
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1993079101567690, guid: d4af06651d8d3584280c91256ee64bf9, type: 3}
       propertyPath: m_IsActive
@@ -12064,6 +12084,7 @@ GameObject:
   - component: {fileID: 1508349839}
   - component: {fileID: 1508349841}
   - component: {fileID: 1508349840}
+  - component: {fileID: 1508349842}
   m_Layer: 0
   m_Name: carp2
   m_TagString: Untagged
@@ -12130,6 +12151,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1508349838}
   m_Mesh: {fileID: 4300000, guid: ed57c8d5ed850ba428cfe0b9550932cf, type: 3}
+--- !u!95 &1508349842
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508349838}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: df0bbf5181a11b74b98f3a8dc4c1a334, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1522879956
 GameObject:
   m_ObjectHideFlags: 0
