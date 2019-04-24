@@ -14,7 +14,7 @@ public class GravekeeperAI : MonoBehaviour
 {   public Animator graveKeeper;
 	public UnityEngine.AI.NavMeshAgent navmesh;
 	public GameObject[] stoppoints;
-	private int currSP = -1;
+	private int currSP = 2;
 	private Vector3 waypointvel;
 
 
