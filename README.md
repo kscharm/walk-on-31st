@@ -36,9 +36,17 @@ To get a hint for the level, press the **h** key. The dog will sniff out the nex
 ## Game Requirements
 
 ## Known Bugs
+1) As items are combined to create new items, they may be inserted later in the inventory array even if there are available spots earlier in the array. This will cause some items not render in the **regular** inventory view, but they will render in the **expanded** view.
 
 ## External Resources
 
 ## Project Task Breakdown
 
 ## Scenes to Open
+1) LaunchGame - Launch the game from this scene only. You can edit the SceneController game object to change the starting scene name & initial starting position to any of the following:
+    - LevelZero, Bathroom
+    - LevelOne, Kitchen
+    - LevelTwo, Graveyard
+2) LevelZero - bathroom and living room scene
+3) LevelOne - goblin kitchen scene
+4) LevelTwo - outdoors graveyard scene
