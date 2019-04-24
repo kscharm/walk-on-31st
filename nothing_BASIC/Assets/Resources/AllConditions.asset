@@ -57,6 +57,12 @@ MonoBehaviour:
   - {fileID: 114008611221475282}
   - {fileID: 114836217846913286}
   - {fileID: 114241042950598854}
+  - {fileID: 114339880290655274}
+  - {fileID: 114862790720455660}
+  - {fileID: 114909538464615114}
+  - {fileID: 114864196685158110}
+  - {fileID: 114672548127343256}
+  - {fileID: 114278268555868156}
 --- !u!114 &114008611221475282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,6 +258,21 @@ MonoBehaviour:
   description: HasShovel
   satisfied: 0
   hash: 242079953
+--- !u!114 &114278268555868156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: Fish2PickedEver
+  m_EditorClassIdentifier: 
+  description: Fish2PickedEver
+  satisfied: 0
+  hash: -1266526485
 --- !u!114 &114293867677614920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,6 +318,21 @@ MonoBehaviour:
   description: HasFish
   satisfied: 0
   hash: 693147281
+--- !u!114 &114339880290655274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: TalkedToGobEver
+  m_EditorClassIdentifier: 
+  description: TalkedToGobEver
+  satisfied: 0
+  hash: 291281437
 --- !u!114 &114385683103626362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -445,7 +481,7 @@ MonoBehaviour:
   m_Name: HasLadle
   m_EditorClassIdentifier: 
   description: HasLadle
-  satisfied: 0
+  satisfied: 1
   hash: -1694840415
 --- !u!114 &114550210439912274
 MonoBehaviour:
@@ -537,6 +573,21 @@ MonoBehaviour:
   description: HasRedSauce
   satisfied: 0
   hash: 1895047640
+--- !u!114 &114672548127343256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: Fish1PickedEver
+  m_EditorClassIdentifier: 
+  description: Fish1PickedEver
+  satisfied: 0
+  hash: 761278698
 --- !u!114 &114717388425823496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -642,6 +693,36 @@ MonoBehaviour:
   description: goblin2Angry
   satisfied: 0
   hash: 298537957
+--- !u!114 &114862790720455660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: ReadDictionaryEver
+  m_EditorClassIdentifier: 
+  description: ReadDictionaryEver
+  satisfied: 0
+  hash: 1074966795
+--- !u!114 &114864196685158110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: Sauce2PickedEver
+  m_EditorClassIdentifier: 
+  description: Sauce2PickedEver
+  satisfied: 0
+  hash: 458250558
 --- !u!114 &114884290278927232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -687,6 +768,21 @@ MonoBehaviour:
   description: OpenDoor_ExitLevel0
   satisfied: 0
   hash: 838846827
+--- !u!114 &114909538464615114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: Sauce1PickedEver
+  m_EditorClassIdentifier: 
+  description: Sauce1PickedEver
+  satisfied: 0
+  hash: -2102247617
 --- !u!114 &114920521894677556
 MonoBehaviour:
   m_ObjectHideFlags: 0
