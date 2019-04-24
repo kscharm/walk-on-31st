@@ -17423,7 +17423,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graveKeeper: {fileID: 1504284464}
-  player: {fileID: 0}
   navmesh: {fileID: 1504284461}
   stoppoints:
   - {fileID: 514304705}
