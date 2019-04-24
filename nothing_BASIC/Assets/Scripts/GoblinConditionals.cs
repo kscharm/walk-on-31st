@@ -24,6 +24,12 @@ public class GoblinConditionals : MonoBehaviour
         goblin1Angry.satisfied = false;
         goblin2Satisfied.satisfied = false;
         goblin2Angry.satisfied = false;
+        if (Global.goblin1Done) {
+            goblin1Satisfied.satisfied = true;
+        }
+        if (Global.golbin2Done) {
+            goblin2Satisfied.satisfied = true;
+        }
     }
 
     // Update is called once per frame
@@ -41,11 +47,9 @@ public class GoblinConditionals : MonoBehaviour
             correctCombo2.satisfied = false;
         }
 
-        // if (goblin1Angry.satisfied == false) {
-        //     goblinBehavior1.resetToIdle();
-        // }
         if (goblin1Satisfied.satisfied == true) {
             goblinBehavior1.victoryCheer();
+            Global.goblin1Done = true;
         }
         if (goblin1Angry.satisfied == true) {
             goblinBehavior1.hitPlayer();
@@ -53,11 +57,9 @@ public class GoblinConditionals : MonoBehaviour
         }
 
 
-        // if (goblin2Angry.satisfied == false) {
-        //     goblinBehavior2.resetToIdle();
-        // }
         if (goblin2Satisfied.satisfied == true) {
             goblinBehavior2.victoryCheer();
+            Global.golbin2Done = true;
         }
         if (goblin2Angry.satisfied == true) {
             goblinBehavior2.hitPlayer();
