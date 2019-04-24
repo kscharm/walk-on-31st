@@ -790,8 +790,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   faderCanvasGroup: {fileID: 1708470355}
   fadeDuration: 1
-  startingSceneName: LevelZero
-  initialStartingPositionName: Bathroom
+  startingSceneName: LevelOne
+  initialStartingPositionName: Kitchen
   playerSaveData: {fileID: 11400000, guid: 55d72825bf06cf44e9cbc1b37812cc6f, type: 2}
 --- !u!4 &353158847
 Transform:
@@ -3634,7 +3634,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e102783141fff2141b33a7b1ef13881b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemImages: []
 --- !u!114 &2049499497
 MonoBehaviour:
   m_ObjectHideFlags: 0
