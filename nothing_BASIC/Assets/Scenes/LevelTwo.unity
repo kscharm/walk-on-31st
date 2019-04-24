@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.07097197, g: 0.07879431, b: 0.14395717, a: 1}
+  m_IndirectSpecularColor: {r: 0.070945226, g: 0.07876397, b: 0.14394262, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4698,7 +4698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: LevelOne
-  startingPointInLoadedScene: Kitchen
+  startingPointInLoadedScene: Exit
   playerSaveData: {fileID: 11400000, guid: 55d72825bf06cf44e9cbc1b37812cc6f, type: 2}
 --- !u!1001 &431549578
 PrefabInstance:
@@ -17423,7 +17423,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graveKeeper: {fileID: 1504284464}
-  player: {fileID: 0}
   navmesh: {fileID: 1504284461}
   stoppoints:
   - {fileID: 514304705}

@@ -12,7 +12,6 @@ using UnityEngine;
 public class GravekeeperAI : MonoBehaviour
 
 {   public Animator graveKeeper;
-    public GameObject player;
 	public UnityEngine.AI.NavMeshAgent navmesh;
 	public GameObject[] stoppoints;
 	private int currSP = -1;
@@ -74,6 +73,7 @@ public class GravekeeperAI : MonoBehaviour
     		}
     		break;
             case AIstate.CHASING:
+             if(navmesh.remainingDistance >= 3) {
                 currSP = 10;
                 float gdist = (stoppoints[currSP].transform.position 
                     - navmesh.transform.position).magnitude;
@@ -83,6 +83,11 @@ public class GravekeeperAI : MonoBehaviour
                 setDestination(gfutureTarget);
                 graveKeeper.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 3;
                 graveKeeper.GetComponent<UnityEngine.AI.NavMeshAgent>().angularSpeed = 180;
+             } else {
+                graveKeeper.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 0;
+                graveKeeper.SetTrigger("reachedplayer");
+             }
+             
                 break;
                 
 
