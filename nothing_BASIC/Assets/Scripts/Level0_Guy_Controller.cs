@@ -24,7 +24,7 @@ public class Level0_Guy_Controller : MonoBehaviour
     void Update()
     {
         float dist = Vector3.Distance(player.transform.position, agent.transform.position);
-        if (dist < 13)
+        if (dist < 15)
         {
             moving = true;
         }

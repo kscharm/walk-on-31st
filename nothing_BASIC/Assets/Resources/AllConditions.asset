@@ -64,6 +64,8 @@ MonoBehaviour:
   - {fileID: 114672548127343256}
   - {fileID: 114278268555868156}
   - {fileID: 114422304874484360}
+  - {fileID: 114778232183244620}
+  - {fileID: 114775991424167292}
 --- !u!114 &114008611221475282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -649,6 +651,36 @@ MonoBehaviour:
   description: OpenCloset
   satisfied: 0
   hash: -1878747140
+--- !u!114 &114775991424167292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: level1exit
+  m_EditorClassIdentifier: 
+  description: level1exit
+  satisfied: 0
+  hash: -617695693
+--- !u!114 &114778232183244620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: level0exit
+  m_EditorClassIdentifier: 
+  description: level0exit
+  satisfied: 0
+  hash: -431054973
 --- !u!114 &114796645480153572
 MonoBehaviour:
   m_ObjectHideFlags: 0
