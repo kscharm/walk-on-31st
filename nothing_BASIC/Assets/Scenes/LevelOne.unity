@@ -3322,7 +3322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03f8a149ea5a3aa4583dc1cab3334cbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: 'Goblin : My order will be the red recipe.'
+  message: 'Goblin : My order will be the Blue recipe.'
   textColor: {r: 1, g: 1, b: 1, a: 1}
   delay: 0
 --- !u!1001 &297106223
@@ -19254,7 +19254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03f8a149ea5a3aa4583dc1cab3334cbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: 'Goblin : I want the Blue recipe!'
+  message: 'Goblin : I want the Red recipe!'
   textColor: {r: 1, g: 1, b: 1, a: 1}
   delay: 0
 --- !u!1001 &1546619711
