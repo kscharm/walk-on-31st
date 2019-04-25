@@ -64,8 +64,6 @@ MonoBehaviour:
   - {fileID: 114672548127343256}
   - {fileID: 114278268555868156}
   - {fileID: 114422304874484360}
-  - {fileID: 114399821815957024}
-  - {fileID: 114534336540889044}
 --- !u!114 &114008611221475282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,7 +122,7 @@ MonoBehaviour:
   m_Name: OpenDoor
   m_EditorClassIdentifier: 
   description: OpenDoor
-  satisfied: 1
+  satisfied: 0
   hash: 207596745
 --- !u!114 &114058155635645654
 MonoBehaviour:
@@ -364,7 +362,7 @@ MonoBehaviour:
   m_Name: PickedUpKey
   m_EditorClassIdentifier: 
   description: PickedUpKey
-  satisfied: 1
+  satisfied: 0
   hash: 1243592844
 --- !u!114 &114393230518750864
 MonoBehaviour:
@@ -396,21 +394,6 @@ MonoBehaviour:
   description: HasPurpleFish
   satisfied: 0
   hash: -1391045176
---- !u!114 &114399821815957024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
-  m_Name: Level0Completed
-  m_EditorClassIdentifier: 
-  description: Level0Completed
-  satisfied: 1
-  hash: -1770076961
 --- !u!114 &114405306700668604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -501,21 +484,6 @@ MonoBehaviour:
   description: HasGenerator
   satisfied: 0
   hash: 1875418495
---- !u!114 &114534336540889044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
-  m_Name: Level1Completed
-  m_EditorClassIdentifier: 
-  description: Level1Completed
-  satisfied: 0
-  hash: 2042408929
 --- !u!114 &114537660950732320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -559,7 +527,7 @@ MonoBehaviour:
   m_Name: PickedUpBottleEver
   m_EditorClassIdentifier: 
   description: PickedUpBottleEver
-  satisfied: 1
+  satisfied: 0
   hash: -1399836076
 --- !u!114 &114631060959830496
 MonoBehaviour:
@@ -664,7 +632,7 @@ MonoBehaviour:
   m_Name: TubMoved
   m_EditorClassIdentifier: 
   description: TubMoved
-  satisfied: 1
+  satisfied: 0
   hash: -1909643676
 --- !u!114 &114753703001785506
 MonoBehaviour:
@@ -844,7 +812,7 @@ MonoBehaviour:
   m_Name: PickedUpKey_ExitLevel0
   m_EditorClassIdentifier: 
   description: PickedUpKey_ExitLevel0
-  satisfied: 1
+  satisfied: 0
   hash: -1983539911
 --- !u!114 &114972834351214418
 MonoBehaviour:
