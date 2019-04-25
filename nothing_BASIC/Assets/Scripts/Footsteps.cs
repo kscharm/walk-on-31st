@@ -20,7 +20,7 @@ public class Footsteps : MonoBehaviour
         if (rbody.velocity.magnitude > 2.5f && !footsteps.isPlaying) {
             footsteps.clip = singleFootstepRunning;
             footsteps.Play();
-        } else if (rbody.velocity.magnitude > 0 && !footsteps.isPlaying) {
+        } else if (rbody.velocity.magnitude > 0.5f && !footsteps.isPlaying) {
             footsteps.clip = singleFootstep;
             footsteps.Play();
         }
