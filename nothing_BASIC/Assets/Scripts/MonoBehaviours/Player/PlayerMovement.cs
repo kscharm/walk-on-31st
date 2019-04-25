@@ -20,6 +20,8 @@ public class PlayerMovement : MonoBehaviour
     public GameObject gameOverMessage;
     public Condition toThrowCondition;
     public Transform throwFrom;
+    public ReactionCollection sceneReset;
+
 
     // private double maxInteractionDistance = 1.5;
     // private float ikWeight = 0;
@@ -205,7 +207,10 @@ public class PlayerMovement : MonoBehaviour
     {
        if (other.tag == "enemy")
        {
-            SceneManager.LoadScene("EndGame", LoadSceneMode.Single);
+            sceneReset.React();
+            animator.enabled = false;
+            rbody.AddForceAtPosition(transform.position - other.transform.position * 20, other.transform.position);
+            
        }
        if (other.tag == "red carpet")
        {
