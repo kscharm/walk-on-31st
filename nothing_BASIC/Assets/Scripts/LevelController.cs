@@ -9,7 +9,6 @@ public class LevelController : MonoBehaviour
     void Start()
     {
         SetTimerText();
-        Global.time += 300f;
     }
 
     // Update is called once per frame

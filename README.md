@@ -39,11 +39,35 @@ To get a hint for the level, press the **h** key. The dog will sniff out the nex
 
 ## Game Requirements
 ### Game Feel
+1)
+2)
+3)
+4)
 ### Fun
+1)
+2)
+3)
+4)
 ### 3D Real-Time Character Control
+1)
+2)
+3)
+4)
 ### Physics Simulation
+1)
+2)
+3)
+4)
 ### Artificial Intelligence (AI)
+1)
+2)
+3)
+4)
 ### Polish
+1)
+2)
+3)
+4)
 
 ## Known Bugs
 1) As items are combined to create new items, they may be inserted later in the inventory array even if there are available spots earlier in the array. This will cause some items not render in the **regular** inventory view, but they will render in the **expanded** view.
@@ -56,7 +80,7 @@ Nandan cite all assets here!
 - **Sammi**: cursor change on mouse hover over interactable, lighting scripts, global timer variables, audio design, level scenery design, scene menu (start, end, win, credits) design, inventory sprites
 - **Nandan**: graveyard digger AI, recipe making interactions, level 1/2 interactions, general room design and implementation
 - **Brian**: dog AI pathplanning & navmesh generation, hint interaction system, general room design and implementation
-- **Erik**: level 1 drunk guy AI, bottle throwing interaction, camera control movement with mouse click, ragdoll animations, general lighting effects
+- **Erik**: level 0 drunk guy AI, bottle throwing interaction, camera control movement with mouse click, ragdoll animations, general lighting effects
 
 ## Scenes to Open
 1) LaunchGame - Launch the game from this scene only. You can edit the SceneController game object to change the starting scene name & initial starting position to any of the following:
