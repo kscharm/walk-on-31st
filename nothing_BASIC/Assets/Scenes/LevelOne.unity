@@ -530,6 +530,21 @@ MonoBehaviour:
   message: 'Goblin : My order will be adasdfsaf adasdfde'
   textColor: {r: 1, g: 1, b: 1, a: 1}
   delay: 0
+--- !u!114 &56051626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: HasPinkPotion
+  satisfied: 1
+  hash: -988733496
 --- !u!1001 &57725892
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1784,6 +1799,7 @@ MonoBehaviour:
   - {fileID: 159708706}
   - {fileID: 219288318}
   - {fileID: 1308796693}
+  - {fileID: 1013489375}
   defaultReactionCollection: {fileID: 626851470}
 --- !u!114 &173170510
 MonoBehaviour:
@@ -1845,6 +1861,7 @@ Transform:
   - {fileID: 1021841850}
   - {fileID: 1700582123}
   - {fileID: 2141060366}
+  - {fileID: 820583410}
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -2440,6 +2457,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcf06ec46d0005b4db19264b4f26b166, type: 3}
+--- !u!114 &199736338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: isCorrectFoodCombo2
+  satisfied: 1
+  hash: 237098029
 --- !u!114 &202296214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6392,11 +6424,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4900350095ceff24fbe8c1ac5f1e17c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  description: isCorrectCombo
+  description: isCorrectCombo_bothSatisfied
   requiredConditions:
   - {fileID: 242232876}
   - {fileID: 1901837788}
-  reactionCollection: {fileID: 1281951167}
+  - {fileID: 2082250927}
+  reactionCollection: {fileID: 820583411}
 --- !u!1 &493743686
 GameObject:
   m_ObjectHideFlags: 0
@@ -10491,6 +10524,66 @@ MonoBehaviour:
   condition: {fileID: 114405306700668604, guid: fd02464d008c790478d9826aba7c7847,
     type: 2}
   satisfied: 0
+--- !u!1 &820583409
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 820583410}
+  - component: {fileID: 820583411}
+  m_Layer: 0
+  m_Name: SelectGoblinReaction_unlockDoor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &820583410
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820583409}
+  m_LocalRotation: {x: -0.43036652, y: -0.6262578, z: -0.38108522, w: 0.5266497}
+  m_LocalPosition: {x: -9.715767, y: 25.09632, z: 4.269416}
+  m_LocalScale: {x: 0.062390007, y: 0.062389985, z: 0.06239}
+  m_Children: []
+  m_Father: {fileID: 173170511}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &820583411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820583409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc7ecfe98531f2429694b8c81a6748a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 1994221681}
+  - {fileID: 894894329}
+  - {fileID: 1742153172}
+  - {fileID: 1371829850}
+  - {fileID: 170639182}
+  - {fileID: 324314570}
+  - {fileID: 869523852}
+  - {fileID: 2066935049}
+  - {fileID: 1272596085}
+  - {fileID: 239591570}
+  - {fileID: 1697665089}
+  - {fileID: 694529241}
+  - {fileID: 1082201347}
+  - {fileID: 1451339193}
+  - {fileID: 813267570}
+  - {fileID: 1665164952}
 --- !u!1 &826977974 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1440266222300335999, guid: 62e2bdda7a7fc144d9f4d03697b4cb31,
@@ -10629,6 +10722,66 @@ MonoBehaviour:
   description: HasDictionary2
   satisfied: 0
   hash: 104228337
+--- !u!1 &845225086
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 845225088}
+  - component: {fileID: 845225087}
+  m_Layer: 0
+  m_Name: SelectGoblinReaction_unlockDoor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &845225087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845225086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc7ecfe98531f2429694b8c81a6748a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 1994221681}
+  - {fileID: 894894329}
+  - {fileID: 1742153172}
+  - {fileID: 1371829850}
+  - {fileID: 170639182}
+  - {fileID: 324314570}
+  - {fileID: 869523852}
+  - {fileID: 2066935049}
+  - {fileID: 1272596085}
+  - {fileID: 239591570}
+  - {fileID: 1697665089}
+  - {fileID: 694529241}
+  - {fileID: 1082201347}
+  - {fileID: 813267570}
+  - {fileID: 1281095027}
+  - {fileID: 1303775826}
+--- !u!4 &845225088
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845225086}
+  m_LocalRotation: {x: -0.43036652, y: -0.6262578, z: -0.38108522, w: 0.5266497}
+  m_LocalPosition: {x: -10.615767, y: 25.09632, z: -2.4225843}
+  m_LocalScale: {x: 0.062390007, y: 0.062389985, z: 0.06239}
+  m_Children: []
+  m_Father: {fileID: 1148381813}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &845323429
 GameObject:
   m_ObjectHideFlags: 0
@@ -11302,7 +11455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03f8a149ea5a3aa4583dc1cab3334cbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: I can't get out!
+  message: These goblins have locked the door!
   textColor: {r: 1, g: 1, b: 1, a: 1}
   delay: 0
 --- !u!1 &873664631 stripped
@@ -11442,6 +11595,21 @@ MonoBehaviour:
   condition: {fileID: 114672155476596150, guid: fd02464d008c790478d9826aba7c7847,
     type: 2}
   satisfied: 0
+--- !u!114 &902805205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: isCorrectFoodCombo1
+  satisfied: 1
+  hash: -1758952041
 --- !u!1 &904146093
 GameObject:
   m_ObjectHideFlags: 0
@@ -13346,6 +13514,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62e2bdda7a7fc144d9f4d03697b4cb31, type: 3}
+--- !u!114 &1013489375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4900350095ceff24fbe8c1ac5f1e17c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: isCorrectCombo
+  requiredConditions:
+  - {fileID: 902805205}
+  - {fileID: 56051626}
+  reactionCollection: {fileID: 1281951167}
 --- !u!114 &1018895813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14664,6 +14849,7 @@ MonoBehaviour:
   - {fileID: 1925175945}
   - {fileID: 612817174}
   - {fileID: 1267058617}
+  - {fileID: 2145665551}
   defaultReactionCollection: {fileID: 2136690921}
 --- !u!114 &1148381812
 MonoBehaviour:
@@ -14725,6 +14911,7 @@ Transform:
   - {fileID: 1212001213}
   - {fileID: 1153323570}
   - {fileID: 307595258}
+  - {fileID: 845225088}
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -15901,11 +16088,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4900350095ceff24fbe8c1ac5f1e17c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  description: IsCorrectCombo
+  description: IsCorrectCombo_bothSatisfied
   requiredConditions:
   - {fileID: 327104296}
   - {fileID: 295844498}
-  reactionCollection: {fileID: 567778739}
+  - {fileID: 1588274351}
+  reactionCollection: {fileID: 845225087}
 --- !u!114 &1267058617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16595,6 +16783,21 @@ MonoBehaviour:
   condition: {fileID: 114550210439912274, guid: fd02464d008c790478d9826aba7c7847,
     type: 2}
   satisfied: 0
+--- !u!114 &1303775826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2392585f8a4e53a42a0ddc8de25e64d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 983442471}
+  audioClip: {fileID: 8300000, guid: 96b6650a22f2cb341a4bbb635f9af634, type: 3}
+  delay: 0
 --- !u!114 &1306723452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19911,6 +20114,21 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1569539685}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1588274351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: goblin1Satisfied
+  satisfied: 1
+  hash: 571022761
 --- !u!1001 &1595382322
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20473,6 +20691,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62e2bdda7a7fc144d9f4d03697b4cb31, type: 3}
+--- !u!114 &1665164952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2392585f8a4e53a42a0ddc8de25e64d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 983442471}
+  audioClip: {fileID: 8300000, guid: 96b6650a22f2cb341a4bbb635f9af634, type: 3}
+  delay: 0
 --- !u!114 &1667457927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23639,6 +23872,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 180}
+--- !u!114 &1914113806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: HasPinkPotion
+  satisfied: 1
+  hash: -988733496
 --- !u!114 &1915837066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25333,6 +25581,21 @@ MonoBehaviour:
   - {fileID: 988112115}
   - {fileID: 838313244}
   reactionCollection: {fileID: 1712528182}
+--- !u!114 &2082250927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: goblin2Satisfied
+  satisfied: 1
+  hash: -918640982
 --- !u!1 &2082760455
 GameObject:
   m_ObjectHideFlags: 0
@@ -26441,6 +26704,23 @@ MonoBehaviour:
   requiredConditions:
   - {fileID: 2144045206}
   reactionCollection: {fileID: 2116491535}
+--- !u!114 &2145665551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4900350095ceff24fbe8c1ac5f1e17c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: New condition collection
+  requiredConditions:
+  - {fileID: 199736338}
+  - {fileID: 1914113806}
+  reactionCollection: {fileID: 567778739}
 --- !u!1 &1031545421313106
 GameObject:
   m_ObjectHideFlags: 0
