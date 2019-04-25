@@ -5,11 +5,9 @@ using UnityEngine.SceneManagement;
 public class LevelController : MonoBehaviour
 {
     public Text timer;
-   public float timeLeft = 120f;
     // Start is called before the first frame update
     void Start()
     {
-        timer.text = Global.timerText;
         SetTimerText();
     }
 
@@ -24,7 +22,6 @@ public class LevelController : MonoBehaviour
         {
             SceneManager.LoadScene("EndGame", LoadSceneMode.Single);
         }
-        timer.text = Global.timerText;
         SetTimerText();
     }
 
