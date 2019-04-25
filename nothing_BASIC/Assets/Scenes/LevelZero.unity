@@ -1205,6 +1205,22 @@ MonoBehaviour:
   message: I'll take this blue fish instead.
   textColor: {r: 1, g: 1, b: 1, a: 1}
   delay: 0
+--- !u!114 &6247651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4900350095ceff24fbe8c1ac5f1e17c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: doesn'tknowwhatthisisfor
+  requiredConditions:
+  - {fileID: 862529889}
+  reactionCollection: {fileID: 1409984824}
 --- !u!114 &7865932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1342,6 +1358,21 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300008, guid: ce8d79c79d11b8f9d00076e98d76c639, type: 3}
+--- !u!114 &48751732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec43236ba6522584894ac80bfbcb3815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  condition: {fileID: 114385683103626362, guid: fd02464d008c790478d9826aba7c7847,
+    type: 2}
+  satisfied: 1
 --- !u!114 &51227922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6602,7 +6633,7 @@ PrefabInstance:
     - target: {fileID: 8904809075927903082, guid: 6fdb51f048d398d41ab5442410bb8c95,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.89
+      value: -8.9044
       objectReference: {fileID: 0}
     - target: {fileID: 8904809075927903082, guid: 6fdb51f048d398d41ab5442410bb8c95,
         type: 3}
@@ -6764,7 +6795,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionLocation: {fileID: 604208861}
-  conditionCollections: []
+  conditionCollections:
+  - {fileID: 6247651}
   defaultReactionCollection: {fileID: 1409984824}
 --- !u!114 &618137200
 MonoBehaviour:
@@ -7188,6 +7220,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 719525338}
   m_CullTransparentMesh: 0
+--- !u!114 &720735924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2392585f8a4e53a42a0ddc8de25e64d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 1991707424}
+  audioClip: {fileID: 8300000, guid: 0dfe28e7ce2057a4488c8962dcab8afd, type: 3}
+  delay: 0
 --- !u!1001 &725413612
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8181,6 +8228,21 @@ MonoBehaviour:
   description: TubMoved
   satisfied: 1
   hash: -1909643676
+--- !u!114 &862529889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: TalkedToGobEver
+  satisfied: 0
+  hash: 291281437
 --- !u!114 &875113554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10121,6 +10183,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   item: {fileID: 11400000, guid: 7355bada1d33c3a4388efb03f28d910d, type: 2}
+--- !u!114 &1185675390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c32f1270758a64ba4bc71dbf7e498b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  gameObject: {fileID: 604208862}
+  activeState: 0
 --- !u!1001 &1189669535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11430,7 +11507,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03f8a149ea5a3aa4583dc1cab3334cbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: 'These words..dont make much sense. '
+  message: "These words..dont make much sense. \nIt says Volume 2 though. "
   textColor: {r: 1, g: 1, b: 1, a: 1}
   delay: 0
 --- !u!114 &1419369434
@@ -12755,6 +12832,20 @@ MonoBehaviour:
   requiredConditions:
   - {fileID: 889642095}
   reactionCollection: {fileID: 191459212}
+--- !u!114 &1666958693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b804958e1981f9544989d65e32719692, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  item: {fileID: 11400000, guid: 316798f4252560f4b8a503890a721dc6, type: 2}
 --- !u!1001 &1669534511
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13073,6 +13164,55 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1689450713}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1689639418
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1689639419}
+  - component: {fileID: 1689639420}
+  m_Layer: 0
+  m_Name: talkedtogoblins
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1689639419
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689639418}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 604208861}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1689639420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689639418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc7ecfe98531f2429694b8c81a6748a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 1904791599}
+  - {fileID: 1666958693}
+  - {fileID: 720735924}
+  - {fileID: 48751732}
+  - {fileID: 1185675390}
 --- !u!1 &1702668312
 GameObject:
   m_ObjectHideFlags: 0
@@ -13856,6 +13996,23 @@ MonoBehaviour:
   condition: {fileID: 114393253725562360, guid: fd02464d008c790478d9826aba7c7847,
     type: 2}
   satisfied: 0
+--- !u!114 &1904791599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f8a149ea5a3aa4583dc1cab3334cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: 'Oh. this will help me understand the goblin.
+
+    it says volume 2.'
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  delay: 0
 --- !u!1001 &1948904322
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14895,73 +15052,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
-        type: 3}
-      propertyPath: throwingBottle
-      value: 
-      objectReference: {fileID: 1652222113944582218, guid: abcc6cc692842fe40b5450ec9e06f423,
-        type: 3}
-    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
-        type: 3}
-      propertyPath: throwTo
-      value: 
-      objectReference: {fileID: 984580199}
-    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
-        type: 3}
-      propertyPath: throwForceScale
-      value: 400
-      objectReference: {fileID: 0}
-    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
-        type: 3}
-      propertyPath: throwUpForce
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
-        type: 3}
-      propertyPath: throwSpin.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
-        type: 3}
-      propertyPath: throwSpin.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
-        type: 3}
-      propertyPath: throwSpin.z
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
-        type: 3}
-      propertyPath: gameOverMessage
-      value: 
-      objectReference: {fileID: 1178634664}
-    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
-        type: 3}
-      propertyPath: toThrowCondition
-      value: 
-      objectReference: {fileID: 114310778524521266, guid: fd02464d008c790478d9826aba7c7847,
-        type: 2}
-    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
-        type: 3}
-      propertyPath: bottleOffset.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
-        type: 3}
-      propertyPath: bottleOffset.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
-        type: 3}
-      propertyPath: bottleOffset.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
-        type: 3}
-      propertyPath: throwFrom
-      value: 
-      objectReference: {fileID: 1851238038}
     - target: {fileID: 3692840389348231112, guid: 1c37b45f16e1409418b499c34918acf9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15032,6 +15122,73 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.85
       objectReference: {fileID: 0}
+    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
+        type: 3}
+      propertyPath: throwingBottle
+      value: 
+      objectReference: {fileID: 1652222113944582218, guid: abcc6cc692842fe40b5450ec9e06f423,
+        type: 3}
+    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
+        type: 3}
+      propertyPath: throwTo
+      value: 
+      objectReference: {fileID: 984580199}
+    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
+        type: 3}
+      propertyPath: throwForceScale
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
+        type: 3}
+      propertyPath: throwUpForce
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
+        type: 3}
+      propertyPath: throwSpin.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
+        type: 3}
+      propertyPath: throwSpin.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
+        type: 3}
+      propertyPath: throwSpin.z
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
+        type: 3}
+      propertyPath: gameOverMessage
+      value: 
+      objectReference: {fileID: 1178634664}
+    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
+        type: 3}
+      propertyPath: toThrowCondition
+      value: 
+      objectReference: {fileID: 114310778524521266, guid: fd02464d008c790478d9826aba7c7847,
+        type: 2}
+    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
+        type: 3}
+      propertyPath: bottleOffset.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
+        type: 3}
+      propertyPath: bottleOffset.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
+        type: 3}
+      propertyPath: bottleOffset.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692840388681795122, guid: 1c37b45f16e1409418b499c34918acf9,
+        type: 3}
+      propertyPath: throwFrom
+      value: 
+      objectReference: {fileID: 1851238038}
     - target: {fileID: 3692840388847644389, guid: 1c37b45f16e1409418b499c34918acf9,
         type: 3}
       propertyPath: m_LocalPosition.y
