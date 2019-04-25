@@ -14,7 +14,11 @@ You are on a walk with your dog. All of a sudden, a man dressed in all black kno
 ## Installation
 Clone this repository using ```git clone https://github.gatech.edu/kscharm3/nothing_BASIC.git``` and open the project with the Unity 3D editor (Note: it may take a while to import assets and compile scripts).
 
+## Run the Game
+To run the game, navigate to ```nothing_BASIC/Builds``` and run ```Walk_on_31st.exe```. 
+
 ## Gameplay Instructions
+*Note: for optimal gameplay experience, be sure to use a mouse!*
 ### Game Objective
 Escape each level by finding the correct items and solving puzzles! A timer is displayed in the upper left corner of the screen. Completing a level will add more time to the timer. If the timer hits zero, you lose! 
 
@@ -34,13 +38,25 @@ To control the camera, click and hold the **right mouse** button. This allows th
 To get a hint for the level, press the **h** key. The dog will sniff out the next item you need to find. 
 
 ## Game Requirements
+### Game Feel
+### Fun
+### 3D Real-Time Character Control
+### Physics Simulation
+### Artificial Intelligence (AI)
+### Polish
 
 ## Known Bugs
 1) As items are combined to create new items, they may be inserted later in the inventory array even if there are available spots earlier in the array. This will cause some items not render in the **regular** inventory view, but they will render in the **expanded** view.
 
 ## External Resources
-
+Nandan cite all assets here!
 ## Project Task Breakdown
+- **Kenny**: inventory system, interaction system, condition checking system, player running movement, scene persistence with data savers, various object animations (fridge, stove, coffins, graves)
+- **Ryan**: kitchen level interaction logic, implemented general player movement with arrow keys, player footstep audio for walking/running, goblin animations
+- **Sammi**: cursor change on mouse hover over interactable, lighting scripts, global timer variables, audio design, level scenery design, scene menu (start, end, win, credits) design, inventory sprites
+- **Nandan**: graveyard digger AI, recipe making interactions, level 1/2 interactions, general room design and implementation
+- **Brian**: dog AI pathplanning & navmesh generation, hint interaction system, general room design and implementation
+- **Erik**: level 1 drunk guy AI, bottle throwing interaction, camera control movement with mouse click, ragdoll animations, general lighting effects
 
 ## Scenes to Open
 1) LaunchGame - Launch the game from this scene only. You can edit the SceneController game object to change the starting scene name & initial starting position to any of the following:
