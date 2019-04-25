@@ -40,12 +40,12 @@ public class SauceFishTracker : MonoBehaviour
     }
 
     public bool isCorrectCombination() {
-        //Red Sauce + Yellow Fish
-        return redSauceCondition.satisfied && yellowFishCondition.satisfied;
+        //green Sauce + Yellow Fish
+        return greenSauceCondition.satisfied && yellowFishCondition.satisfied;
     }
     public bool isCorrectCombination2() {
-        //Orange Sauce + Purple Fish
-        return orangeSauceCondition.satisfied && purpleFishCondition.satisfied;
+        //Orange Sauce + Green Fish
+        return orangeSauceCondition.satisfied && greenFishCondition.satisfied;
     }
 
 }
