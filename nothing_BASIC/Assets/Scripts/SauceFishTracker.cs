@@ -31,21 +31,26 @@ public class SauceFishTracker : MonoBehaviour
         purpleFishCondition.satisfied = false;
         blueFishCondition.satisfied = false;
 
+        if (Global.hasGreenFish) {
+            greenFishCondition.satisfied = true;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {   
-
+        if (greenFishCondition.satisfied) {
+            Global.hasGreenFish = true;
+        }
     }
 
     public bool isCorrectCombination() {
-        //green Sauce + Yellow Fish
-        return greenSauceCondition.satisfied && yellowFishCondition.satisfied;
-    }
-    public bool isCorrectCombination2() {
         //Orange Sauce + Green Fish
         return orangeSauceCondition.satisfied && greenFishCondition.satisfied;
+    }
+    public bool isCorrectCombination2() {
+        //green Sauce + Yellow Fish
+        return greenSauceCondition.satisfied && yellowFishCondition.satisfied;
     }
 
 }
