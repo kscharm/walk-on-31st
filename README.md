@@ -35,7 +35,10 @@ There are two views for player inventory: **regular** and **expanded**. In the r
 To control the camera, click and hold the **right mouse** button. This allows the player to check out the scenery of the level!
 
 ### Hints
-To get a hint for the level, press the **h** key. The dog will sniff out the next item you need to find. 
+To get a hint for the level, press the **h** key. The dog will sniff out the next item you need to find.
+
+### Pause/Exit
+To bring up the pause menu, press the **esc** key. To exit, click the **exit game** button within the pause menu.
 
 ## Game Requirements
 ### Game Feel
@@ -59,15 +62,20 @@ To get a hint for the level, press the **h** key. The dog will sniff out the nex
 3)
 4)
 ### Artificial Intelligence (AI)
-1)
-2)
-3)
-4)
+
 ### Polish
-1)
-2)
-3)
-4)
+- Start menu and in-game pause menu with ability to restart or exit the game
+- Styled game over, win, and credit scenes
+- Transitions between levels with a short fade out, fade in cut scene
+- Getting knocked out by an enemy triggers player ragdoll followed by a fade out, fade in cut scene 
+- Player interaction animations with interactable objects
+- Scripted interactable object animations: flopping fish, standing drunk guy, hungry goblins, gravekeeper with lantern
+- Proximity-based events: drunk guy knocks you out if he gets to close, gravekeeper chases you after being alerted and knocks you out if you get caught
+- Physics event-based feedback: throwing bottle at drunk guy
+- Particle effects: water in tub, lighting, electricity on fence
+- Audio effects: drunk man grumbling
+- Unified aesthetic: consistent spooky theme throughout game, flickering/dim lighting
+
 
 ## Known Bugs
 1) As items are combined to create new items, they may be inserted later in the inventory array even if there are available spots earlier in the array. This will cause some items not render in the **regular** inventory view, but they will render in the **expanded** view.
