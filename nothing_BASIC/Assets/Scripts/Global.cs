@@ -10,7 +10,8 @@ public class Global : MonoBehaviour
     public static string timerText;
     public static bool goblin1Done;
     public static bool golbin2Done;
-
+    public static bool level0 = true;
+    public static bool level1 = true;
 
     public void Start()
     {
