@@ -231,7 +231,7 @@ public class PlayerMovement : MonoBehaviour
         bodyForce.GetComponent<Rigidbody>().AddForce(Vector3.up * 3000);
         bodyForce.GetComponent<Rigidbody>().AddForce((transform.position - hit.position) * 4000);
         Global.time -= 20;
-        sceneReset.React();
+        //sceneReset.React();
     }
 
 }
