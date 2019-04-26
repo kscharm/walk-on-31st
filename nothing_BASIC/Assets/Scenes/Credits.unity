@@ -146,8 +146,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -184.4, y: -163.69}
-  m_SizeDelta: {x: 308.9, y: 515.42}
+  m_AnchoredPosition: {x: -202.4, y: -163.69}
+  m_SizeDelta: {x: 344.9, y: 515.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &448573824
 MonoBehaviour:
@@ -182,13 +182,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Game Objective\r\nEscape each level by finding the correct items and solving
-    puzzles! A timer is displayed in the upper left corner of the screen. Completing
-    a level will add more time to the timer. If the timer hits zero, you lose!\r\n\r\nPlayer
-    Movement\r\nUse the WASD keys to control the character. To run, hold the left
-    shift key.\r\n\r\nItem Interactions\r\nThe \"hand\" cursor will indicate if an
-    item in the game is interactable. To interact with an item, click the left mouse
-    button.\r"
+  m_Text: "Level One Assets\n-Realistic Furniture And Interior Props Pack by Sevastian
+    Marevoy\r\n-Unity Adventure Game tutorial/Assets\r\n\r-House On The Lake by Sevastian
+    Marevoy\n\r-Worn Bookshelf by Jason Wong\r\n\r\nLevel Two Assets\r\n-Magic Mirror
+    Lite - Reflection for Unity by  Digital Ruby (Jeff Johnson)\r\n-PBR Ladle by 3D.BJ:\r\n-Troll
+    \u0421annibal by Kazimir\r\n-Small Town America - Streets - FREE by MultiFlagStudios\r\n-Fishbones
+    Rigged 3D Model by NTSC\r"
 --- !u!222 &448573825
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -323,7 +322,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 2800000, guid: 079e981254335e7418c5bf634f242791, type: 3}
+  m_Texture: {fileID: 2800000, guid: c3e01b204fc4fd640aa2e43376f3b91a, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -520,8 +519,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 176.93, y: -110.34}
-  m_SizeDelta: {x: 353.9, y: 616.12}
+  m_AnchoredPosition: {x: 176.93, y: -141.9}
+  m_SizeDelta: {x: 353.9, y: 552.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1403782214
 MonoBehaviour:
@@ -556,14 +555,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Inventory\r\nThere are two views for player inventory: regular and expanded.
-    In the regular inventory view, the first four item slots are displayed on the
-    righthand side of the screen. To open the expanded view, click the '<' icon to
-    the left of the regular inventory view. To close the expanded view, click the
-    '>' icon.\r\n\r\nCamera Control\r\nTo control the camera, click and hold the right
-    mouse button. This allows the player to check out the scenery of the level!\r\n\r\nHints\r\nTo
-    get a hint for the level, press the h key. The dog will sniff out the next item
-    you need to find.\n"
+  m_Text: "Level Two Assets\r\n-Bandit & Pirate Pack by Rain Entertainment \n-FREE
+    Cartoon Halloween Pack by Lumo-Art 3D\r\n-PBR Ground Materials #2 [Dirt, Grass
+    & Rocky] by John's Junkyard Assets\r\n-Lightning Bolt Effect for Unity by Jeff
+    Johnson\r\n-PBR Sci-Fi Exterior Props: Generator by CaptainCatSparrow\n-Coffin
+    Royale by @pauloscreations:\r\n-Stylized Trees (Low Poly) by Tom Poon\r\n-Rusty
+    Black Shovel by Sergi Nicol\xE1s\r\n\r-Church 3D by Andreicg\r\n-Medieval Fantasy
+    House by Robin Tucker\r\n-Medieval Stone Keep by Lylek Games\r\n\r\nMiscellaneous
+    Assets\r\n-Low Poly Animated Dog by Nitacawo\r\n-Sculpted Fish 3D Model by thatguyjay\r"
 --- !u!222 &1403782215
 CanvasRenderer:
   m_ObjectHideFlags: 0
