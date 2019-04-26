@@ -16,6 +16,7 @@ public class GravekeeperAI : MonoBehaviour
 	public GameObject[] stoppoints;
 	private int currSP = -1;
 	private Vector3 waypointvel;
+    public PlayerMovement player;
 
 
     public AIstate aistate;
@@ -84,8 +85,9 @@ public class GravekeeperAI : MonoBehaviour
                 graveKeeper.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 3;
                 graveKeeper.GetComponent<UnityEngine.AI.NavMeshAgent>().angularSpeed = 180;
              } else {
-                graveKeeper.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 0;
+                graveKeeper.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 2;
                 graveKeeper.SetTrigger("reachedplayer");
+                player.hitFrom(transform);
              }
              
                 break;
