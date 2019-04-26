@@ -21,6 +21,8 @@ public class PlayerMovement : MonoBehaviour
     public Condition toThrowCondition;
     public Transform throwFrom;
     public ReactionCollection sceneReset;
+    public GameObject ragdoll;
+    public GameObject bodyForce;
 
 
     // private double maxInteractionDistance = 1.5;
@@ -214,7 +216,10 @@ public class PlayerMovement : MonoBehaviour
        {
             sceneReset.React();
             animator.enabled = false;
-            rbody.AddForceAtPosition(transform.position - other.transform.position * 20, other.transform.position);
+            ragdoll.SetActive(true);
+            GetComponent<CapsuleCollider>().enabled = false;
+            bodyForce.GetComponent<Rigidbody>().AddForce(Vector3.up * 3000);
+            bodyForce.GetComponent<Rigidbody>().AddForce((transform.position - other.transform.position) * 4000);
             Global.time -= 20;
             
        }
