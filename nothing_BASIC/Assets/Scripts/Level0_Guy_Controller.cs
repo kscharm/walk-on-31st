@@ -9,6 +9,7 @@ public class Level0_Guy_Controller : MonoBehaviour
     public GameObject player;
     public GameObject ragdoll;
     public GameObject key2;
+    public AudioSource song;
 
     private NavMeshAgent agent;
     private Animator animator;
@@ -51,6 +52,7 @@ public class Level0_Guy_Controller : MonoBehaviour
             ragdoll.SetActive(true);
             GetComponent<CapsuleCollider>().enabled = false;
             agent.Stop();
+            song.Stop();
         }
     }
 }
