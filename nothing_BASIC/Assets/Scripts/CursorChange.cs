@@ -5,10 +5,23 @@ using UnityEngine;
 public class CursorChange : MonoBehaviour
 {
     public Texture2D cursor;
-
-    void OnMouseEnter()
+    public Transform player;
+    public float maxInteractDistance = 5.0f;
+    private void Start()
     {
-        Cursor.SetCursor(cursor, Vector2.zero, CursorMode.Auto);
+        player = GameObject.Find("Player").transform;
+    }
+
+
+    private void OnMouseEnter()
+    {
+        if (gameObject.activeSelf)
+        {
+            if (Vector3.Distance(player.transform.position, transform.position) < maxInteractDistance)
+            {
+                Cursor.SetCursor(cursor, Vector2.zero, CursorMode.Auto);
+            }
+        }
     }
 
     void OnMouseExit()
@@ -19,6 +32,6 @@ public class CursorChange : MonoBehaviour
     private void disable()
     {
         Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
-        GetComponent<CursorChange>().enabled = false;
+        player.SendMessage("disableCursor");
     }
 }

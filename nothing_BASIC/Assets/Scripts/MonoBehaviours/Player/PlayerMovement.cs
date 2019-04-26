@@ -200,6 +200,11 @@ public class PlayerMovement : MonoBehaviour
             bottle.GetComponent<Rigidbody>().AddTorque(throwSpin);
         }
     }
+
+    private void disableCursor()
+    {
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+    }
         
 
 
@@ -210,6 +215,7 @@ public class PlayerMovement : MonoBehaviour
             sceneReset.React();
             animator.enabled = false;
             rbody.AddForceAtPosition(transform.position - other.transform.position * 20, other.transform.position);
+            Global.time -= 20;
             
        }
        if (other.tag == "red carpet")
