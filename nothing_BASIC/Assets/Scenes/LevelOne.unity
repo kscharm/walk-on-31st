@@ -1205,7 +1205,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reactions:
-  - {fileID: 1695552686}
   - {fileID: 1992996222}
   - {fileID: 787464507}
   - {fileID: 706077088}
@@ -5159,6 +5158,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 3c194e7f43d36ed4988322bf33b85730, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ee543af5c36122740a711aad74b72dbc, type: 2}
     - target: {fileID: 400002, guid: 3c194e7f43d36ed4988322bf33b85730, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.9879866
@@ -5191,10 +5194,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -25.016
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 3c194e7f43d36ed4988322bf33b85730, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ee543af5c36122740a711aad74b72dbc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c194e7f43d36ed4988322bf33b85730, type: 3}
 --- !u!4 &384187253 stripped
@@ -6641,7 +6640,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 142d677cac0419048a2e41952ac323c6, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.186
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -12517,6 +12516,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 3c194e7f43d36ed4988322bf33b85730, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ee543af5c36122740a711aad74b72dbc, type: 2}
     - target: {fileID: 400002, guid: 3c194e7f43d36ed4988322bf33b85730, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.9879866
@@ -12549,10 +12552,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -25.016
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 3c194e7f43d36ed4988322bf33b85730, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ee543af5c36122740a711aad74b72dbc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c194e7f43d36ed4988322bf33b85730, type: 3}
 --- !u!4 &941845449 stripped
@@ -19523,6 +19522,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 3c194e7f43d36ed4988322bf33b85730, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ee543af5c36122740a711aad74b72dbc, type: 2}
     - target: {fileID: 400002, guid: 3c194e7f43d36ed4988322bf33b85730, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.9879866
@@ -19555,10 +19558,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -25.016
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 3c194e7f43d36ed4988322bf33b85730, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ee543af5c36122740a711aad74b72dbc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c194e7f43d36ed4988322bf33b85730, type: 3}
 --- !u!4 &1490461359 stripped
@@ -21275,21 +21274,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62e2bdda7a7fc144d9f4d03697b4cb31, type: 3}
---- !u!114 &1695552686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a931d1c243b462c46bad5f7d2aae5949, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 0
-  animator: {fileID: 57725894}
-  trigger: HighTake
 --- !u!1001 &1696420068
 PrefabInstance:
   m_ObjectHideFlags: 0
