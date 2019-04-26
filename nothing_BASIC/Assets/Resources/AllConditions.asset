@@ -58,7 +58,6 @@ MonoBehaviour:
   - {fileID: 114836217846913286}
   - {fileID: 114241042950598854}
   - {fileID: 114339880290655274}
-  - {fileID: 114862790720455660}
   - {fileID: 114909538464615114}
   - {fileID: 114864196685158110}
   - {fileID: 114672548127343256}
@@ -79,7 +78,7 @@ MonoBehaviour:
   m_Name: goblin2Satisfied
   m_EditorClassIdentifier: 
   description: goblin2Satisfied
-  satisfied: 0
+  satisfied: 1
   hash: -918640982
 --- !u!114 &114015259147641790
 MonoBehaviour:
@@ -124,7 +123,7 @@ MonoBehaviour:
   m_Name: OpenDoor
   m_EditorClassIdentifier: 
   description: OpenDoor
-  satisfied: 0
+  satisfied: 1
   hash: 207596745
 --- !u!114 &114058155635645654
 MonoBehaviour:
@@ -154,7 +153,7 @@ MonoBehaviour:
   m_Name: HasGoldKey
   m_EditorClassIdentifier: 
   description: HasGoldKey
-  satisfied: 0
+  satisfied: 1
   hash: -634121075
 --- !u!114 &114145075572739530
 MonoBehaviour:
@@ -259,7 +258,7 @@ MonoBehaviour:
   m_Name: HasShovel
   m_EditorClassIdentifier: 
   description: HasShovel
-  satisfied: 0
+  satisfied: 1
   hash: 242079953
 --- !u!114 &114278268555868156
 MonoBehaviour:
@@ -334,7 +333,7 @@ MonoBehaviour:
   m_Name: TalkedToGobEver
   m_EditorClassIdentifier: 
   description: TalkedToGobEver
-  satisfied: 0
+  satisfied: 1
   hash: 291281437
 --- !u!114 &114385683103626362
 MonoBehaviour:
@@ -349,7 +348,7 @@ MonoBehaviour:
   m_Name: HasDictionary2
   m_EditorClassIdentifier: 
   description: HasDictionary2
-  satisfied: 0
+  satisfied: 1
   hash: 104228337
 --- !u!114 &114388979326205170
 MonoBehaviour:
@@ -364,7 +363,7 @@ MonoBehaviour:
   m_Name: PickedUpKey
   m_EditorClassIdentifier: 
   description: PickedUpKey
-  satisfied: 0
+  satisfied: 1
   hash: 1243592844
 --- !u!114 &114393230518750864
 MonoBehaviour:
@@ -424,7 +423,7 @@ MonoBehaviour:
   m_Name: bothGoblinsSatisfied
   m_EditorClassIdentifier: 
   description: bothGoblinsSatisfied
-  satisfied: 0
+  satisfied: 1
   hash: -688148436
 --- !u!114 &114448366326592914
 MonoBehaviour:
@@ -439,7 +438,7 @@ MonoBehaviour:
   m_Name: PickedUpSHEver
   m_EditorClassIdentifier: 
   description: PickedUpSHEver
-  satisfied: 0
+  satisfied: 1
   hash: 749643187
 --- !u!114 &114476146570938240
 MonoBehaviour:
@@ -454,7 +453,7 @@ MonoBehaviour:
   m_Name: HasDictionary1
   m_EditorClassIdentifier: 
   description: HasDictionary1
-  satisfied: 0
+  satisfied: 1
   hash: -1623247797
 --- !u!114 &114510765262627342
 MonoBehaviour:
@@ -484,7 +483,7 @@ MonoBehaviour:
   m_Name: HasGenerator
   m_EditorClassIdentifier: 
   description: HasGenerator
-  satisfied: 0
+  satisfied: 1
   hash: 1875418495
 --- !u!114 &114537660950732320
 MonoBehaviour:
@@ -499,7 +498,7 @@ MonoBehaviour:
   m_Name: HasLadle
   m_EditorClassIdentifier: 
   description: HasLadle
-  satisfied: 0
+  satisfied: 1
   hash: -1694840415
 --- !u!114 &114550210439912274
 MonoBehaviour:
@@ -529,7 +528,7 @@ MonoBehaviour:
   m_Name: PickedUpBottleEver
   m_EditorClassIdentifier: 
   description: PickedUpBottleEver
-  satisfied: 0
+  satisfied: 1
   hash: -1399836076
 --- !u!114 &114631060959830496
 MonoBehaviour:
@@ -559,7 +558,7 @@ MonoBehaviour:
   m_Name: goblin1Satisfied
   m_EditorClassIdentifier: 
   description: goblin1Satisfied
-  satisfied: 0
+  satisfied: 1
   hash: 571022761
 --- !u!114 &114654828085066554
 MonoBehaviour:
@@ -634,7 +633,7 @@ MonoBehaviour:
   m_Name: TubMoved
   m_EditorClassIdentifier: 
   description: TubMoved
-  satisfied: 0
+  satisfied: 1
   hash: -1909643676
 --- !u!114 &114753703001785506
 MonoBehaviour:
@@ -664,7 +663,7 @@ MonoBehaviour:
   m_Name: level1exit
   m_EditorClassIdentifier: 
   description: level1exit
-  satisfied: 0
+  satisfied: 1
   hash: -617695693
 --- !u!114 &114778232183244620
 MonoBehaviour:
@@ -679,7 +678,7 @@ MonoBehaviour:
   m_Name: level0exit
   m_EditorClassIdentifier: 
   description: level0exit
-  satisfied: 0
+  satisfied: 1
   hash: -431054973
 --- !u!114 &114796645480153572
 MonoBehaviour:
@@ -724,7 +723,7 @@ MonoBehaviour:
   m_Name: FenceLowered
   m_EditorClassIdentifier: 
   description: FenceLowered
-  satisfied: 0
+  satisfied: 1
   hash: -1881090423
 --- !u!114 &114836217846913286
 MonoBehaviour:
@@ -741,21 +740,6 @@ MonoBehaviour:
   description: goblin2Angry
   satisfied: 0
   hash: 298537957
---- !u!114 &114862790720455660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
-  m_Name: ReadDictionaryEver
-  m_EditorClassIdentifier: 
-  description: ReadDictionaryEver
-  satisfied: 0
-  hash: 1074966795
 --- !u!114 &114864196685158110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -844,7 +828,7 @@ MonoBehaviour:
   m_Name: PickedUpKey_ExitLevel0
   m_EditorClassIdentifier: 
   description: PickedUpKey_ExitLevel0
-  satisfied: 0
+  satisfied: 1
   hash: -1983539911
 --- !u!114 &114972834351214418
 MonoBehaviour:

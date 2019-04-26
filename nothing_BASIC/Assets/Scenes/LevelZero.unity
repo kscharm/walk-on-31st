@@ -13640,7 +13640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b698434391f86a94fbbc37ce9f2ebd21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceApart: 1.25
+  distanceApart: 1.6
   dog: {fileID: 1841536255}
   player: {fileID: 491516183}
   conditions:
