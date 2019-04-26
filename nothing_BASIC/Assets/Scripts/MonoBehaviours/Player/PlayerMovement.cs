@@ -214,19 +214,24 @@ public class PlayerMovement : MonoBehaviour
     {
        if (other.tag == "enemy")
        {
-            sceneReset.React();
-            animator.enabled = false;
-            ragdoll.SetActive(true);
-            GetComponent<CapsuleCollider>().enabled = false;
-            bodyForce.GetComponent<Rigidbody>().AddForce(Vector3.up * 3000);
-            bodyForce.GetComponent<Rigidbody>().AddForce((transform.position - other.transform.position) * 4000);
-            Global.time -= 20;
+            hitFrom(other.transform);
             
        }
        if (other.tag == "red carpet")
        {
             SceneManager.LoadScene("EndGame", LoadSceneMode.Single);
        }
+    }
+
+    public void hitFrom(Transform hit)
+    {
+        animator.enabled = false;
+        ragdoll.SetActive(true);
+        GetComponent<CapsuleCollider>().enabled = false;
+        bodyForce.GetComponent<Rigidbody>().AddForce(Vector3.up * 3000);
+        bodyForce.GetComponent<Rigidbody>().AddForce((transform.position - hit.position) * 4000);
+        Global.time -= 20;
+        sceneReset.React();
     }
 
 }
