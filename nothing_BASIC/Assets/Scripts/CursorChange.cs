@@ -15,13 +15,7 @@ public class CursorChange : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        if (gameObject.activeSelf)
-        {
-            if (Vector3.Distance(player.transform.position, transform.position) < maxInteractDistance)
-            {
-                Cursor.SetCursor(cursor, Vector2.zero, CursorMode.Auto);
-            }
-        }
+        Cursor.SetCursor(cursor, Vector2.zero, CursorMode.Auto);
     }
 
     void OnMouseExit()

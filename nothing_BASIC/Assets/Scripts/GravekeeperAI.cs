@@ -74,7 +74,7 @@ public class GravekeeperAI : MonoBehaviour
     		}
     		break;
             case AIstate.CHASING:
-             if(navmesh.remainingDistance >= 3) {
+             if(navmesh.remainingDistance >= 2.5) {
                 currSP = 14;
                 float gdist = (stoppoints[currSP].transform.position 
                     - navmesh.transform.position).magnitude;

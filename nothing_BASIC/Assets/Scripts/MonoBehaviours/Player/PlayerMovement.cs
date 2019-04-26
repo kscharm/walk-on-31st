@@ -38,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
     private bool handleInput = true;
     private WaitForSeconds inputHoldWait;
     private readonly int hashLocomotionTag = Animator.StringToHash("Locomotion");
+    private bool justhit = false;
 
 
     public const string startingPositionKey = "starting position";
@@ -47,6 +48,7 @@ public class PlayerMovement : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         rbody = GetComponent<Rigidbody>();
+        justhit = false;
 
         inputHoldWait = new WaitForSeconds (inputHoldDelay);
 
@@ -225,13 +227,18 @@ public class PlayerMovement : MonoBehaviour
 
     public void hitFrom(Transform hit)
     {
-        animator.enabled = false;
-        ragdoll.SetActive(true);
-        GetComponent<CapsuleCollider>().enabled = false;
-        bodyForce.GetComponent<Rigidbody>().AddForce(Vector3.up * 3000);
-        bodyForce.GetComponent<Rigidbody>().AddForce((transform.position - hit.position) * 4000);
-        Global.time -= 20;
-        sceneReset.React();
+        if (!justhit)
+        {
+            animator.enabled = false;
+            ragdoll.SetActive(true);
+            GetComponent<CapsuleCollider>().enabled = false;
+            bodyForce.GetComponent<Rigidbody>().AddForce(Vector3.up * 3000);
+            bodyForce.GetComponent<Rigidbody>().AddForce((transform.position - hit.position) * 4000);
+            Global.time -= 20f;
+            sceneReset.React();
+            justhit = true;
+        }
+
     }
 
 }
