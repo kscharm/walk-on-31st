@@ -219,7 +219,7 @@ public class PlayerMovement : MonoBehaviour
        }
        if (other.tag == "red carpet")
        {
-            SceneManager.LoadScene("EndGame", LoadSceneMode.Single);
+            SceneManager.LoadScene("YouWon", LoadSceneMode.Single);
        }
     }
 

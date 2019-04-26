@@ -792,7 +792,7 @@ MonoBehaviour:
   faderCanvasGroup: {fileID: 1708470355}
   fadeDuration: 1
   startingSceneName: LevelTwo
-  initialStartingPositionName: Bathroom
+  initialStartingPositionName: Graveyard
   playerSaveData: {fileID: 11400000, guid: 55d72825bf06cf44e9cbc1b37812cc6f, type: 2}
 --- !u!4 &353158847
 Transform:
