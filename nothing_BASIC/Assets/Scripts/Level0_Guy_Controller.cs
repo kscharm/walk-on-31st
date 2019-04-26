@@ -9,7 +9,7 @@ public class Level0_Guy_Controller : MonoBehaviour
     public GameObject player;
     public GameObject ragdoll;
     public GameObject key2;
-    public AudioSource song;
+    private AudioSource song;
 
     private NavMeshAgent agent;
     private Animator animator;
@@ -19,6 +19,7 @@ public class Level0_Guy_Controller : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
+        song = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
