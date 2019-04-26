@@ -12,6 +12,7 @@ public class IncreaseTime : MonoBehaviour
         if (!condition.satisfied)
         {
             Global.time += time;
+            condition.satisfied = true;
         }
     }
 }

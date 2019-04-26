@@ -9146,7 +9146,6 @@ MonoBehaviour:
   reactions:
   - {fileID: 430175169}
   - {fileID: 321653113}
-  - {fileID: 1533202383}
 --- !u!1001 &737208944
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17576,21 +17575,6 @@ MonoBehaviour:
   - {fileID: 1219751918}
   - {fileID: 1580925205}
   - {fileID: 626917923}
---- !u!114 &1533202383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec43236ba6522584894ac80bfbcb3815, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  condition: {fileID: 114775991424167292, guid: fd02464d008c790478d9826aba7c7847,
-    type: 2}
-  satisfied: 1
 --- !u!4 &1543810839 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000013347439334, guid: d5eed0a5b6a34b34482815ba18f3d9a2,
@@ -22873,7 +22857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03f8a149ea5a3aa4583dc1cab3334cbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: I need to fill in the grave first before I close the coffin!
+  message: I need to close the coffin before I can fill in the grave!
   textColor: {r: 1, g: 1, b: 1, a: 1}
   delay: 0
 --- !u!1 &2096588637
@@ -23819,7 +23803,7 @@ PrefabInstance:
     - target: {fileID: 405881167357550709, guid: 65e564e17790de945aac66781d34152e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.07
+      value: -0.93
       objectReference: {fileID: 0}
     - target: {fileID: 405881167357550709, guid: 65e564e17790de945aac66781d34152e,
         type: 3}

@@ -1217,10 +1217,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4900350095ceff24fbe8c1ac5f1e17c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  description: doesn'tknowwhatthisisfor
+  description: Talked to goblins?
   requiredConditions:
   - {fileID: 862529889}
-  reactionCollection: {fileID: 1409984824}
+  reactionCollection: {fileID: 1689639420}
 --- !u!114 &7865932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2540,7 +2540,6 @@ MonoBehaviour:
   - {fileID: 728313231}
   - {fileID: 1323508843}
   - {fileID: 1202842015}
-  - {fileID: 1421340572}
   - {fileID: 1468517706}
   - {fileID: 1106762197}
 --- !u!4 &217116858 stripped
@@ -3995,7 +3994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f29b6054d4e0304f8b32fb4625cff19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uniqueIdentifier: BookGameObject
+  uniqueIdentifier: DictionaryGameObject
   saveData: {fileID: 11400000, guid: 48d6089c54f7ceb42b1f63276fdc2247, type: 2}
   gameObjectToSave: {fileID: 604208862}
 --- !u!114 &421810970
@@ -8003,7 +8002,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   description: TalkedToGobEver
-  satisfied: 0
+  satisfied: 1
   hash: 291281437
 --- !u!114 &875113554
 MonoBehaviour:
@@ -11268,21 +11267,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1421017266}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1421340572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80c32f1270758a64ba4bc71dbf7e498b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 0
-  gameObject: {fileID: 604208862}
-  activeState: 0
 --- !u!1 &1430064850
 GameObject:
   m_ObjectHideFlags: 0

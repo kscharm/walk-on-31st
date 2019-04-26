@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -775,21 +775,6 @@ MonoBehaviour:
   - {fileID: 1341646772}
   - {fileID: 584463817}
   - {fileID: 818882199}
---- !u!114 &81454216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec43236ba6522584894ac80bfbcb3815, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  condition: {fileID: 114778232183244620, guid: fd02464d008c790478d9826aba7c7847,
-    type: 2}
-  satisfied: 1
 --- !u!1 &82432873
 GameObject:
   m_ObjectHideFlags: 0
@@ -18624,7 +18609,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reactions:
   - {fileID: 888057533}
-  - {fileID: 81454216}
 --- !u!4 &1441559908
 Transform:
   m_ObjectHideFlags: 0
@@ -21469,6 +21453,7 @@ GameObject:
   - component: {fileID: 1701435564}
   - component: {fileID: 1701435561}
   - component: {fileID: 1701435566}
+  - component: {fileID: 1701435562}
   m_Layer: 0
   m_Name: Savers
   m_TagString: Untagged
@@ -21491,6 +21476,21 @@ MonoBehaviour:
   uniqueIdentifier: GoblinGameObject
   saveData: {fileID: 11400000, guid: 5f4a767d19fd4c94eb015ffa4a3975c6, type: 2}
   gameObjectToSave: {fileID: 173170505}
+--- !u!114 &1701435562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701435560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f29b6054d4e0304f8b32fb4625cff19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueIdentifier: Dictionary2GameObject
+  saveData: {fileID: 11400000, guid: 5f4a767d19fd4c94eb015ffa4a3975c6, type: 2}
+  gameObjectToSave: {fileID: 873664631}
 --- !u!114 &1701435564
 MonoBehaviour:
   m_ObjectHideFlags: 0
