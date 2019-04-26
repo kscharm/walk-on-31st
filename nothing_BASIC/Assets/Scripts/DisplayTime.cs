@@ -25,8 +25,8 @@ public class DisplayTime : MonoBehaviour
         if (remaining > 60f)
         {
             //remaining += 2f;
-            minutes = remaining / 60;
-            remaining = remaining%60;
+            minutes = Mathf.Floor(remaining / 60);
+            remaining = Mathf.Round(remaining%60);
             time.text = "Your time: ";
             minute.text = minutes + " minutes and ";
             seconds.text = +remaining + " seconds";
