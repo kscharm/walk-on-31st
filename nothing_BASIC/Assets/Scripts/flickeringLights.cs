@@ -27,7 +27,8 @@ public class flickeringLights : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(Random.Range(minWaitTime, maxWaitTime));
-            randomInstensity = Random.Range(minIntensity, maxIntensity);
+            randomInstensity = Random.Range(minIntensity, 1);
+            randomInstensity *= maxIntensity;
             light.intensity = randomInstensity;
         }
     }
