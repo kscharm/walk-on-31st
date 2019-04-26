@@ -755,6 +755,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!114 &27531106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2696,6 +2698,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!114 &214722521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3096,6 +3100,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!1 &271863297
 GameObject:
   m_ObjectHideFlags: 0
@@ -3121,7 +3127,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 271863297}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.73, y: 0.84, z: 0.72}
+  m_LocalPosition: {x: 20.68, y: 0.84, z: 0.72}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1668338219}
@@ -3202,6 +3208,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!1 &278051111
 GameObject:
   m_ObjectHideFlags: 0
@@ -3484,6 +3492,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!1 &320274600
 GameObject:
   m_ObjectHideFlags: 0
@@ -3936,6 +3946,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!4 &346045206 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6916908820408058869, guid: 6629ced35968ab042923f3c86d1cb59a,
@@ -4941,6 +4953,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!4 &431549583 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6916908820408058869, guid: 6629ced35968ab042923f3c86d1cb59a,
@@ -5413,6 +5427,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!1001 &470578978
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5996,6 +6012,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!4 &502902335 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6916908820408058869, guid: 6629ced35968ab042923f3c86d1cb59a,
@@ -7003,6 +7021,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!4 &545051439 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6916908820408058869, guid: 6629ced35968ab042923f3c86d1cb59a,
@@ -7347,6 +7367,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!4 &569706281 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6916908820408058869, guid: 6629ced35968ab042923f3c86d1cb59a,
@@ -7631,6 +7653,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!4 &574621021 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6916908820408058869, guid: 6629ced35968ab042923f3c86d1cb59a,
@@ -8958,6 +8982,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!114 &720496780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9928,6 +9954,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!1001 &817561068
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10228,6 +10256,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!114 &851156387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10506,6 +10536,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!114 &877615496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10841,6 +10873,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!4 &890452901 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6916908820408058869, guid: 6629ced35968ab042923f3c86d1cb59a,
@@ -11150,6 +11184,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!1 &922758838
 GameObject:
   m_ObjectHideFlags: 0
@@ -14884,6 +14920,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!1 &1291127400
 GameObject:
   m_ObjectHideFlags: 0
@@ -15125,6 +15163,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!4 &1319039873 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6916908820408058869, guid: 6629ced35968ab042923f3c86d1cb59a,
@@ -16260,6 +16300,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!4 &1401426899 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6916908820408058869, guid: 6629ced35968ab042923f3c86d1cb59a,
@@ -16927,6 +16969,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!1 &1481266505
 GameObject:
   m_ObjectHideFlags: 0
@@ -17423,20 +17467,13 @@ MonoBehaviour:
   - {fileID: 2065114755}
   - {fileID: 2013739616}
   - {fileID: 567050094}
-  - {fileID: 2013739616}
+  - {fileID: 271863297}
+  - {fileID: 888449688}
+  - {fileID: 594122018}
+  - {fileID: 77183676}
   - {fileID: 1076558319}
-  - {fileID: 1291127400}
-  - {fileID: 1192849932}
   - {fileID: 567050094}
-  - {fileID: 1076558319}
-  - {fileID: 3692840390241055284}
-  - {fileID: 3692840390241055284}
-  - {fileID: 3692840390241055284}
-  - {fileID: 3692840390241055284}
-  - {fileID: 3692840390241055284}
-  - {fileID: 3692840390241055284}
-  - {fileID: 3692840390241055284}
-  - {fileID: 3692840390241055284}
+  - {fileID: 514304705}
   - {fileID: 3692840390241055284}
   aistate: 0
 --- !u!95 &1504284464 stripped
@@ -17973,6 +18010,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!1 &1571192898 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6916908820251284474, guid: 6629ced35968ab042923f3c86d1cb59a,
@@ -18331,6 +18370,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!1 &1586785697
 GameObject:
   m_ObjectHideFlags: 0
@@ -20265,6 +20306,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!1001 &1786994381
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20800,6 +20843,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!114 &1862738465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21288,6 +21333,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!114 &1937916656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21695,6 +21742,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!65 &1972060343
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22530,6 +22579,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!4 &2067152936 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6916908820408058869, guid: 6629ced35968ab042923f3c86d1cb59a,
@@ -22820,6 +22871,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!4 &2086934489 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6916908820408058869, guid: 6629ced35968ab042923f3c86d1cb59a,
@@ -23311,6 +23364,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!1 &2117764712
 GameObject:
   m_ObjectHideFlags: 0
@@ -23518,6 +23573,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!114 &2143301908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24060,6 +24117,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!4 &698128990064756335
 Transform:
   m_ObjectHideFlags: 0
@@ -24949,6 +25008,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!1 &3354141036896794037
 GameObject:
   m_ObjectHideFlags: 0
@@ -26848,6 +26909,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!4 &7471293541020211965
 Transform:
   m_ObjectHideFlags: 0
@@ -27274,6 +27337,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!1001 &8879835193364923537
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27633,6 +27698,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!4 &8904075829696557512
 Transform:
   m_ObjectHideFlags: 0
