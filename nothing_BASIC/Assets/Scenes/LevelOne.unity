@@ -270,6 +270,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!114 &4283178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1797,6 +1799,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!114 &173170509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2533,6 +2537,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!114 &212882791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3352,6 +3358,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 54e1d45aa12def44c8914206fb0dc3d9, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!114 &288608780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5930,6 +5938,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!114 &448636800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6209,6 +6219,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!114 &454967599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7251,6 +7263,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!1001 &551100144
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8641,6 +8655,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!114 &643369063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10715,6 +10731,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!114 &826977978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11590,6 +11608,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!114 &873664636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12791,6 +12811,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!65 &963765742
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13886,6 +13908,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!65 &1023058882
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13963,6 +13987,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!114 &1039488680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14086,6 +14112,21 @@ MonoBehaviour:
   description: HasDictionary2
   satisfied: 1
   hash: 104228337
+--- !u!114 &1058894824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2392585f8a4e53a42a0ddc8de25e64d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 983442471}
+  audioClip: {fileID: 8300000, guid: bea8f4178ddf1a045a5e7d1ead924fb0, type: 3}
+  delay: 0
 --- !u!1 &1064389890
 GameObject:
   m_ObjectHideFlags: 0
@@ -14927,6 +14968,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!114 &1148381811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15335,6 +15378,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!114 &1156240875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15536,6 +15581,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!65 &1173292380
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16770,6 +16817,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   item: {fileID: 11400000, guid: 2b4bec79f708867468d7bdc22e54c4f7, type: 2}
+--- !u!114 &1292023477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2392585f8a4e53a42a0ddc8de25e64d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 983442471}
+  audioClip: {fileID: 8300000, guid: bea8f4178ddf1a045a5e7d1ead924fb0, type: 3}
+  delay: 0
 --- !u!1001 &1297403086
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17576,6 +17638,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!114 &1363491443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17758,6 +17822,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!1 &1392840222
 GameObject:
   m_ObjectHideFlags: 0
@@ -18130,6 +18196,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!114 &1424982474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18230,6 +18298,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!114 &1436622123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18915,6 +18985,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!114 &1476692620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20647,6 +20719,7 @@ MonoBehaviour:
   - {fileID: 88871511}
   - {fileID: 1618661373}
   - {fileID: 434094790}
+  - {fileID: 1292023477}
 --- !u!114 &1635720298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21380,6 +21453,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!114 &1699969868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21610,6 +21685,7 @@ MonoBehaviour:
   - {fileID: 2019756414}
   - {fileID: 88871511}
   - {fileID: 1618661373}
+  - {fileID: 1058894824}
 --- !u!1001 &1716024493
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23105,6 +23181,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!114 &1844947595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24379,6 +24457,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!114 &1926483403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24602,6 +24682,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!114 &1947863813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26900,6 +26982,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 40501ea0974876343ac476242869377a, type: 3}
+  player: {fileID: 0}
+  maxInteractDistance: 5
 --- !u!1 &1592828262674438
 GameObject:
   m_ObjectHideFlags: 0
